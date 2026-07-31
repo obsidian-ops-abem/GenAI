@@ -100,3 +100,4 @@ Graph Engineering 系の**実装完全マニュアル**。本ボルトの Graph 
 - いつ Graph にするか → [[10_Graph Engineering 最大の間違い Loop↔Graph判断]]・[[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]
 - verifier・接地検証 → [[09_Loop Engineering Claude,GPT 実戦で効くもの]]・[[01_エージェントファクトリの作り方 ビルダーズガイド]]・[[03_AI協業の発注の型 HITL実務]]
 - worktree 隔離 → [[10_1チャットをエージェントチームへ Opus5 12ステップ]]・[[11_Graph of Loops Claude Code完全システム10リポジトリ]]・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
+- 学習ロードマップ版（本記事＝実装完全マニュアルの対） → [[13_Graph Architectへの20ステップ5フェーズ]]（@eng_khairallah1。Loop 必習→5パターン→信頼性→「グラフにしない」判断。本記事は Claude Code 実装、13_ は学習の道筋）

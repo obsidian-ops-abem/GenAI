@@ -115,3 +115,4 @@ Claude↔GPT 切替は**中央の脳**を替えるだけ。設計したループ
 - Graph層の深掘り → [[07_Graph Engineering Clearly Explained]]
 - 自己検証の限界・エージェントの正体 → [[06_AIエージェントの正体はプロンプトだった]]
 - Context規律 → [[08_Context Engineering Claude Codeの文脈設計]]
+- 同著者による Graph への学習ロードマップ → [[13_Graph Architectへの20ステップ5フェーズ]]（本記事を実戦解説とするなら、13_ は Loop→Graph の段階的習得ロードマップ。Phase 1「Loop 必習」が本記事の前置き）
