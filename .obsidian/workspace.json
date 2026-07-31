@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/01_エージェント設計論/06_AIエージェントの正体はプロンプトだった.md",
+                "file": "Clippings/Post by @shotovim on X.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06_AIエージェントの正体はプロンプトだった"
+              "title": "Post by @shotovim on X"
             }
           }
         ]
@@ -182,21 +182,25 @@
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
-      "bases:新規ベースを作成": false
+      "bases:新規ベースを作成": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
+    "Clippings/Ephemeral-AI-Labephemeral-sandbox Open-source agent sandbox infrastructure for parallel coding agents isolated workspaces, MCPCLI control, observability, and atomic publication.md",
+    "Clippings/Post by @shotovim on X.md",
+    "Clippings/どう頼むかがAIの成果を決める ― 丸投げしないAI協業の「発注の型」.md",
+    "02_wiki/summaries/01_AI/01_エージェント設計論/01_Graph Engineering エージェントを行列から解放する.md",
+    "02_wiki/summaries/01_AI/01_エージェント設計論/10_Graph Engineering 最大の間違い Loop↔Graph判断.md",
+    "02_wiki/summaries/01_AI/01_エージェント設計論/06_AIエージェントの正体はプロンプトだった.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/04_Prompt to Graph Engineering 5層の統一モデル.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/02_LOOP vs GRAPH vs HARNESS ENGINEERING.md",
-    "Clippings/Ephemeral-AI-Labephemeral-sandbox Open-source agent sandbox infrastructure for parallel coding agents isolated workspaces, MCPCLI control, observability, and atomic publication.md",
-    "Clippings/どう頼むかがAIの成果を決める ― 丸投げしないAI協業の「発注の型」.md",
     "02_wiki/summaries/02_ツール/05_Vibe Kanban コーディングエージェント用Kanbanワークスペース.md",
     "02_wiki/summaries/02_ツール/04_PixelRAG スクショで検索するRAG.md",
     "02_wiki/summaries/02_ツール/03_Mastra Trace Intelligence.md",
     "02_wiki/summaries/02_ツール/02_無料OSSで有料ツールを代替する10のGitHubリポジトリ.md",
     "02_wiki/summaries/02_ツール/01_Brevio ローカル完結の492種類ツール集.md",
-    "02_wiki/summaries/01_AI/01_エージェント設計論/01_Graph Engineering エージェントを行列から解放する.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/11_Graph of Loops Claude Code完全システム10リポジトリ.md",
     "log.md.tmp.9604.0755bd3edc18",
     "CLAUDE.md.tmp.9604.dae8b74c96ad",
@@ -213,9 +217,6 @@
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/02_24時間自走する自律型AIエージェントの設計図.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/10_1チャットをエージェントチームへ Opus5 12ステップ.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/09_Claude Code×Obsidianで第二の脳を作る 2000時間の設計ルール.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/08_Context Engineering Claude Codeの文脈設計.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/07_Claude Code 超初心者ボルション道場.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/06_Claude Code 8時間を1時間にする10の方法.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス",
     "02_wiki/summaries/01_AI/02_Claude Code実践",
