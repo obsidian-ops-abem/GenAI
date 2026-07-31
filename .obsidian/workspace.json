@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/OpenAI創業者カーパシーの革命的Obsidian活用術【保存版】.md",
+                "file": "01_raw-sources/41_Obsidianのおすすめ機能と選ぶ理由（出典）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenAI創業者カーパシーの革命的Obsidian活用術【保存版】"
+              "title": "41_Obsidianのおすすめ機能と選ぶ理由（出典）"
             }
           }
         ]
@@ -188,8 +188,12 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
-    "02_wiki/summaries/01_AI/01_エージェント設計論/13_Graph Architectへの20ステップ5フェーズ.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/11_Obsidianのおすすめ機能と選ぶ理由.md",
+    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/01_エージェントファクトリの作り方 ビルダーズガイド.md",
+    "02_wiki/summaries/03_セキュリティ/01_MIXI新卒技術研修セキュリティ研修まとめ.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/10_1チャットをエージェントチームへ Opus5 12ステップ.md",
     "Clippings/OpenAI創業者カーパシーの革命的Obsidian活用術【保存版】.md",
+    "02_wiki/summaries/01_AI/01_エージェント設計論/13_Graph Architectへの20ステップ5フェーズ.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/01_Agent Skillsを作る完全プロンプト.md",
     "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
     "Clippings/2026-08-01/How to Become a Graph Architect With Zero Experience (Full Course).md",
@@ -220,10 +224,6 @@
     "Clippings/2026-08-01/どう頼むかがAIの成果を決める ― 丸投げしないAI協業の「発注の型」.md",
     "Clippings/2026-08-01/Post by @shotovim on X.md",
     "Clippings/2026-07-31/Post by @hi_bysir on X.md",
-    "99_to_delete/Clippings_処理済み_20260801/Ephemeral-AI-Labephemeral-sandbox Open-source agent sandbox infrastructure for parallel coding agents isolated workspaces, MCPCLI control, observability, and atomic publication.md",
-    "99_to_delete/Clippings_処理済み_20260801/どう頼むかがAIの成果を決める ― 丸投げしないAI協業の「発注の型」.md",
-    "99_to_delete/Clippings_処理済み_20260801/Post by @shotovim on X.md",
-    "99_to_delete/Clippings_処理済み_20260801/Post by @hi_bysir on X.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
