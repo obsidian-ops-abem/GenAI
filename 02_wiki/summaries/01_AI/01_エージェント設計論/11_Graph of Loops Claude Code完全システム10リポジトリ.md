@@ -91,6 +91,6 @@ created: 2026-08-01
 
 - Graph+Loop 二層 → [[08_Agent Harness vs Loop vs Graph Engineering]]・[[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]
 - Loop 信頼性・ゲート → [[09_Loop Engineering Claude,GPT 実戦で効くもの]]・[[01_エージェントファクトリの作り方 ビルダーズガイド]]
-- worktree・ファンアウト → [[10_1チャットをエージェントチームへ Opus5 12ステップ]]
+- worktree・ファンアウト → [[10_1チャットをエージェントチームへ Opus5 12ステップ]]・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
 - 「done を取り戻せる」= 根拠停止 → [[02_24時間自走する自律型AIエージェントの設計図]]
 - Graph は必要時だけ → [[10_Graph Engineering 最大の間違い Loop↔Graph判断]]・[[07_Graph Engineering Clearly Explained]]

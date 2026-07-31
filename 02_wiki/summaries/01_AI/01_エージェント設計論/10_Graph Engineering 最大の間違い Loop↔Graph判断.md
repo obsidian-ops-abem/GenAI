@@ -119,3 +119,4 @@ DISTINCT な専門性（research/write/review）に分解できる？
 - 5層統一モデル → [[04_Prompt to Graph Engineering 5層の統一モデル]]
 - GraphRAG → [[02_GraphRAG 知識グラフでRAGを置き換える]]
 - 3層パイプライン実装 → [[03_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]]
+- Graph にした後の14の実装手 → [[12_Graph Engineering with Claude 14-Step roadmap]]（本記事は「いつGraph化するか」、12_は「Graph化した後のどう」）

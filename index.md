@@ -39,6 +39,7 @@ updated: 2026-08-01
 - [[09_Loop Engineering Claude,GPT 実戦で効くもの]] — Khairallah(@eng_khairallah1)によるloop engineering実戦解説。Loop vs Chainの判定・Claude/GPT両エコシステムの収束・実戦5原則(done定義/接地検証器/階層的終了/コスト規律/不可逆前チェック)・実戦4罠を示す（本文はユーザー提供クリップから再構成）の要約
 - [[10_Graph Engineering 最大の間違い Loop↔Graph判断]] — wandermist(@wandermist)による「最大の間違い＝必要でないのにグラフを作ること」。ループは1ノードのグラフ、グラフ昇格を正当化する5シグナル・30秒決定木・6項目チェックリストでLoop↔Graphを判定。懐疑派の冷却材（本文はユーザー提供クリップから再構成）の要約
 - [[11_Graph of Loops Claude Code完全システム10リポジトリ]] — Granite0x(@Granite0x)によるGraph+Loop二層統合の実践ガイド。Graph(G1-G4)とLoop(L1-L6)の10実リポジトリをソースコードレベルで解説。「doneを取り戻せるか」が全10を採点。bernstein/agent-worktree/wshobson-agents/beads/serena/superpowers等（本文はユーザー提供クリップから再構成）の要約
+- [[12_Graph Engineering with Claude 14-Step roadmap]] — 0xCodez(@0xCodez)によるGraph版14ステップ完全コース。[[05_ループエンジニアリング14ステップ]](Loop版)の対。直線エージェントを退化グラフと見なし「次ステップは前の出力を読むか?」で無駄待ちを切る。node契約/schema・fan-out→reduce→synthesizeのdiamond・verifier(adversarial/diverse/judge)・worktree隔離・loop-until-dry(見たもの全てにdedupe)・model tier・pipeline優先・dynamic workflows自己ルーティング。Claude Code実装完全マニュアル（本文はユーザー提供クリップから再構成）の要約
 
 #### 02_Claude Code実践（使い方・ワークフロー・MCP・スキル）
 
@@ -52,11 +53,13 @@ updated: 2026-08-01
 - [[08_Context Engineering Claude Codeの文脈設計]] — 発話前の約7,850トークンを設計対象とし、削除優先・段階的開示・サブエージェント委譲で窓を保つ規律（/context・4失敗モード・6ジョブ）の要約
 - [[09_Claude Code×Obsidianで第二の脳を作る 2000時間の設計ルール]] — Claude Codeアカデミア(2000時間運用)による実践版。5分セットアップ・CLAUDE.md設計5要素・6運用パターン・7設計ルール・安全3策を網羅。本ボルトの運用ルールとほぼ一致する参考文献（本文はユーザー提供クリップから再構成）の要約
 - [[10_1チャットをエージェントチームへ Opus5 12ステップ]] — Rody(@0x_rody)によるClaude Codeサブエージェントのチーム化12ステップ。最初のワーカーから3階層ツリーまで、モデル/effortルーティング・構造的深さキャップ(ワーカーからAgent削除)・仕事をしなかった検証器・20分セットアップを示す（本文はユーザー提供クリップから再構成）の要約
+- [[11_Obsidianのおすすめ機能と選ぶ理由]] — shotovim(@shotovim)によるObsidianおすすめ機能ランキング(Git連携/内部リンク/Web Clipper/Bases/Canvas/プラグイン/デイリーノート)。「ClaudeCodeが〜は理由にならない（ローカルファースト設計の帰結）」と冷やす短い意見ポスト（本文はユーザー提供クリップから再構成）の要約
 
 #### 03_エージェント運用・ガバナンス（長時間運用・ファクトリ・品質保証）
 
 - [[01_エージェントファクトリの作り方 ビルダーズガイド]] — Av1dlive(@Av1dlive)によるAgent Factory完全構築ガイド(約5400語)。5ステーション(ABOM/組立/証明/認証/運用)・「第2の首」機械化・6テスト・7ガード・1法(no evals, no production)・4自律ティア・7日ロードマップ。Sage API紹介色強いが工場思想は製品非依存（本文はユーザー提供クリップから再構成）の要約
 - [[02_24時間自走する自律型AIエージェントの設計図]] — AIテック(@aitech_jp)による長時間運用エージェントの日本語実務ガイド。4層(Trigger/Workflow/Agent/Guardrail)・「状態機械を先に」・5つの壊れる理由・7設計原則・5実行環境(/loop/Routines/Modal・Trigger.dev/Agent SDK/Managed Agents)・15チェック・設計プロンプト付き（本文はユーザー提供クリップから再構成）の要約
+- [[03_AI協業の発注の型 HITL実務]] — sh-fukaya(Qiita)によるHITL実務レシピ。AIの成果物を一括で受け取らず依頼・承認・検証の3点だけに人が関与。3つの型(結論ファースト+構成承認／決め手ポイント1問ずつ／結論を仮説に決め手だけ検証の2層レビュー)＋コピペ可能なプロンプト（本文はユーザー提供クリップから再構成）の要約
 
 #### 04_LLM・RAG・基礎（LLM基礎・RAG・モデル選定・プラットフォーム）
 
@@ -76,6 +79,8 @@ updated: 2026-08-01
 - [[05_Vibe Kanban コーディングエージェント用Kanbanワークスペース]] — DanKornas(@DanKornas)によるコーディングエージェント向けKanbanワークスペース(BloopAI/vibe-kanban)。エージェントごとにブランチ/ターミナル/開発サーバーを分離し差分レビューをワークスペース内に閉じ込める。※サービス終了予定の要約
 - [[06_agmsg CLIエージェント間メッセージング]] — fujibee(@fujibee)によるCLI AIエージェント間メッセージングOSS(Claude Code/Codex/opencode)。v1.1.12はコミュニティ主導の成熟(opencode-sentinel/codexブリッジ修正/可視化ツール5つ)を示すの要約
 - [[07_graphify コードベースを知識グラフ化]] — Graphify-Labsによる`/graphify`スキル。コード/docs/PDF/画像/動画を知識グラフ化しgrepでなくグラフをクエリ。コードはtree-sitter ASTで完全ローカル・LLM不使用・ベクトル不使用。EXTRACTED/INFERRED信頼度タグ。20+アシスタント対応の要約
+- [[08_スマホからPCのcodexとccをリモート操作]] — Bysir(@hi_bysir)によるスマホ→PCリモート操作ハック。Herdr(ターミナルマルチプレクサ+Agent First)+Termius+sshでcodex/ccの公式モバイルアプリのサブスク・切替問題を回避。Amphetamineでスリープ防止・公網はFRP。※コメントでPaseo/網易UU等の代替言及（本文はユーザー提供クリップから再構成）の要約
+- [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] — Ephemeral-AI-Labによる並列コーディングエージェント用OSS基盤(Rust・MIT)。1つの共有サンドボックス内で各エージェントに隔離ワークスペースを与え変更セットを原子的公開。LayerStack・CLI/MCP 3ツール群(Management/Runtime/Observability)（本文はユーザー提供クリップのREADMEから再構成）の要約
 
 ### 03_セキュリティ
 
