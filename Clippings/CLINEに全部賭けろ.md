@@ -1,0 +1,378 @@
+---
+title: "CLINEに全部賭けろ"
+source: "https://zenn.dev/mizchi/articles/all-in-on-cline"
+author:
+published: 2025-02-26
+created: 2026-08-02
+description:
+tags:
+  - "clippings"
+---
+2326
+
+916
+
+Cline を使い始めて2ヶ月ぐらい経った。
+
+自分の直感として、Cline は真のイノベーションの入口であり、そして開けてはいけないパンドラの箱でもあったと思う。
+
+ここでいう Cline は Cline型コーディングエージェントであり、広義には Devin / Cursor や Copilot Agent 等を含む話。だが、後述するように Cline でしか見えない世界がある。
+
+その先の未来に、プログラマとしての自分はフルベットする、という話をする。
+
+## 私たちが知っているプログラミングの終焉
+
+大事なことは次の記事に全部書いてある。まずこれを読んでほしい。
+
+<iframe src="https://embed.zenn.studio/card#zenn-embedded__b88ae459ddab3" frameborder="0" height="121.328125"></iframe>
+
+> (Google翻訳) Steve Yegge 氏は、置き換えられるのはジュニアおよび中級レベルのプログラマーではなく、新しいプログラミング ツールやパラダイムを受け入れず過去に固執するプログラマーであると指摘しています。  
+> <略>  
+> これはプログラミングの終わりではありません。最新の再発明の始まりです
+
+<iframe src="https://embed.zenn.studio/card#zenn-embedded__d1aa8b4bf8ec" frameborder="0" height="121.328125"></iframe>
+
+これをあのティム・オライリーが言っている、という重みを感じてほしい
+
+## AIとプログラマが真の意味で同じ土俵に立った
+
+まず Cline 自体は、端的には VSCode のような「プログラミングエディタをヘッドレスで動かすツール」に過ぎない。
+
+Cline は人間のプログラマと同じように環境情報を参照する。コードを実行し、そのログを吸い上げて、再修正する。
+
+しかし、Cline上の作業では、このフローに本質的な変化が生まれたように思う。Clineは強い(危険な)実行権限を持ち、このサイクルが今まで比べてとにかく圧倒的に速い。この速さによってAIプログラミング体験が、強烈に変質する。
+
+Cursorでコマンド実行パーミッションにYOLOモードも使ったが、体験としては Copilot の延長みたいなもので、基本的に人間の意思決定を尊重しようとする。
+
+Cline は暴走列車みたいなもので、最初の指示以外は人間なんかどうでもいいと思っているフシがある。その結果、これ抜きに実現できない速さを獲得し、自分はこれ無しで我慢できなくなった。正直、かなりの中毒性がある。
+
+そういう魔力は、Copilot や Cursor にはなかった。だから Cline、というか厳密には Fork の Roo Code を使っている。
+
+たぶん、今までは人間の思い込みが無意識に制約を掛けていた。その枷から外れた Cline だけが自分に未来を見せてくれている。とにかく使ってみてほしい。
+
+## AI はプログラミングが(どのぐらい)下手だったのか
+
+まず、一般的な職業プログラマにとっては、AIはプログラミングが下手というのが一般的な認識だと思う。
+
+実際、自分も「単純な」コーディング性能では自分も別に賢くないと思っている。今一番賢い Claude-3.7-sonnet で新卒2年目ぐらいだろうか。
+
+が、それはAIと人間の得ている情報の非対称性によって、不当に低く評価されていたことがわかってきたようにも思う。Cline にデータを吸わせると、わかりやすく性能が高まっていくのが観測できる。今までは、単に情報不足だっただけではないか。
+
+Cline がこれを解決した。その結果生まれるのは、圧倒的なコーディング速度である。ただし、AIが得意な範囲での、という但し書きもあるが。
+
+結局人間も試行錯誤のPDCAでコードを書かざるを得ないわけだが、Cline の試行錯誤の速度はもうどんなエキスパートでも勝てないレベルに達しつつある。
+
+## Cline に得意なことをやらせる
+
+自分が指示を出すと15分で700行ぐらいのコードのテストを通過するコードが書ける。
+
+例えば、JSON から特定のアクセスパスのデータを、型推論しつつ抽出する dig という関数を書かせてみた。
+
+<iframe src="https://embed.zenn.studio/github#zenn-embedded__069d44df7a3ed" frameborder="0" height="121.328125"></iframe>
+
+```
+export function dig<T, Q extends Query>(
+  obj: T,
+  query: Q
+): DeepValue<T, QueryToArray<Q>> {
+  return digUntyped(obj, query) as DeepValue<T, QueryToArray<Q>>;
+}
+//...
+
+// Unit Tests
+import { expect } from "@std/expect";
+import { test } from "@std/testing/bdd";
+
+test("dig - string query basic object access", () => {
+  const obj = { a: { b: 1 } };
+  expect(dig(obj, "a")).toEqual({ b: 1 });
+  expect(dig(obj, "a.b")).toBe(1);
+});
+// ...
+```
+
+こういうふうにテストをパスしている。
+
+```
+$ deno test -A dig.ts               
+Check file:///home/mizchi/lab/core/dig.ts
+running 17 tests from ./dig.ts
+dig - string query basic object access ... ok (1ms)
+dig - array query basic object access ... ok (0ms)
+dig - string query array access ... ok (0ms)
+dig - array query array access ... ok (0ms)
+dig - string query wildcard ... ok (0ms)
+dig - array query wildcard ... ok (0ms)
+digUntyped - regex query ... ok (0ms)
+digUntyped - object query ... ok (0ms)
+digUntyped - $keys query ... ok (0ms)
+digUntyped - $values query ... ok (0ms)
+digUntyped - $flat query ... ok (0ms)
+digUntyped - $pick query ... ok (0ms)
+digUntyped - $exclude query ... ok (0ms)
+digUntyped - combined special queries ... ok (0ms)
+dig - edge cases ... ok (0ms)
+digUntyped - basic functionality ... ok (0ms)
+dig - type inference ... ok (0ms)
+```
+
+作りながら、「クエリを内部的に構造化して」「正規表現がほしいな」「自己再帰でネストしたオブジェクトに対応して」みたいな指示を出して、都度テストを書かせた。
+
+これは、わかりやすくAIに得意なことをやらせている。
+
+- 外部参照やコンテキストがない
+- 技術的なドメインに閉じている
+- モックデータを作りやすい
+- すでに既存実装がありそう
+
+これは正直、自分でも書けるが、この実装に要した時間が 5分程度というのが大きい。自分でこの量を書くと、たぶん30分から1時間かかっただろう。発展も容易で、モックデータを作ってテストを通させると良い。それこそが仕様をテストで表現する技術で、より要求されるスキルになる。
+
+たぶん手数こそが一番大事で、その手数で人間は勝てないフェーズにはすでに達している。
+
+そして気づくはずだ。人間の判断こそがボトルネックである、と。そして人間を伺わない Cline だけが達成できた世界で、Copilot が独力で辿り着けなかった境地でもある。
+
+## 難しいことをやらせる: JSON に対するHM型推論
+
+dig は実装方法が自明なケースだったので、あえて難しいことをやらせる。
+
+型がないJSONから、JSONの型を推論して、そこから zod のバリデータを作りたい。
+
+自分が与えた具体的な指示は、まず簡単な HM型推論を実装させ、そこから型を抽出して zod バリデータを組み立てるように、というもの。
+
+[Hindley–Milner type system - Wikipedia](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)
+
+<iframe src="https://embed.zenn.studio/card#zenn-embedded__f512e6444a849" frameborder="0" height="121.328125"></iframe>
+
+<iframe src="https://embed.zenn.studio/github#zenn-embedded__85e342ecd9331" frameborder="0" height="121.328125"></iframe>
+
+これは正直あまり作り込んでいないのだが、例えばここまでは実装が終わっている。
+
+```
+///...
+test("ネストされたオブジェクトの推論", () => {
+  const env = new TypeEnvironment();
+  const json = {
+    user: {
+      id: 1,
+      name: "John",
+      tags: ["admin", "user"],
+    },
+  };
+
+  const type = inferTypeFromJson(json, env);
+  const typeStr = typeToString(type);
+  expect(typeStr).toBe(
+    "{ user: { id: number, name: string, tags: string[] } }"
+  );
+});
+```
+
+簡単な例だがうまく動いている。あとはこれのテストケースを増やして、実装させるとうまくいくはず。
+
+ここまでやって、ここからいくつか学べることがあったと思う。
+
+前提としてユーザー側の洞察が必須。事前にこういう知識やコンテキストが必要。
+
+- JSON というデータ構造で何が表現できるか
+- 型推論や、HM 型推論とは何かを知っている。使える。
+- 抽出したい構造は、どのようにJSONで表現できるか
+- JSON に HM型推論を適用して、意味があるのか
+
+恥ずかしながら、自分は実はHM型推論は概念は知ってるがふんわりとしてしか理解してないので、ここの評価がすでに曖昧になっている。ただ、それを使った応用のテストコードは、比較的簡単に評価できるように見える。たぶんテストコードを増やしていけば、なんかとかなりそう。
+
+自分が理解してないものを実装するには「結果から逆算されうる内部構造に対する直感」というかなり高度な思考が要求されることになる。今までプログラマではないから人がプログラマに仕事を依頼する時は、この感覚だったんだと思う。
+
+## ドライバー席を譲る判断と覚悟
+
+GitHub Copilot は、その通りあくまで消極的なナビゲーターだった。エンドユーザーの体験としては、 `Math.<Tab>` で Tab を押したら `sin,cos,tan,PI...`を挿入するインテリセンスが、静的解析のメソッドレベルから(確率的とはいえ)関数呼び出しの引数込み `.sin(Math.PI/n)` まで拡大されたぐらいの感覚だった。
+
+それでも十分にすごいのだが、 Cline はもうそういう次元じゃない。ペアプロでいうとClineがドライバーで、ユーザーがナビゲータになる。役割を交代する。
+
+人間が考えることは、まず Cline が得意そうな数学、アルゴリズム、ライブラリかどうかをプログラマが考えて、それができそうならClineにやらせればよい。 `2点間のユークリッド距離を計算する distance 関数を実装して` といえばいい。
+
+今やらせてみた。
+
+```
+// 2点間のユークリッド距離を計算する distance 関数をTSで実装して。Deno でテストも書いて
+/**
+ * Calculates the Euclidean distance between two points in n-dimensional space
+ * @param point1 First point as an array of numbers
+ * @param point2 Second point as an array of numbers
+ * @returns The Euclidean distance between the two points
+ * @throws Error if the points have different dimensions
+ */
+export function distance(point1: number[], point2: number[]): number {
+  if (point1.length !== point2.length) {
+    throw new Error("Points must have the same number of dimensions");
+  }
+
+  let sumOfSquares = 0;
+  for (let i = 0; i < point1.length; i++) {
+    const diff = point2[i] - point1[i];
+    sumOfSquares += diff * diff;
+  }
+
+  return Math.sqrt(sumOfSquares);
+}
+
+import {
+  assertEquals,
+  assertThrows,
+} from "https://deno.land/std/assert/mod.ts";
+
+Deno.test("distance between identical points is 0", () => {
+  assertEquals(distance([0], [0]), 0);
+  assertEquals(distance([1, 2], [1, 2]), 0);
+  assertEquals(distance([5, 5, 5], [5, 5, 5]), 0);
+});
+
+Deno.test("distance in 1D space", () => {
+  assertEquals(distance([0], [5]), 5);
+  assertEquals(distance([10], [5]), 5);
+  assertEquals(distance([-5], [5]), 10);
+});
+
+Deno.test("distance in 2D space", () => {
+  // Distance between (0,0) and (3,4) should be 5 (Pythagorean triple)
+  assertEquals(distance([0, 0], [3, 4]), 5);
+
+  // Distance between (1,1) and (4,5) should be 5
+  assertEquals(distance([1, 1], [4, 5]), 5);
+
+  // Distance between (-1,-1) and (2,3) should be 5
+  assertEquals(distance([-1, -1], [2, 3]), 5);
+});
+
+Deno.test("distance in 3D space", () => {
+  // Distance between (0,0,0) and (3,4,0) should be 5
+  assertEquals(distance([0, 0, 0], [3, 4, 0]), 5);
+
+  // Distance between (1,1,1) and (4,5,1) should be 5
+  assertEquals(distance([1, 1, 1], [4, 5, 1]), 5);
+
+  // Custom 3D case
+  const result = distance([2, 3, 4], [5, 7, 9]);
+  assertEquals(Math.round(result * 100) / 100, 7.07); // Rounded to 2 decimal places
+});
+
+Deno.test("throws error when points have different dimensions", () => {
+  assertThrows(
+    () => distance([1, 2], [1, 2, 3]),
+    Error,
+    "Points must have the same number of dimensions"
+  );
+});
+```
+
+この程度なら 15秒 で終わる。そして、これを自分が確認するのに1分かかるが、テストがあるので負担は下がっている。
+
+(テスト書きやすくするのに、浮動小数点の曖昧性を避けてるな、とは思った。)
+
+とはいえ、そのコーディング力は実際に対話しているモデルの性能に依存している。自分の肌感だと、実際にタスクが最終的に成功する確率が7割、書かれたコードが自分の要求する品質に達している確率は7割ぐらいだろうか。結果として、使えるコードがでる確率は半分ぐらいになる。
+
+なので自分は、まず Clineに得意な範囲をやらせて、それを自分がリファクタリングしてモジュール化する、という手順を繰り返させる。
+
+その結果、この辺のスクリプトが書き上がった。
+
+<iframe src="https://embed.zenn.studio/card#zenn-embedded__e1f39322041fa" frameborder="0" height="121.328125"></iframe>
+
+やり方を思いつけば、15分で700行書けるという感覚がある。
+
+## Cline/Claude が苦手なこと: コンテキストの保持
+
+自分は、「PoC を1ファイルに限定して実装させる」あるいは「参照するライブラリ/モジュールを明示して、それに対する実装」というアプローチを取っている。なぜなら、コンテキストが明示的ではない環境で、参照を解決するのが苦手だから。
+
+これは、AIのモデル性能があがっていき、コンテキストウィンドウが拡大することで解決することがわかっている。
+
+コンテキスト保持に関しては、それらに対処する苦肉の策に Memory Bank や MCP, Agentic RAG 等の技術があるが、正直、コンテキストウィンドウとサマリ生成どちらが生き残る技術なのか、現時点で読み切れない。現状はコストと相談しながら、逐次選ぶしかない。
+
+<iframe src="https://embed.zenn.studio/card#zenn-embedded__5c6eb870fcb71" frameborder="0" height="121.328125"></iframe>
+
+[Introducing the Model Context Protocol \\ Anthropic](https://www.anthropic.com/news/model-context-protocol)
+
+## Cline AI 時代のプログラマに必要なこと
+
+このように整理できるはず。
+
+- コンテキストを記述する能力
+- ドメインを記述する能力
+- AIの性能に対する直感
+
+AIに対する直感以外は、適切なモジュール分割、境界づけられたコンテキストの抽出であり、ユビキタス言語の構築、DDD であり、ドメインエキスパートとしての実装対象の抽象化能力ではないか。
+
+結局自分は `.clinerules` に結構な量の指示を書いており、これを自分の能力に合わせて構築できるのがプログラミングのドメインエキスパートとしての価値だと感じている。
+
+<iframe src="https://embed.zenn.studio/github#zenn-embedded__ba80d40e3b43" frameborder="0" height="374"></iframe>
+
+やはり汎用プロンプトでは限界があるというのが自分の認識で、プログラミング言語や実装対象、周辺技術をまとめたドキュメントを準備しておくのが大事。
+
+それとは別に、短期的に必要な能力として、コスト圧縮のためのコンテキスト圧縮しつつ、AIのミスを手動で修正して補助するエージェントとしての役目がある。
+
+## Cline とプログラミング言語適性
+
+プログラミング言語適性もある。現時点の Cline が機能する言語は限定的で TypeScript, C#, Python あたりの高水準な言語、かつ人気があって学習量があり、実行前に型チェックができる静的型付けの補助がある言語が向いている。
+
+試した範囲では、静的型付けの有無はループを回す速度に直結している。JS より TS のが成功率が段違いに良い。
+
+反面 Rust / Haskell のようなコンパイラ制約が厳しい言語だと、今の Claude だと人間のエキススパートの助けなしにコンパイル/テストをパスすることが難しい確率が高い。
+
+(どんなに指示を与えても実装を歪めてテストを通そうとするので、都度叱っている。ここの仕草が非常にジュニアエンジニアっぽい。)
+
+これに関しては、AIモデルの性能向上を待つか、エキスパートとして寄り添う必要がある。
+
+## これがなぜ「パンドラの箱」か
+
+Cline は環境情報を取るのに様々なコマンドを直接実行しようとする。
+
+一応、未知のコマンドは実行にユーザーを確認するようになっていたり、自動実行可能な許可リストを作れるようになっている。Auto Approver という仕組み。
+
+とはいえ、やっていくとわかるのだが、どんどんユーザー側の確認が緩くなっていく。人間側がボトルネックである自覚を持ってしまうと、そうなるまいとすぐに許可を与えたくなる。
+
+Cline 自体は基本的に思いつきでなんでもサンドボックス外でコマンド実行するので、危険。その結果として環境情報を吸い上げてコーディング精度が上がっているわけだが…。
+
+たぶん、Cline を使いたいと言われた各社のセキュリティ担当は、相当頭抱えることになるだろう。
+
+というところまで予想付くので、Cline が行き着いた先で熱くなるテーマが、コンテナセキュリティと WebAssembly Sandbox になる、という予想がある。
+
+自分はせめてもの抵抗として `deno run --allow-net` 等で実行時パーミッション与えて実行しているが、やっぱサボって `-A(--allow-all)` しがち。まあでも deno は向いてると思う。
+
+## vs プログラマ不要論
+
+自分はプログラマが不要になるとは思っていない。プログラマというのはコードを書く作業員ではなく、対象のドメインを抽象して構成要素を分解・再構築する思考訓練を受けた専門家だと思っているからだ。
+
+そしてこの思考様式なくして、プログラミングは実現しない。AI がプログラミングをするときの水準がこれなのだから、人間側が AI の期待に応える必要がある。応えられない範囲は、ハルシネーションで埋まっていく。
+
+高度なAIは自分の鏡みたいなもので、AIから引き出せる性能は、自分の能力にそのまま比例する。プログラミング作業が少し自然言語に近づいただけで、実際の動作レベルがプログラミング言語であることは変わらないし、デバッグ時に必要とされる水準は変わっていないし、なんならより難しくなっているかもしれない。
+
+プログラマという職業は終わらない。ただ、変わっていくだけ。
+
+> (Google翻訳) 私はまだそれを信じていません。高度なコンピューティング能力をはるかに多くの人々の手に渡す画期的な進歩があれば、確かに、かつては高度な訓練を受けた専門家の領域だったことを普通の人々が実行できるようになります。しかし、その同じ画期的な進歩によって、新しい種類のサービスとそれらのサービスに対する需要も生まれます。それは、ごく少数の人しか理解できない、深い魔法の新たな源泉を生み出します。  
+> [https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/)
+
+ただし、自分も専門家というサンクコストによるバイアスがあって楽観しすぎるのも危険とも思っている。
+
+例えば翻訳の仕事がなくなった、という次の記事は、正直他人事と感じるには生々しすぎた。
+
+[もうすぐ消滅するという人間の翻訳について｜平野暁人](https://note.com/aki0309/n/n1f05cb496913)
+
+> 2024年末現在、僕の手元にきている来年の依頼は０件。  
+> 2025年の収入見込みも畢竟、０円ということになる。
+
+> あくまでもひとつの翻訳の話である。  
+> つまりは翻訳のひとつの話である。  
+> 関係ないと思うならこの先を読まなくてもいい。  
+> 自分の知る現実と違うならこの先を信じなくてもいい。
+
+そしてAIコーディングはおそらく今がハイプサイクルの頂点で、その宿命として今後幻滅期が来る。プログラミングの練度が低い人が参入し、そして使えないと喚いて去っていくだろう。今の手を汚さないAI驚き屋連中が使えるようには、Cline は整備されていない。
+
+勝負はそこからで、Cline 型コーディングが整備され、万人に開放され、プラクティスが整理されたとき、適応している側の人類でないと、単に生産性という面で生き残れない。
+
+もっというと単純に言うと生産性に基づく給与競争で勝てない。あるいは生産性ではなく、AI自体を管理するパイプライン設計を自分のコアスキルにする必要がある。そういう予感がある。
+
+だから自分は、生き残るために Cline に今後のプログラマ人生を賭ける。
+
+916
+
+この記事に贈られたバッジ
+
+![もっと読みたい](https://static.zenn.studio/images/badges/paid/badge-frame-20.svg) ![Thank you](https://static.zenn.studio/images/badges/paid/badge-frame-5.svg) ![もっと読みたい](https://static.zenn.studio/images/badges/paid/badge-frame-5.svg) ![Thank you](https://static.zenn.studio/images/badges/paid/badge-frame-3.svg) ![参考になった](https://static.zenn.studio/images/badges/paid/badge-frame-3.svg)
