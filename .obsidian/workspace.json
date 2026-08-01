@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/06_Hugging Faceでモデルを探すコツ.md",
+                "file": "03_claudecode/20260801-forgejo-actions-auto-deploy-progress.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06_Hugging Faceでモデルを探すコツ"
+              "title": "20260801-forgejo-actions-auto-deploy-progress"
             }
           }
         ]
@@ -197,8 +197,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1dd0e146ea6cbd6",
+  "active": "89bac682efefb389",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/06_Hugging Faceでモデルを探すコツ.md",
+    "03_claudecode/20260801-forgejo-actions-auto-deploy-progress.md",
+    "03_claudecode/20260801-forgejo-actions-auto-deploy-progress.md.tmp.6991.cade921f7e58",
+    "03_claudecode",
+    "_prefix_backup_20260730_083136/無題のフォルダ",
     "02_wiki/無題のフォルダ",
     "02_wiki/summaries/02_ツール/13_GitHub公式スタックPRとgh-stackスキル.md",
     "02_wiki/summaries/04_論文執筆/01_科学論文での図表作成のルール.md",
@@ -226,16 +231,11 @@
     "Clippings/2026-08-01/Post by @connect24h on X.md",
     "Clippings/2026-08-01/Post by @HeyAnjula on X.md",
     "Clippings/2026-08-01/Post by @DanKornas on X 1.md",
-    "Clippings/2026-08-01/Playwrightで業務E2Eテストのアーキテクチャを設計する — Screen Object Model、Fluent Chaining、日本語メソッド名、ロケーター辞書の統合パターン.md",
     "log.md.tmp.7544.f11c9e5ec6e4",
     "index.md.tmp.7544.15918b49b1c2",
     "index.md.tmp.7544.75c7e605ca5a",
     "index.md.tmp.7544.09611b23a638",
     "index.md.tmp.7544.a0eabdf20e2a",
-    "02_wiki/summaries/01_AI/01_エージェント設計論/12_Graph Engineering with Claude 14-Step roadmap.md.tmp.7544.aceac468d63e",
-    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/04_YC QM マルチプレイヤーエージェントハーネス.md.tmp.7544.fb6e6194d57f",
-    "01_raw-sources/54_YC QM マルチプレイヤーエージェントハーネス（出典）.md.tmp.7544.4add41c07a54",
-    "02_wiki/summaries/02_ツール/13_GitHub公式スタックPRとgh-stackスキル.md.tmp.7544.14ba86147a7f",
     "無題のファイル 1.canvas"
   ]
 }
