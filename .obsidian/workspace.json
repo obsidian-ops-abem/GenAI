@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/01_エージェント設計論/12_Graph Engineering with Claude 14-Step roadmap.md",
+                "file": "Clippings/Post by @ycombinator on X.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "12_Graph Engineering with Claude 14-Step roadmap"
+              "title": "Post by @ycombinator on X"
             }
           }
         ]
@@ -188,6 +188,8 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/01_エージェント設計論/12_Graph Engineering with Claude 14-Step roadmap.md",
+    "Clippings/Post by @ycombinator on X.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/06_AIエージェントの正体はプロンプトだった.md",
     "Clippings/Playwrightで業務E2Eテストのアーキテクチャを設計する — Screen Object Model、Fluent Chaining、日本語メソッド名、ロケーター辞書の統合パターン.md",
     "Clippings/Graph Engineering an Agent That Reviews Its Own Work. The Anthropic Method (Full Guide).md",
@@ -222,8 +224,6 @@
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/01_エージェントファクトリの作り方 ビルダーズガイド.md",
     "02_wiki/summaries/03_セキュリティ/01_MIXI新卒技術研修セキュリティ研修まとめ.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/10_1チャットをエージェントチームへ Opus5 12ステップ.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/01_Agent Skillsを作る完全プロンプト.md",
-    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
