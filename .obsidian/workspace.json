@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Post by @ycombinator on X.md",
+                "file": "Clippings/Post by @tonkotsuboy_com on X.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Post by @ycombinator on X"
+              "title": "Post by @tonkotsuboy_com on X"
             }
           }
         ]
@@ -188,8 +188,9 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
-    "Clippings/Post by @ycombinator on X 1.md",
     "Clippings/Post by @ycombinator on X.md",
+    "Clippings/Post by @tonkotsuboy_com on X.md",
+    "Clippings/Post by @ycombinator on X 1.md",
     "Clippings/Post by @ycombinator on X 2.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/12_Graph Engineering with Claude 14-Step roadmap.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/06_AIエージェントの正体はプロンプトだった.md",
@@ -223,7 +224,6 @@
     "Clippings/Post by @pokamaru3 on X.md",
     "Clippings/OpenAI創業者カーパシーの革命的Obsidian活用術【保存版】.md",
     "01_raw-sources/41_Obsidianのおすすめ機能と選ぶ理由（出典）.md",
-    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/01_エージェントファクトリの作り方 ビルダーズガイド.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
