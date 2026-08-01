@@ -3,7 +3,7 @@ title: インデックス
 aliases: ["00_インデックス"]
 tags: [moc]
 created: 2026-07-28
-updated: 2026-08-01
+updated: 2026-08-02
 ---
 
 # インデックス
@@ -42,6 +42,7 @@ updated: 2026-08-01
 - [[12_Graph Engineering with Claude 14-Step roadmap]] — 0xCodez(@0xCodez)によるGraph版14ステップ完全コース。[[05_ループエンジニアリング14ステップ]](Loop版)の対。直線エージェントを退化グラフと見なし「次ステップは前の出力を読むか?」で無駄待ちを切る。node契約/schema・fan-out→reduce→synthesizeのdiamond・verifier(adversarial/diverse/judge)・worktree隔離・loop-until-dry(見たもの全てにdedupe)・model tier・pipeline優先・dynamic workflows自己ルーティング。Claude Code実装完全マニュアル（本文はユーザー提供クリップから再構成）の要約
 - [[13_Graph Architectへの20ステップ5フェーズ]] — Khairallah(@eng_khairallah1)によるグラフアーキテクトへの20ステップ5フェーズ学習ロードマップ。[[09_Loop Engineering Claude,GPT 実戦で効くもの]](同著者Loop実戦)の延長。Phase1 Loop必習(verifierが全て/4失敗モード)→Phase2 グラフモデル(nodes/edges/state/全ノードがLLMでない/LangGraph)→Phase3 5パターン(router/orchestrator-worker/fan-out fan-in/evaluator-optimizer/HITL gate)→Phase4 信頼性(validation gate/リカバリ/state永続化/観測可能性)→Phase5「グラフにしない」判断。12_(実装完全マニュアル)の対で学習の道筋（本文はユーザー提供クリップから再構成）の要約
 - [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]] — undefinedKi(@undefinedKi)による自己レビューエージェントのGraph構築8ステップ完全ガイド。Anthropicの9語「you do not fix the code, you fix the process」。judge先構築→わざと壊す→ルールブック→3アイテムストレステスト→state ディスク→見えない2人のレビューア→コスト別チェック配置→高価な操作の直列化。実証: Anthropic/Jarred Sumner(Bun, $165k)/Mike Krieger(165k行TS)。12_のverifier 3パターンを具体実装（本文はユーザー提供クリップから再構成）の要約
+- [[15_Graph Engineering 入門 What It Is]] — Mahaximus(@Mahaximus_)によるGraph Engineering入門。node（作業単位）とedge（真の依存）の2プリミティブから、fake-edge test（無駄な待ち発見）・diamond（fan-out→並列→収束）・checker node（並列の失敗防止: 5チェック項目）・static first, dynamic second・Claude Codeのworkflow構文（depends_on）まで。線形＝退化グラフ。CLAUDE.mdでworkflow デフォルト固定（本文はユーザー提供クリップから再構成）の要約
 
 #### 02_Claude Code実践（使い方・ワークフロー・MCP・スキル）
 
@@ -59,6 +60,10 @@ updated: 2026-08-01
 - [[12_カーパシーのObsidian活用術 30分で第二の脳]] — lucky_note_lab(@lucky_note_lab)による非エンジニア向け30分構築チュートリアル。KarpathyのLLM Wiki設計図をObsidian+Web Clipper+Claude Code+タスクスケジューラで実装。raw/wiki一方通行・読まない・分類しない・右クリックだけ・人間の意志(やる気/記憶/判断)を設計から完全に外す。本ボルト運用ルールの直接の原型（本文はユーザー提供クリップから再構成）の要約
 - [[13_Learn Claude Code ハーネスエンジニアリング学習]] — DanKornas(@DanKornas)紹介/shareAI-lab作成のOSS(MIT)。"Bash is all you need"。コーディングエージェントのハーネスがどう組み立てられるかを20レッスンで学ぶ0-to-1学習プロジェクト。5領域(エージェントループ/ツール使用/許可システム/コンテキストとメモリ/エージェント操作・ワークツリー分離)。プロンプトでなくハーネスを見る（本文はユーザー提供クリップのポストから再構成）の要約
 - [[14_Claudeは多層実行エンジン Chatでない]] — HeyAnjula(@HeyAnjula)によるClaude 5層(Chat/Code/MCP/Skills/CLAUDE.md)の整理。チャットでなく多層実行エンジン。Skills+MCPの組み合わせが「提案」から「実行」への境界。ツール接続+スキル+永続コンテキストでAIチームメイト化。本ボルトはこの多層を実装・運用（本文はユーザー提供クリップから再構成）の要約
+- [[15_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]] — mizchi(@mizchi)によるCline宣言的エッセイ(2025-02)。暴走列車のような強い実行権限+圧倒的試行錯誤速度が魔法でありパンドラの箱。人間の判断がボトルネック、ドライバー席を譲る。AI時代プログラマ3能力(コンテキスト/ドメイン記述/AI性能直感)・静的型付けがループ速度に直結・セキュリティはコンテナ/WASM（本文はユーザー提供クリップから再構成）の要約
+- [[16_Claude Codeの6層アーキテクチャ ダムループ]] — DailyDoseOfDS(@DailyDoseOfDS_)/Avi Chawla(@_avichawla)によるClaude Code内部構造6層(入力/知識/実行/統合/マルチエージェント/観測可能性)の図解。モデルはループ内の1ノード、ループ自体は意図的シングルスレッドの「ダムループ」。コンテキスト95%到達で要約でなく構造化抽出(pruning beats summarizing)・エージェントチームはworktree分離（本文はユーザー提供クリップから再構成）の要約
+- [[17_Stop Vibe Coding Spec駆動開発の5ブロック]] — Jey(@0xJeyx)によるspec-driven development実践ガイド。AI出力を予測可能にするのはプロンプトでなくspec(実行計画)。PRD(人)/design doc(エンジニア)/spec(エージェント)の峻別。5ブロック(Why/What/Constraints/Out of scope/Tasks)+5ステップループ。業界4巨頭(Amazon Kiro/GitHub Spec Kit/Google/Microsoft)が道具を出荷。「決定は自分のものに」（本文はユーザー提供クリップから再構成）の要約
+- [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]] — Miraqle(@0xMiraqle)による第二の脳統合ガイド。前の脳は「あなたがエンジンだったから」死んだ。2026年は人間が捕捉・決定、エージェントが残り全て。4層×1writer+nightly compiler+1Mコンテキストがretrieval pipeline不要化。新しい失敗モード(2000ノート超劣化/ハルシネーション統合/スキーマdrift/プライバシー)。Karpathy gist+日本バズボルト統合（本文はユーザー提供クリップから再構成）の要約
 
 #### 03_エージェント運用・ガバナンス（長時間運用・ファクトリ・品質保証）
 
@@ -75,6 +80,7 @@ updated: 2026-08-01
 - [[04_Langflow ビジュアルAIワークフロービルダー]] — AIワークフローをビジュアルに組みAPI/MCPサーバーとしてデプロイできるOSSの要約
 - [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]] — デジタル庁(2023/06)の非エンジニア向けGPT API実践ガイド。ブラックボックス相手の心構え・messages構成・プロンプトTips・他システム連携・従来NLPとの使い分けを網羅（全46ページ）の要約
 - [[06_Hugging Faceでモデルを探すコツ]] — AI難民キャンプによる初心者向けHugging Faceモデル探索ガイド（目的別・日本語対応・おすすめタグ）。※本文未取得、description基づく構成推定の要約
+- [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]] — Mike(@mikenevermiss)によるClaude Fable 5(Mythos-class)実用ガイド。Opusの上に位置する新階層、長期多段階曖昧問題で真価。classifier(サイバー/生化/蒸留でOpus再ルーティング)・effort(low/medium/high/xhighダイヤル)・8プロンプト・5誤用・スキップ基準。Stripeが5000万行Ruby移行を1日で。1Mコンテキスト（本文はユーザー提供クリップから再構成）の要約
 
 ### 02_ツール
 

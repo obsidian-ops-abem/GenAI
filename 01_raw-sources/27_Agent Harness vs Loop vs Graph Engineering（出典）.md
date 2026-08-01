@@ -1,12 +1,12 @@
 ---
-title: "21_Agent Harness vs Loop vs Graph Engineering（出典）"
+title: "27_Agent Harness vs Loop vs Graph Engineering（出典）"
 tags: [raw-source]
 source: https://x.com/LunarResearcher/status/2082076425465762082
 article_url: https://x.com/i/article/2082042903384489984
 author: Lunar (@LunarResearcher)
 published: 2026-07-28
 created: 2026-07-31
-reconstructed: true
+updated: 2026-08-02
 ---
 
 # 出典メタデータ
@@ -14,101 +14,610 @@ reconstructed: true
 - ポストURL: https://x.com/LunarResearcher/status/2082076425465762082
 - 記事URL（X article）: https://x.com/i/article/2082042903384489984
 - 著者: Lunar（@LunarResearcher）— ceo @kollectivexyz / AI engineer
-- 公開: 2026年7月28日 12:11（JST）
+- 公開: 2026年7月28日
 - 形態: X article（長文）。メインポストは見出し＋リンクのみ
-- エンゲメント: 18 RT / 104 いいね / **251 ブックマーク** / 140Kビュー
-- タイトル: **Agent Harness Engineering vs Loop Engineering vs Graph Engineering**
+- タイトル: **Agent Harness Engineering vs Loop Engineering vs Graph Engineering — A Practical Guide To The 3 Layers People Keep Mixing Together**
 
 要約は [[08_Agent Harness vs Loop vs Graph Engineering]] を参照。
 
-> [!warning] 本文取得状況
-> 本ポストは X の「article」形式でログイン壁があり、**本人の本文全文を直接取得できなかった**。下記「再構成内容」は以下の情報源から高い精度で再構成したもの：
-> - 記事タイトル・リプライ群（@iiiichigo_chan / @0xWast3 / @mycomputerspot）の直接引用
-> - Vin Vashishta「Harness, Loop, & Graph: A Simple Explanation」（bug-fix エージェントの具体例・3層構造）
-> - MindStudio「Loop Engineering vs Harness Engineering」（what/when vs where/what touch/how recover の対比定義）
-> - Medium（@bijit211987）/ Towards AI / TrueFoundry / DevCompass の複数独立解説が一致して述べる定義
->
-> 3つの概念の定義は情報源間で完全に一致しているため、再構成の確度は高い。正確な引用が必要な場合は原文（要ログイン）を参照のこと。
+> [!info] 本文取得状況（2026-08-02 更新）
+> 当初（2026-07-31）は X article のログイン壁により本人本文を直接取得できず、Vin Vashishta / MindStudio 等の複数独立解説から再構成していた。2026-08-02 にユーザーが Clippings/ へクリップした**著者本人の原文全文**を入手したため、本ページを原本保存版に差し替えた。再構成版で述べていた3層の定義は原文と完全に一致することを確認済み。
 
 ---
 
-# 再構成内容
+# 原文（著者 @LunarResearcher の X article 全文）
 
-## リプライ群から読み取れる論点
+## A Practical Guide To The 3 Layers People Keep Mixing Together
 
-メインポストへの主要リプライ:
+Most people talk about AI agents like it's one thing.
 
-- **@iiiichigo_chan**: "i think loop engineering is the most important but graph engineering gets more and more important too"（Loop が最重要だが Graph の重要性も増している）
-- **@0xWast3**: "I think every agent is good"
-- **@mycomputerspot**: "The layers matter. If files and APIs are involved, 'agent' stops being a feature name and starts being an ops problem."（**ファイルやAPIが絡むと、agent は機能名ではなく運用問題になる**）
+It isn't.
 
-最後のリプライは本記事の核心を突く: エージェントが本物のシステム（ファイル・API操作）に触れると、Harness 層（環境・インフラ・復旧）が運用上の本質になる、という指摘。
+When an agent moves beyond a toy demo and starts touching files, APIs, documents, customers, or production code, you are no longer just "prompting a model."
 
-## 3つの概念の定義（複数情報源で一致）
+You are designing a system.
 
-| 概念 | 責務 | 一言定義 | 種類 |
-|---|---|---|---|
-| **Harness Engineering** | 環境・インフラ・復旧 | モデルが動く**環境**を構築する | 基盤レイヤー（制御フローとは独立） |
-| **Loop Engineering** | 反復の制御フロー | 作業→フィードバック→反復の**サイクル**を設計する | 制御フロー（線形・順次） |
-| **Graph Engineering** | グラフ構造の制御フロー | ノードとエッジで**エージェント間の接続**を定義する | 制御フロー（非線形・分岐） |
+And in that system, three ideas keep getting mixed together:
 
-**重要**: Loop と Graph は**制御フロンの代替選択**（タスクごとにどちらかを選ぶ）だが、**Harness はそのどちらとも併用する別の基盤レイヤー**。
+- **Agent harness engineering**
+- **Loop engineering**
+- **Graph engineering**
 
-### Harness Engineering（環境・インフラ層）
+They all sit around the same model. They all affect reliability. And yes, they can all contain loops.
 
-- **焦点**: エージェントの環境とインフラストラクチャ
-- **定義（MindStudio）**: 「loop が *what the agent does / when* を定義するなら、harness は ***where it runs / what it can touch / how it recovers*** を定義する」
-- **責務**: メモリ管理、ツールルーティング、ロギング、セキュリティ、サンドボックス、エラー復旧
-- **成果物**: パイプライン、ツール設定、観測性ダッシュボード、エラーハンドラ
-- **Vin Vashishta の定義**: LLM は本質的にテキストを生成するだけで外部システムに触れられない。「モデルと世界の間に座る翻訳層」が harness。モデル出力を実際の関数（ファイルを開く等）に変換し、結果をモデルが読めるテキストに戻す
-- **怠ると**: 完璧な loop があっても、不十分な harness では「本番で壊れる・エラーから復旧できない・観測不能」になる
+But they solve **different problems**.
 
-### Loop Engineering（反復制御フロー）
+If you mix them up, you end up debugging the wrong layer.
 
-- **焦点**: 時間経過に伴うエージェントの挙動
-- **定義**: work → feedback → iterate の反復サイクル。各パスで何をすべきか、ケイデンス、いつタスク完了かを制御
-- **成果物**: 終了条件、反復ロジック、ケイデンスルール
-- **怠ると**: 明確な完了基準がないため「永遠にループする・止まる・早すぎる停止」
+## The 30-Second Answer
 
-### Graph Engineering（グラフ構造制御フロー）
+Here's the clean version:
 
-- **焦点**: 複雑・大規模タスクでのタスク分散
-- **定義**: 単一ループエージェントが詰まる/記憶過多になる問題を、**複数の特化ステップと明確なハンドオフ**に分割
-- **成果物**: ノード（作業単位）、エッジ（ルーティング）、共有状態
-- 単一ループは「自分自身を指すエッジを持つ1ノードのグラフ」に過ぎない（→ [[07_Graph Engineering Clearly Explained]] と整合）
+- **Harness engineering** builds the environment around the model
+- **Loop engineering** designs the repeated work-and-feedback cycle
+- **Graph engineering** makes the workflow topology explicit
 
-## 具体例: バグ修正エージェント（Vin Vashishta）
+A good mental model is:
 
-| 層 | 役割 |
-|---|---|
-| **Harness** | エージェントにファイルを開く・編集する能力を与える翻訳層。ツール・サンドボックス・観測性 |
-| **Loop** | コード変更がテストを壊したら、学んだことを適用して再試行。「次に何を、いつ止めるか」 |
-| **Graph** | 単一エージェントが詰まったら、ジョブを複数の特化ステップ（再現→分析→修正→検証）に分割しハンドオフ |
+**Environment → Feedback → Flow**
 
-## 3層は「競合」ではなく「同じシステムの異なる部分」
+- The **harness** gives the model tools, memory, control, and a workspace
+- The **loop** decides how work gets retried, checked, and improved
+- The **graph** defines what step is allowed to happen next
 
-Vin Vashishta の明確な主張:
+That is the difference.
 
-> "in reality they are different parts of the same system"（現実には、これらは同じシステムの異なる部分にすぎない）
+## Why These Terms Matter Now
 
-人々はしばしば3つを**競合する方法論**として語るが、実際は**1つの階層的アーキテクチャ**として協調する。さらに、これらの層は企業に AI エージェントへの**段階的移行パス**を提供し、技術的な一気作り変えではなくスムーズな移行を可能にする。
+A raw model cannot do real work by itself.
 
-## いつどちらの制御フローを選ぶか
+It cannot:
 
-- **Loop を選ぶ**: 線形・順次なタスク、単一エージェントで完結する場合。まず Loop から始めるのが基本（→ [[05_ループエンジニアリング14ステップ]]）
-- **Graph を選ぶ**: 非線形・分岐・並列が多い、複数特化ステップ間で状態共有が必要、単一ループが記憶過多/待ち状態に陥る場合
-- **Harness は常に必要**: どちらを選んでも、本番運用には環境・復旧・観測性の harness が必須
+- maintain project state across sessions
+- safely call tools
+- inspect a browser
+- enforce permissions
+- retry failed work
+- validate output quality
+- route tasks across specialists
+- stop at the right moment
 
-LangChain は Graph Engineering を「確立されたアプローチの最新の名称」と位置づけ、Loop/Harness 工学と繋いでいる。
+All of that comes from the system around it.
 
----
+As agentic software matures, a practical stack is emerging:
 
-## 関連（ボルト内の系譜）
+1. **The harness** gives the model operating conditions
+2. **The loops** make the work repeatable and verifiable
+3. **The graph** makes complex workflows explicit and controllable
 
-本記事は、本ボルト既存の3層/5層モデル群と同じ系譜:
+Once you see these as separate layers, a lot of AI architecture confusion disappears.
 
-- [[02_LOOP vs GRAPH vs HARNESS ENGINEERING]] — 同じ3層の診断フレーム（@0xwhrrari）
-- [[04_Prompt to Graph Engineering 5層の統一モデル]] — Prompt/Context/**Harness**/Loop/Graph の5層（@akshay_pachaar 前編）
-- [[07_Graph Engineering Clearly Explained]] — Graph 層を掘り下げた続編（@akshay_pachaar）
-- [[03_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]] — 3層の実装チュートリアル
-- [[05_ループエンジニアリング14ステップ]] — Loop 層のロードマップ
+## What A Serious Harness Usually Includes
+
+1\. Context Injection
+
+What the model sees before it acts:
+
+- instructions
+- retrieved knowledge
+- conversation state
+- memory
+- policies
+- task-specific rules
+
+2\. Action Surfaces
+
+What the model can do:
+
+- API calls
+- browser actions
+- shell commands
+- code execution
+- MCP tools
+- databases
+- custom functions
+
+3\. Persistence
+
+What survives across time:
+
+- files
+- checkpoints
+- session state
+- progress logs
+- git history
+- long-term memory
+
+4\. Execution Control
+
+How the run is managed:
+
+- retries
+- timeouts
+- budgets
+- model selection
+- subagent spawning
+- approval gates
+
+5\. Safety And Governance
+
+What keeps the system safe:
+
+- least-privilege permissions
+- isolation
+- allowlists
+- secret handling
+- human approval
+
+6\. Observability
+
+What lets you debug it:
+
+- traces
+- tool inputs and outputs
+- state transitions
+- latency
+- cost
+- eval results
+
+## Why Harness Engineering Matters
+
+Two teams can use the same model and get completely different outcomes.
+
+Why?
+
+Because one team gives the model:
+
+- clean tools
+- stable state
+- structured memory
+- clear permissions
+- observable execution
+
+And the other gives it:
+
+- a vague prompt
+- messy tools
+- noisy context
+- no memory
+- no verification
+
+The model may be the same.
+
+The working conditions are not.
+
+Harness engineering matters whenever the agent:
+
+- cannot access the right capability
+- loses context between sessions
+- acts inconsistently across environments
+- cannot be audited
+- has too much permission
+- cannot recover cleanly after interruption
+
+If the model cannot operate reliably, the first place to look is the harness.
+
+# 2\. Loop Engineering
+
+## What It Is
+
+Every tool-using agent already has a tiny built-in loop:
+
+1. call the model
+2. observe the result
+3. run tools
+4. feed the observations back
+5. repeat until done
+
+Loop engineering begins when you **intentionally design additional cycles** around that behavior.
+
+Not just "ask again."
+
+Not just "retry."
+
+But a real work-and-feedback system.
+
+## Anatomy Of A Good Loop
+
+Trigger
+
+What starts a new cycle?
+
+- user request
+- failed test
+- new document
+- scheduled run
+- webhook
+- evaluator feedback
+
+Goal
+
+What specific condition are we trying to reach?
+
+Not "keep improving."
+
+A real target.
+
+State
+
+What does the next cycle need to know?
+
+- current draft
+- previous attempt
+- tool results
+- errors
+- progress status
+
+Action Policy
+
+What is the agent allowed to do?
+
+- edit
+- delegate
+- call tools
+- spend tokens
+- write files
+- open PRs
+
+Evidence
+
+How do we know whether it worked?
+
+- tests
+- schema validation
+- citations
+- diffs
+- metrics
+- reviewer approval
+
+Feedback
+
+What exactly failed?
+
+The feedback should be compact and actionable.
+
+Stop Rule
+
+When does it end?
+
+- success
+- timeout
+- budget exhausted
+- max retries hit
+- irrecoverable failure
+- escalation to a human
+
+## The Most Important Principle In Loop Engineering
+
+**Do not loop on confidence. Loop on evidence.**
+
+"The agent says it is done" is not a stop condition.
+
+A real stop condition looks more like:
+
+- the tests pass
+- the schema validates
+- the citations resolve
+- the reviewer approves
+- the policy check is clean
+
+That is loop engineering.
+
+## Why Loop Engineering Is Not Just Prompt Engineering
+
+A prompt tells the model what to do **during a call**.
+
+A loop defines what the system does **after the call**.
+
+That includes:
+
+- how it checks results
+- how it reacts to failure
+- how it persists progress
+- how it decides to continue
+- how it terminates
+
+Prompting improves a response.
+
+A loop improves a process.
+
+That is a very different engineering problem.
+
+# 3\. Graph Engineering
+
+## What It Is
+
+Graph engineering makes workflow structure explicit.
+
+It answers a different question:
+
+> Not just "what should the agent do?" But "what is allowed to happen next?"
+
+In graph engineering:
+
+- steps are **nodes**
+- transitions are **edges**
+- branching is explicit
+- parallel work is explicit
+- joins are explicit
+- retries are explicit
+- human interrupts are explicit
+
+The graph becomes the control map for the system.
+
+## What Graph Engineers Actually Design
+
+Node Boundaries
+
+What belongs in:
+
+- a deterministic function
+- an LLM call
+- a specialist agent
+- a human review step
+
+State Schema
+
+What each node can read or write.
+
+Routing Conditions
+
+What evidence moves the job:
+
+- forward
+- backward
+- sideways
+- to escalation
+
+Concurrency
+
+What can run in parallel, and what must wait.
+
+Cycles And Exits
+
+Where retries are allowed, how many are allowed, and how they stop.
+
+Durability
+
+Where checkpoints happen and how the workflow resumes after interruption.
+
+## When Graphs Are Worth It
+
+Graphs are valuable when the process includes:
+
+- meaningful branching
+- approvals
+- specialist handoffs
+- parallel work
+- recovery paths
+- multi-step workflows with explicit control points
+
+They are less useful when the job is simply:
+
+> "Give one agent a few tools and let it work."
+
+In that case, a solid harness plus a few loops may be enough.
+
+A graph adds clarity, but it also adds structure.
+
+Too much structure too early can make the system brittle.
+
+# How The 3 Layers Work Together
+
+Let's say you are building a research-and-publishing agent.
+
+It has to:
+
+- scope a topic
+- gather sources
+- screen citations
+- draft a report
+- pass legal review
+- publish only after approval
+
+Here's how the layers map:
+
+Harness
+
+Provides:
+
+- browser access
+- search tools
+- file workspace
+- memory
+- citations
+- approvals
+- traces
+- model routing
+
+Loop
+
+Handles:
+
+- retrying source retrieval when evidence is weak
+- fixing citation failures
+- running grader checks
+- refreshing work when the market changes
+
+Graph
+
+Controls the path:
+
+- scoping
+- research
+- screening
+- synthesis
+- drafting
+- review
+- publication
+
+With a human gate before release.
+
+That is why the 3 layers are not interchangeable.
+
+They work together, but they are not the same thing.
+
+# Diagnose The Failure Before You Pick The Fix
+
+Here's the practical rule:
+
+## If the agent cannot operate, fix the harness
+
+Examples:
+
+- missing tool access
+- stale state
+- weak memory
+- bad permissions
+- no observability
+
+## If the agent almost works but is unreliable, fix the loop
+
+Examples:
+
+- first draft is close but weak
+- success is inconsistent
+- retries are uncontrolled
+- there is no proof of completion
+
+## If the process itself is complex, fix the graph
+
+Examples:
+
+- many specialists
+- approvals
+- branching logic
+- parallel paths
+- structured handoffs
+
+# Common Mistakes
+
+## 1\. Building The Graph Too Early
+
+Teams often diagram a huge workflow before seeing how the work actually behaves.
+
+Better approach:
+
+- start with a simpler harness
+- collect traces
+- find the stable patterns
+- formalize only what deserves control
+
+## 2\. Letting The Same Model Write And Grade Without Safeguards
+
+Self-review can help, but it shares the same blind spots.
+
+Prefer:
+
+- deterministic checks where possible
+- separate reviewer context
+- external evaluators
+- human approval for high-impact actions
+
+## 3\. Using "Keep Trying" As A Loop
+
+That is not a loop design.
+
+That is an uncontrolled cost leak.
+
+Every loop needs:
+
+- a measurable goal
+- real evidence
+- retry limits
+- escalation rules
+
+## 4\. Treating The Harness Like A Junk Drawer
+
+More tools do not automatically mean better agents.
+
+Too many tools create:
+
+- selection mistakes
+- noisy context
+- weak reliability
+- wider risk surface
+
+A good harness is not crowded. It is precise.
+
+## 5\. Blaming The Model For Orchestration Failures
+
+A model cannot compensate for:
+
+- broken APIs
+- stale state
+- missing exit conditions
+- vague tool schemas
+- invisible failure modes
+
+Fix the layer that owns the failure.
+
+# A Simple Production Checklist
+
+## Harness
+
+- Are tools narrow and documented?
+- Is state durable?
+- Are permissions least-privilege?
+- Can operators pause, inspect, and resume?
+- Are traces visible?
+
+## Loop
+
+- What evidence proves success?
+- What feedback is returned on failure?
+- How many retries are allowed?
+- What is the stop rule?
+- What happens when the budget runs out?
+
+## Graph
+
+- Which paths must be deterministic?
+- What can run in parallel?
+- Where are the human gates?
+- What state is shared?
+- Where do recovery paths begin?
+
+## Evaluation
+
+- Can you replay real traces?
+- Can you compare versions?
+- Can you attribute improvement to a real change?
+
+## Operations
+
+- Are you tracking cost?
+- latency?
+- failure rate?
+- intervention rate?
+- task success in production?
+
+# The Simplest Way To Remember The Difference
+
+If you only remember one thing, remember this:
+
+- **Harness engineering** makes the model operational
+- **Loop engineering** makes the work iterative and verifiable
+- **Graph engineering** makes the execution path explicit and controllable
+
+None replaces the others.
+
+A perfect graph will not save a weak harness. A strong harness will still waste money without good loops. And clean loops become hard to manage when branching and approvals stay hidden in ad hoc code.
+
+Reliable agent systems show up when all 3 layers are designed intentionally.
+
+That is the actual architecture stack.
+
+## Final Takeaway
+
+People keep talking about AI agents like the breakthrough is the model.
+
+In production, that is rarely the real differentiator.
+
+The differentiator is the system around the model:
+
+- the harness that lets it work
+- the loops that let it improve
+- the graph that lets it operate under control
+
+That is how toy agents become real systems.
