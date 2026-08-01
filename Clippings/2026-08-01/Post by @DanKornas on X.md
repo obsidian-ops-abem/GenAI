@@ -1,60 +1,54 @@
 ---
 title: "Post by @DanKornas on X"
-source: "https://x.com/DanKornas/status/2083026345060167825"
+source: "https://x.com/DanKornas/status/2083286807702097997"
 author:
   - "[[@DanKornas]]"
-published: 2026-07-31
+published: 2026-08-01
 created: 2026-08-01
-description: "ターミナルタブ間でコーディングエージェントの作業を計画すると、実装よりもレビューが難しくなることがあります。 Vibe Kanbanは、コーディングエージェントが行う作業の計画とレビューを支援する開発者向けのKanbanベースのワークスペースです。 これにより、各エージェント"
+description: "すべてのモデル、ツール、リトリーバルコンポーネントをゼロから構築するのをやめましょう。 LangChainは、エージェントやLLM駆動のアプリケーションを作成するビルダー向けのオープンソースフレームワークです。 モデル、エンベディング、ベクトルストアなどを対象とした標準インタ"
 tags:
   - "clippings"
 ---
-ターミナルタブ間でコーディングエージェントの作業を計画すると、実装よりもレビューが難しくなることがあります。
+すべてのモデル、ツール、リトリーバルコンポーネントをゼロから構築するのをやめましょう。
 
-Vibe Kanbanは、コーディングエージェントが行う作業の計画とレビューを支援する開発者向けのKanbanベースのワークスペースです。
+LangChainは、エージェントやLLM駆動のアプリケーションを作成するビルダー向けのオープンソースフレームワークです。
 
-これにより、各エージェントのワークスペースに専用のブランチ、ターミナル、開発サーバーを割り当て、イシューからレビュー済みの変更へ移行しやすくなります。
+モデル、エンベディング、ベクトルストアなどを対象とした標準インターフェースを提供することで、AIアプリケーションのワークフローを組み立てるのを支援します。
 
 主な機能：
 
-• Kanbanイシュー – ボード上で作業を作成、優先順位付け、割り当て
+• 標準インターフェース – モデル、エンベディング、ベクトルストア、その他のコンポーネント間で動作
 
-• エージェントワークスペース – エージェントにブランチ、ターミナル、開発サーバーを提供
+• プロバイダー統合 – チャットおよびエンベディングモデル、ツール、ツールキット、リトリーバーを接続
 
-• 差分レビュー – インラインコメントを残し、エージェントにフィードバックを送信
+• データ拡張 – LLMアプリケーションをデータソースや外部・内部システムに接続
 
-• アプリプレビュー – 組み込みブラウザ、DevTools、インスペクトモード、デバイスのエミュレーションを使用
+• モデル相互運用性 – 要件やプロバイダーの選択が変わった際にモデルを交換
 
-• エージェント選択 – Claude Code、Codex、Gemini CLIを含む10以上のコーディングエージェントを切り替え
+• 柔軟な抽象化レイヤー – 詳細な制御のために高レベルチェーンまたは低レベルコンポーネントを使用
 
-オープンソース（Apache License 2.0）です。注意：READMEによると、Vibe Kanbanはサービス終了予定です。
+オープンソース（MITライセンス）です。
 
 返信内のリンク 👇
 
-![画像](https://pbs.twimg.com/media/HOhlauCXIAAuoj5?format=png&name=large)
-
 ---
 
-🔗 GitHub: https://github.com/BloopAI/vibe-kanban…
+🔗 GitHub: https://github.com/langchain-ai/langchain…
 
 \---
 
 ✉️ If you’re into AI, ML, agents, and building real systems, join my newsletter (it’s free): http://dankornas.substack.com
 
-[github.com GitHub - BloopAI/vibe-kanban: Get 10X more out of Claude Code, Codex or any coding agent](https://t.co/3UnPlGOCBM)
+[github.com GitHub - langchain-ai/langchain: The agent engineering platform.](https://t.co/D9Vpz7iv2H)
 
 ---
 
 ## Comments
 
-> **Mikhail Rogov @i\_mika\_el** · [2026-07-31](https://x.com/i_mika_el/status/2083092117597880377)
+> **安叫兽|Bird BNB @ajs6888** · [2026-07-31](https://x.com/ajs6888/status/2083338375248117793)
 > 
-> Inline diff feedback tied to each agent workspace is the piece terminal tabs never solve.
-> 
-> > **Dan Kornas @DanKornas** · [2026-07-31](https://x.com/DanKornas/status/2083097084077457785)
-> > 
-> > The diff is the handoff point. If review still lives in another tab, the workspace has only moved the mess around.
+> 主要是少写一堆胶水代码了
 
-> **RaoulDuke @RaoulDukeDegen** · [2026-07-31](https://x.com/RaoulDukeDegen/status/2083047287844970677)
+> **Alexa | Startup founder @alexabelonix** · [2026-07-31](https://x.com/alexabelonix/status/2083291315144433737)
 > 
-> bloop shut down april cuz free users killed monetization but community keeps it
+> solid stuff.
