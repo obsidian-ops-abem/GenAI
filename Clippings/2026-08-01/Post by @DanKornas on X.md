@@ -1,54 +1,52 @@
 ---
 title: "Post by @DanKornas on X"
-source: "https://x.com/DanKornas/status/2083286807702097997"
+source: "https://x.com/DanKornas/status/2083309467798544836"
 author:
   - "[[@DanKornas]]"
 published: 2026-08-01
 created: 2026-08-01
-description: "すべてのモデル、ツール、リトリーバルコンポーネントをゼロから構築するのをやめましょう。 LangChainは、エージェントやLLM駆動のアプリケーションを作成するビルダー向けのオープンソースフレームワークです。 モデル、エンベディング、ベクトルストアなどを対象とした標準インタ"
+description: "Many MCP tools are awkward to connect to apps built around HTTP and OpenAPI. mcpo is an MCP-to-OpenAPI proxy for builders who need to make"
 tags:
   - "clippings"
 ---
-すべてのモデル、ツール、リトリーバルコンポーネントをゼロから構築するのをやめましょう。
+Many MCP tools are awkward to connect to apps built around HTTP and OpenAPI.
 
-LangChainは、エージェントやLLM駆動のアプリケーションを作成するビルダー向けのオープンソースフレームワークです。
+mcpo is an MCP-to-OpenAPI proxy for builders who need to make MCP tools available to OpenAPI-compatible agents and apps.
 
-モデル、エンベディング、ベクトルストアなどを対象とした標準インターフェースを提供することで、AIアプリケーションのワークフローを組み立てるのを支援します。
+It helps you put an MCP server behind an HTTP interface by taking its command or endpoint and generating an OpenAPI schema plus interactive docs.
 
-主な機能：
+Key features:
 
-• 標準インターフェース – モデル、エンベディング、ベクトルストア、その他のコンポーネント間で動作
+• OpenAPI proxy – exposes MCP tools through standard HTTP endpoints
 
-• プロバイダー統合 – チャットおよびエンベディングモデル、ツール、ツールキット、リトリーバーを接続
+• Interactive docs – generates a documentation UI for each tool
 
-• データ拡張 – LLMアプリケーションをデータソースや外部・内部システムに接続
+• Transport support – works with stdio, SSE, and Streamable HTTP MCP servers
 
-• モデル相互運用性 – 要件やプロバイダーの選択が変わった際にモデルを交換
+• Multi-server config – serves multiple MCP tools from a Claude Desktop-format config file
 
-• 柔軟な抽象化レイヤー – 詳細な制御のために高レベルチェーンまたは低レベルコンポーネントを使用
+• OAuth 2.1 – supports authentication for protected Streamable HTTP MCP servers
 
-オープンソース（MITライセンス）です。
+It’s open-source (MIT license).
 
-返信内のリンク 👇
+Link in the reply 👇
+
+![画像](https://pbs.twimg.com/media/HOlm6pGWMAA_Ir_?format=png&name=large)
 
 ---
 
-🔗 GitHub: https://github.com/langchain-ai/langchain…
+🔗 GitHub: https://github.com/open-webui/mcpo
 
 \---
 
 ✉️ If you’re into AI, ML, agents, and building real systems, join my newsletter (it’s free): http://dankornas.substack.com
 
-[github.com GitHub - langchain-ai/langchain: The agent engineering platform.](https://t.co/D9Vpz7iv2H)
+[https://t.co/CpZNUvkOlc](https://t.co/CpZNUvkOlc)
 
 ---
 
 ## Comments
 
-> **安叫兽|Bird BNB @ajs6888** · [2026-07-31](https://x.com/ajs6888/status/2083338375248117793)
+> **Ayodele Ayodeji @Ayo\_dataanalyst** · [2026-07-31](https://x.com/Ayo_dataanalyst/status/2083310087708237977)
 > 
-> 主要是少写一堆胶水代码了
-
-> **Alexa | Startup founder @alexabelonix** · [2026-07-31](https://x.com/alexabelonix/status/2083291315144433737)
-> 
-> solid stuff.
+> Thanks @DanKornas I need to check this out.

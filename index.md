@@ -41,6 +41,7 @@ updated: 2026-08-01
 - [[11_Graph of Loops Claude Code完全システム10リポジトリ]] — Granite0x(@Granite0x)によるGraph+Loop二層統合の実践ガイド。Graph(G1-G4)とLoop(L1-L6)の10実リポジトリをソースコードレベルで解説。「doneを取り戻せるか」が全10を採点。bernstein/agent-worktree/wshobson-agents/beads/serena/superpowers等（本文はユーザー提供クリップから再構成）の要約
 - [[12_Graph Engineering with Claude 14-Step roadmap]] — 0xCodez(@0xCodez)によるGraph版14ステップ完全コース。[[05_ループエンジニアリング14ステップ]](Loop版)の対。直線エージェントを退化グラフと見なし「次ステップは前の出力を読むか?」で無駄待ちを切る。node契約/schema・fan-out→reduce→synthesizeのdiamond・verifier(adversarial/diverse/judge)・worktree隔離・loop-until-dry(見たもの全てにdedupe)・model tier・pipeline優先・dynamic workflows自己ルーティング。Claude Code実装完全マニュアル（本文はユーザー提供クリップから再構成）の要約
 - [[13_Graph Architectへの20ステップ5フェーズ]] — Khairallah(@eng_khairallah1)によるグラフアーキテクトへの20ステップ5フェーズ学習ロードマップ。[[09_Loop Engineering Claude,GPT 実戦で効くもの]](同著者Loop実戦)の延長。Phase1 Loop必習(verifierが全て/4失敗モード)→Phase2 グラフモデル(nodes/edges/state/全ノードがLLMでない/LangGraph)→Phase3 5パターン(router/orchestrator-worker/fan-out fan-in/evaluator-optimizer/HITL gate)→Phase4 信頼性(validation gate/リカバリ/state永続化/観測可能性)→Phase5「グラフにしない」判断。12_(実装完全マニュアル)の対で学習の道筋（本文はユーザー提供クリップから再構成）の要約
+- [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]] — undefinedKi(@undefinedKi)による自己レビューエージェントのGraph構築8ステップ完全ガイド。Anthropicの9語「you do not fix the code, you fix the process」。judge先構築→わざと壊す→ルールブック→3アイテムストレステスト→state ディスク→見えない2人のレビューア→コスト別チェック配置→高価な操作の直列化。実証: Anthropic/Jarred Sumner(Bun, $165k)/Mike Krieger(165k行TS)。12_のverifier 3パターンを具体実装（本文はユーザー提供クリップから再構成）の要約
 
 #### 02_Claude Code実践（使い方・ワークフロー・MCP・スキル）
 
@@ -56,12 +57,15 @@ updated: 2026-08-01
 - [[10_1チャットをエージェントチームへ Opus5 12ステップ]] — Rody(@0x_rody)によるClaude Codeサブエージェントのチーム化12ステップ。最初のワーカーから3階層ツリーまで、モデル/effortルーティング・構造的深さキャップ(ワーカーからAgent削除)・仕事をしなかった検証器・20分セットアップを示す（本文はユーザー提供クリップから再構成）の要約
 - [[11_Obsidianのおすすめ機能と選ぶ理由]] — shotovim(@shotovim)によるObsidianおすすめ機能ランキング(Git連携/内部リンク/Web Clipper/Bases/Canvas/プラグイン/デイリーノート)。「ClaudeCodeが〜は理由にならない（ローカルファースト設計の帰結）」と冷やす短い意見ポスト（本文はユーザー提供クリップから再構成）の要約
 - [[12_カーパシーのObsidian活用術 30分で第二の脳]] — lucky_note_lab(@lucky_note_lab)による非エンジニア向け30分構築チュートリアル。KarpathyのLLM Wiki設計図をObsidian+Web Clipper+Claude Code+タスクスケジューラで実装。raw/wiki一方通行・読まない・分類しない・右クリックだけ・人間の意志(やる気/記憶/判断)を設計から完全に外す。本ボルト運用ルールの直接の原型（本文はユーザー提供クリップから再構成）の要約
+- [[13_Learn Claude Code ハーネスエンジニアリング学習]] — DanKornas(@DanKornas)紹介/shareAI-lab作成のOSS(MIT)。"Bash is all you need"。コーディングエージェントのハーネスがどう組み立てられるかを20レッスンで学ぶ0-to-1学習プロジェクト。5領域(エージェントループ/ツール使用/許可システム/コンテキストとメモリ/エージェント操作・ワークツリー分離)。プロンプトでなくハーネスを見る（本文はユーザー提供クリップのポストから再構成）の要約
+- [[14_Claudeは多層実行エンジン Chatでない]] — HeyAnjula(@HeyAnjula)によるClaude 5層(Chat/Code/MCP/Skills/CLAUDE.md)の整理。チャットでなく多層実行エンジン。Skills+MCPの組み合わせが「提案」から「実行」への境界。ツール接続+スキル+永続コンテキストでAIチームメイト化。本ボルトはこの多層を実装・運用（本文はユーザー提供クリップから再構成）の要約
 
 #### 03_エージェント運用・ガバナンス（長時間運用・ファクトリ・品質保証）
 
 - [[01_エージェントファクトリの作り方 ビルダーズガイド]] — Av1dlive(@Av1dlive)によるAgent Factory完全構築ガイド(約5400語)。5ステーション(ABOM/組立/証明/認証/運用)・「第2の首」機械化・6テスト・7ガード・1法(no evals, no production)・4自律ティア・7日ロードマップ。Sage API紹介色強いが工場思想は製品非依存（本文はユーザー提供クリップから再構成）の要約
 - [[02_24時間自走する自律型AIエージェントの設計図]] — AIテック(@aitech_jp)による長時間運用エージェントの日本語実務ガイド。4層(Trigger/Workflow/Agent/Guardrail)・「状態機械を先に」・5つの壊れる理由・7設計原則・5実行環境(/loop/Routines/Modal・Trigger.dev/Agent SDK/Managed Agents)・15チェック・設計プロンプト付き（本文はユーザー提供クリップから再構成）の要約
 - [[03_AI協業の発注の型 HITL実務]] — sh-fukaya(Qiita)によるHITL実務レシピ。AIの成果物を一括で受け取らず依頼・承認・検証の3点だけに人が関与。3つの型(結論ファースト+構成承認／決め手ポイント1問ずつ／結論を仮説に決め手だけ検証の2層レビュー)＋コピペ可能なプロンプト（本文はユーザー提供クリップから再構成）の要約
+- [[04_YC QM マルチプレイヤーエージェントハーネス]] — Y Combinator(@ycombinator)が社内使用していたマルチエージェントハーネス「QM」をMITでOSS化(yc-software/qm)。会社全体(会計/法律/イベント/エンジニアリング)で役立つ。クラウドファースト・Slack/UI ネイティブ・企業ブレインコネクタ・マルチプレイヤー。「脳と手を分離」戦略。Hermes/OpenClaw/Funky類似（本文はユーザー提供クリップから再構成）の要約
 
 #### 04_LLM・RAG・基礎（LLM基礎・RAG・モデル選定・プラットフォーム）
 
@@ -84,6 +88,9 @@ updated: 2026-08-01
 - [[08_スマホからPCのcodexとccをリモート操作]] — Bysir(@hi_bysir)によるスマホ→PCリモート操作ハック。Herdr(ターミナルマルチプレクサ+Agent First)+Termius+sshでcodex/ccの公式モバイルアプリのサブスク・切替問題を回避。Amphetamineでスリープ防止・公網はFRP。※コメントでPaseo/網易UU等の代替言及（本文はユーザー提供クリップから再構成）の要約
 - [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] — Ephemeral-AI-Labによる並列コーディングエージェント用OSS基盤(Rust・MIT)。1つの共有サンドボックス内で各エージェントに隔離ワークスペースを与え変更セットを原子的公開。LayerStack・CLI/MCP 3ツール群(Management/Runtime/Observability)（本文はユーザー提供クリップのREADMEから再構成）の要約
 - [[10_agent-skill-creator ワークフローをAIスキル化]] — trendtech33566(@trendtech33566)紹介/FrancyJGLisboa作成のOSS(⭐約2千)。自然文の作業フローをSKILL.mdに自動変換・1ファイルで17プラットフォーム対応・検証/セキュリティスキャン/evals付き。「定型作業をAIに覚えさせたい」人向け。[[01_Agent Skillsを作る完全プロンプト]](手書きプロンプト)のツール化（本文はユーザー提供クリップのポストから再構成・詳細はリポジトリ要確認）の要約
+- [[11_Playwright業務E2Eテストの統合アーキテクチャ]] — lin-yuchen(Developers.io)によるPlaywright+TypeScriptのE2Eテスト設計。Screen Object Model+Fluent Chaining+日本語メソッド名+ロケーター関数辞書+ポップアップ ファクトリ封じ込めの5パターン統合。「書き方より構造で寿命が決まる」(@connect24h実務共感ポスト統合)。テストコードが仕様書に（本文はユーザー提供クリップから再構成）の要約
+- [[12_mcpo MCP-to-OpenAPIプロキシ]] — DanKornas(@DanKornas)紹介/open-webui作成のOSS(MIT)。MCPサーバをOpenAPI互換アプリへ繋ぐプロキシ。OpenAPIスキーマ+インタラクティブドキュメント自動生成。stdio/SSE/Streamable HTTP対応・Claude Desktop形式マルチサーバ・OAuth 2.1（本文はユーザー提供クリップのポストから再構成）の要約
+- [[13_GitHub公式スタックPRとgh-stackスキル]] — tonkotsuboy_com(@tonkotsuboy_com)によるGitHub公式スタック型PRとgh-stackスキルの紹介。変更を依存関係のある小さなPRの連鎖に積み重ね、gh-stack Agent Skillで自然言語操作(Claude Code/Codex)。Agent SkillのPR操作実例（本文はユーザー提供クリップから再構成）の要約
 
 ### 03_セキュリティ
 
