@@ -11,10 +11,14 @@
             "id": "89bac682efefb389",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/オントロジーでClaudeの性能を上げよう(2)：同じ作業を2回やって、コスト26%減・応答29%短縮を実測した.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "オントロジーでClaudeの性能を上げよう(2)：同じ作業を2回やって、コスト26%減・応答29%短縮を実測した"
             }
           }
         ]
@@ -195,6 +199,7 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
+    "Clippings/オントロジーでClaudeの性能を上げよう(2)：同じ作業を2回やって、コスト26%減・応答29%短縮を実測した.md",
     "Clippings/THE ULTIMATE SECOND BRAIN GUIDE + BONUS (that never forgets anything).md",
     "Clippings/2026-08-02/THE ULTIMATE SECOND BRAIN GUIDE + BONUS (that never forgets anything).md",
     "Clippings/2026-08-02/Stop Vibe Coding How to Get Perfect AI Code Every Time.md",
@@ -230,7 +235,6 @@
     "Clippings/CLINEに全部賭けろ.md",
     "Clippings/Everything Fable 5.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/05_ループエンジニアリング14ステップ.md",
-    "03_claudecode/20260801-forgejo-actions-auto-deploy-progress.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
