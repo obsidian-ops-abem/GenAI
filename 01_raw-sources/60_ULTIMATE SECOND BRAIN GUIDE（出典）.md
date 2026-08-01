@@ -15,7 +15,7 @@ created: 2026-08-02
 - 形態: X 長文ポスト（ガイド）
 - タイトル: **THE ULTIMATE SECOND BRAIN GUIDE + BONUS (that never forgets anything)**
 
-要約は [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]] を参照。
+要約は [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]] を参照。
 
 > [!note] 本文はクリップ全文を使用。Karpathy の LLM Wiki gist（2026-04）+ 日本のバズボルト（2026-07、194K views）+ 4層構造 + nightly compiler を統合したガイド。1M コンテキストウィンドウが retrieval pipeline を不要化するという2026年の変化を強調。
 

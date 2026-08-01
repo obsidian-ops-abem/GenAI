@@ -15,7 +15,7 @@ created: 2026-07-30
 - 形態: Xポスト（長文）。同著者の外部記事への導線（t.me Telegram）も含む
 - インプレッション等: 自己申告ベース（外部検証なし）
 
-要約は [[08_Context Engineering Claude Codeの文脈設計]] を参照。
+要約は [[06_Context Engineering Claude Codeの文脈設計]] を参照。
 
 ---
 

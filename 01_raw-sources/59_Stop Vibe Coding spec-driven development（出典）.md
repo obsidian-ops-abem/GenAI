@@ -15,7 +15,7 @@ created: 2026-08-02
 - 形態: X 長文ポスト（ガイド）
 - タイトル: **Stop Vibe Coding: How to Get Perfect AI Code Every Time**
 
-要約は [[17_Stop Vibe Coding Spec駆動開発の5ブロック]] を参照。
+要約は [[04_Stop Vibe Coding Spec駆動開発の5ブロック]] を参照。
 
 ---
 

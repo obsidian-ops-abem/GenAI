@@ -16,4 +16,4 @@ created: 2026-07-29
 - 公開: 2026年7月24日 午後8:49
 - 付属リポジトリ: github.com/Archive228/loop-graph-harness（未検証）
 
-要約は [[03_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]] を参照。
+要約は [[01_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]] を参照。

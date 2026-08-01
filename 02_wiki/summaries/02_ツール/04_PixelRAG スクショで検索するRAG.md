@@ -50,4 +50,4 @@ WebページやPDFを**スクリーンショット画像のまま**ベクトル�
 ## 関連
 
 - RAGの系譜 / 知識グラフによるRAG置き換え → [[02_GraphRAG 知識グラフでRAGを置き換える]]
-- エージェント設計全体の整理 → [[04_Prompt to Graph Engineering 5層の統一モデル]]
+- エージェント設計全体の整理 → [[02_Prompt to Graph Engineering 5層の統一モデル]]

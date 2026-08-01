@@ -16,10 +16,10 @@ created: 2026-08-01
 - Substack: movez.substack.com
 - 関連: Claude Code の **dynamic workflows**（JavaScript オーケストレーション＋サブエージェント群）
 
-要約は [[12_Graph Engineering with Claude 14-Step roadmap]] を参照。
+要約は [[03_Graph Engineering with Claude 14-Step roadmap]] を参照。
 
 > [!info] 本文取得について
-> 本記事はユーザーが Clippings フォルダへクリップした全文（英語）を提供したため、それに基づき転記。同著者による [[05_ループエンジニアリング14ステップ]]（Loop 版14ステップ）と対をなす Graph 版。
+> 本記事はユーザーが Clippings フォルダへクリップした全文（英語）を提供したため、それに基づき転記。同著者による [[01_ループエンジニアリング14ステップ]]（Loop 版14ステップ）と対をなす Graph 版。
 
 ---
 

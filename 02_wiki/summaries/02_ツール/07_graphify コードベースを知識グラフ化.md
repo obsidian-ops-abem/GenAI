@@ -104,7 +104,7 @@ graphify install               # スキル登録
 |---|---|
 | RAG の系譜 | [[02_GraphRAG 知識グラフでRAGを置き換える]]（知識グラフでRAG置換）の具現化、[[04_PixelRAG...]]（視覚ベース）とは別軸 |
 | 信頼度タグ | `EXTRACTED`/`INFERRED` は [[01_エージェントファクトリの作り方 ビルダーズガイド]]「チェックできるものを強制、判断は閾値」と共鳴 |
-| Context節約 | serena の16kトークン問題（[[11_Graph of Loops Claude Code完全システム10リポジトリ]] L3）と関連 —— グラフクエリで読み込み削減 |
+| Context節約 | serena の16kトークン問題（[[03_Graph of Loops Claude Code完全システム10リポジトリ]] L3）と関連 —— グラフクエリで読み込み削減 |
 | 本ボルト自身 | このVaultの `[[Wikilink]]` ネットワークと同じ「検索でなくトラバース」思想だが、コード/ドキュメントが対象 |
 
 `/graphify` は**このVaultの知識グラフアプローチをコードベースへ適用するツール**と言える。Obsidian Vault と graphify-out/ は鏡写しの関係。
@@ -114,5 +114,5 @@ graphify install               # スキル登録
 - GraphRAG（知識グラフでRAG置換） → [[02_GraphRAG 知識グラフでRAGを置き換える]]
 - 視覚ベースRAG（別アプローチ） → [[04_PixelRAG スクショで検索するRAG]]
 - 信頼度タグ・検証 → [[01_エージェントファクトリの作り方 ビルダーズガイド]]
-- Context節約・serena の16k問題 → [[11_Graph of Loops Claude Code完全システム10リポジトリ]]・[[08_Context Engineering Claude Codeの文脈設計]]
-- 第二の脳（本Vaultと同思想） → [[01_Claude×Obsidianで第二の脳を作る]]・[[09_Claude Code×Obsidianで第二の脳を作る 2000時間の設計ルール]]
+- Context節約・serena の16k問題 → [[03_Graph of Loops Claude Code完全システム10リポジトリ]]・[[06_Context Engineering Claude Codeの文脈設計]]
+- 第二の脳（本Vaultと同思想） → [[01_Claude×Obsidianで第二の脳を作る]]・[[02_Claude Code×Obsidianで第二の脳を作る 2000時間の設計ルール]]

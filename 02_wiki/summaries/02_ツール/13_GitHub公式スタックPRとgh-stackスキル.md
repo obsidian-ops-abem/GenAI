@@ -38,15 +38,15 @@ GitHub 公式のスタック PR を直接コマンドで操作するのでなく
 
 **エージェント時代の PR ワークフロー**。02_ツール カテゴリだが、Agent Skill の具体適用例としても位置付けられる:
 
-- **Agent Skill の実例**: [[01_Agent Skillsを作る完全プロンプト]]（手書きプロンプト）・[[10_agent-skill-creator ワークフローをAIスキル化]]（OSS 自動生成）が「Skill をどう作るか」なら、gh-stack は **Skill で定型的 Git/PR 操作を自然言語化した実例**。[[14_Claudeは多層実行エンジン Chatでない]]（Skills + MCP が実行エンジンのアンロック）の具体事例
-- **「自然言語で操作」** は [[12_カーパシーのObsidian活用術 30分で第二の脳]]（日本語で頼むだけ・プログラム書けないでも OK）と同思想。gh-stack は Git の複雑なコマンドを自然言語で Wrap
-- **変更の分割・依存連鎖** は、[[12_Graph Engineering with Claude 14-Step roadmap]]（node 契約・edge は依存）や [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]（バッチ・state ディスク）の「依存関係の明示化」を PR 単位で実現。スタック PR の依存連鎖 = グラフの edge
-- **小さく保つレビュー** は [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・ルールブック・バッチ再生成）の「小さな単位で検証」思想の PR 版。巨大な一括変更でなく段階的検証
+- **Agent Skill の実例**: [[01_Agent Skillsを作る完全プロンプト]]（手書きプロンプト）・[[10_agent-skill-creator ワークフローをAIスキル化]]（OSS 自動生成）が「Skill をどう作るか」なら、gh-stack は **Skill で定型的 Git/PR 操作を自然言語化した実例**。[[04_Claudeは多層実行エンジン Chatでない]]（Skills + MCP が実行エンジンのアンロック）の具体事例
+- **「自然言語で操作」** は [[04_カーパシーのObsidian活用術 30分で第二の脳]]（日本語で頼むだけ・プログラム書けないでも OK）と同思想。gh-stack は Git の複雑なコマンドを自然言語で Wrap
+- **変更の分割・依存連鎖** は、[[03_Graph Engineering with Claude 14-Step roadmap]]（node 契約・edge は依存）や [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（バッチ・state ディスク）の「依存関係の明示化」を PR 単位で実現。スタック PR の依存連鎖 = グラフの edge
+- **小さく保つレビュー** は [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・ルールブック・バッチ再生成）の「小さな単位で検証」思想の PR 版。巨大な一括変更でなく段階的検証
 
 ## 関連
 
 - Agent Skill の作法 → [[01_Agent Skillsを作る完全プロンプト]]・[[10_agent-skill-creator ワークフローをAIスキル化]]
-- Skills + MCP（自然言語で実行） → [[14_Claudeは多層実行エンジン Chatでない]]
-- 日本語で頼むだけ → [[12_カーパシーのObsidian活用術 30分で第二の脳]]
-- 依存関係の明示化（グラフの edge） → [[12_Graph Engineering with Claude 14-Step roadmap]]
-- 小さな単位で検証 → [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]
+- Skills + MCP（自然言語で実行） → [[04_Claudeは多層実行エンジン Chatでない]]
+- 日本語で頼むだけ → [[04_カーパシーのObsidian活用術 30分で第二の脳]]
+- 依存関係の明示化（グラフの edge） → [[03_Graph Engineering with Claude 14-Step roadmap]]
+- 小さな単位で検証 → [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]

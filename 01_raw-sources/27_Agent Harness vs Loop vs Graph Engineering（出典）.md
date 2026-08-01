@@ -18,7 +18,7 @@ updated: 2026-08-02
 - 形態: X article（長文）。メインポストは見出し＋リンクのみ
 - タイトル: **Agent Harness Engineering vs Loop Engineering vs Graph Engineering — A Practical Guide To The 3 Layers People Keep Mixing Together**
 
-要約は [[08_Agent Harness vs Loop vs Graph Engineering]] を参照。
+要約は [[04_Agent Harness vs Loop vs Graph Engineering]] を参照。
 
 > [!info] 本文取得状況（2026-08-02 更新）
 > 当初（2026-07-31）は X article のログイン壁により本人本文を直接取得できず、Vin Vashishta / MindStudio 等の複数独立解説から再構成していた。2026-08-02 にユーザーが Clippings/ へクリップした**著者本人の原文全文**を入手したため、本ページを原本保存版に差し替えた。再構成版で述べていた3層の定義は原文と完全に一致することを確認済み。

@@ -15,7 +15,7 @@ created: 2026-07-31
 - 形態: X 長文ポスト（ノート）
 - タイトル: **The biggest Graph Engineering mistake everyone makes**
 
-要約は [[10_Graph Engineering 最大の間違い Loop↔Graph判断]] を参照。
+要約は [[02_Graph Engineering 最大の間違い Loop↔Graph判断]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文（全編）を提供したため、それに基づき転記・再構成した。原文は英語。下記は英語原文の核心を保持しつつ見出しを付けて整理。
@@ -152,9 +152,9 @@ TRUE な並列処理が必要か            GRAPH を配線:
 
 ## 関連（ボルト内）
 
-- Graph層の深掘り（同じ「いつ過剰か」を含む） → [[07_Graph Engineering Clearly Explained]]
-- Loop↔Chain の判定（本記事の Loop↔Graph と対） → [[09_Loop Engineering Claude,GPT 実戦で効くもの]]
-- Harness/Loop/Graph 3層 → [[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[08_Agent Harness vs Loop vs Graph Engineering]]
-- 5層統一モデル → [[04_Prompt to Graph Engineering 5層の統一モデル]]
+- Graph層の深掘り（同じ「いつ過剰か」を含む） → [[02_Graph Engineering Clearly Explained]]
+- Loop↔Chain の判定（本記事の Loop↔Graph と対） → [[02_Loop Engineering Claude,GPT 実戦で効くもの]]
+- Harness/Loop/Graph 3層 → [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[04_Agent Harness vs Loop vs Graph Engineering]]
+- 5層統一モデル → [[02_Prompt to Graph Engineering 5層の統一モデル]]
 - GraphRAG（知識グラフでRAG置換） → [[02_GraphRAG 知識グラフでRAGを置き換える]]
-- 3層パイプライン実装 → [[03_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]]
+- 3層パイプライン実装 → [[01_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]]

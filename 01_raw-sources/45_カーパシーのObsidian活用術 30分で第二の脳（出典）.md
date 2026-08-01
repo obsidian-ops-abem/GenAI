@@ -16,7 +16,7 @@ created: 2026-08-01
 - 元ネタ: **Andrej Karpathy** の LLM Wiki 設計図（[gist 442a6bf555914893e9891c11519de94f](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), 2026-04-04 公開）
 - 構成要素: Obsidian（無料）＋ Obsidian Web Clipper（公式拡張）＋ Claude Code（Codex でも可）＋ Windows タスクスケジューラ
 
-要約は [[12_カーパシーのObsidian活用術 30分で第二の脳]] を参照。
+要約は [[04_カーパシーのObsidian活用術 30分で第二の脳]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文（日本語）を提供したため、それに基づき転記。本ボルトの運用ルール（CLAUDE.md・3層構造・Ingest/Query/Lint）の直接の原型となる Karpathy 設計図の実践チュートリアル。

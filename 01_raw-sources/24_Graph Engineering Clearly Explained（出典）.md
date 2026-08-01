@@ -18,7 +18,7 @@ reconstructed: true
 - 形態: X article（長文）
 - タイトル: **Graph Engineering Clearly Explained**
 
-要約は [[07_Graph Engineering Clearly Explained]] を参照。
+要約は [[02_Graph Engineering Clearly Explained]] を参照。
 
 > [!warning] 本文取得状況
 > 本ポストは X の「article」形式でログイン壁があり、**本人の本文全文を直接取得できなかった**。下記「再構成内容」は以下の情報源から高い精度で再構成したもの：

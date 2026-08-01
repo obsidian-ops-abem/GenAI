@@ -15,7 +15,7 @@ created: 2026-08-01
 - 形態: X ポスト（長文フルガイド・8ステップ）
 - 実証例: **Anthropic**（10パッケージ移行）・**Jarred Sumner**（Bun の Zig→Rust 移植）・**Mike Krieger**（Python→165k行 TypeScript）
 
-要約は [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]] を参照。
+要約は [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文（英語）を提供したため、それに基づき転記。

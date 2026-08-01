@@ -49,12 +49,12 @@ created: 2026-08-01
 **MCP の相互運用性インフラ**。本ボルトの MCP 系ノート群を補完:
 
 - [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]（Boris Cherny の3原則・Context7/Playwright/Figma 等の公式 MCP サーバー8選）が「どの MCP サーバを使うか」なら、mcpo は **MCP サーバを OpenAPI アプリへどう繋ぐか**のインフラ
-- **「OpenAPI スキーマ自動生成」** は、[[12_Graph Engineering with Claude 14-Step roadmap]]（@0xCodez step03 node 契約・JSON schema で validate）や [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・境界ある入出力）の「契約（schema）」思想のインフラ版。MCP ツールの境界を OpenAPI スキーマで明示
-- **Claude Desktop 形式のマルチサーバ設定** は、複数 MCP サーバを一元管理する標準フォーマットの存在を示す。本ボルト運用（[[12_カーパシーのObsidian活用術 30分で第二の脳]] の AI エージェント＋ツール連携）での実践的参照点
+- **「OpenAPI スキーマ自動生成」** は、[[03_Graph Engineering with Claude 14-Step roadmap]]（@0xCodez step03 node 契約・JSON schema で validate）や [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・境界ある入出力）の「契約（schema）」思想のインフラ版。MCP ツールの境界を OpenAPI スキーマで明示
+- **Claude Desktop 形式のマルチサーバ設定** は、複数 MCP サーバを一元管理する標準フォーマットの存在を示す。本ボルト運用（[[04_カーパシーのObsidian活用術 30分で第二の脳]] の AI エージェント＋ツール連携）での実践的参照点
 - **stdio・SSE・Streamable HTTP のトランスポート対応** は、[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]（MCP インターフェース・3ツール群）と同様に「エージェントとツールを繋ぐ層」の標準化
 
 ## 関連
 
 - MCP サーバー選定（Boris 8選） → [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]
-- 契約・schema（node 契約） → [[12_Graph Engineering with Claude 14-Step roadmap]]・[[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]
+- 契約・schema（node 契約） → [[03_Graph Engineering with Claude 14-Step roadmap]]・[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]
 - MCP インターフェース（エージェントとツールの接続層） → [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]

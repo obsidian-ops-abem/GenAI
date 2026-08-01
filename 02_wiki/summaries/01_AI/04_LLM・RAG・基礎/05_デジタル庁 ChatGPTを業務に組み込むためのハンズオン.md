@@ -77,6 +77,6 @@ GPTを使うまでもない処理（形態素解析など）は**従来型が品
 
 ## 関連
 
-- プロンプト設計の規律 → [[08_Context Engineering Claude Codeの文脈設計]]・[[01_Agent Skillsを作る完全プロンプト]]
+- プロンプト設計の規律 → [[06_Context Engineering Claude Codeの文脈設計]]・[[01_Agent Skillsを作る完全プロンプト]]
 - ハルシネーション・インジェクション対策 → [[01_MIXI新卒技術研修セキュリティ研修まとめ]]
-- AIエージェントの構造化（本資料の延長線） → [[06_AIエージェントの正体はプロンプトだった]]・[[04_Prompt to Graph Engineering 5層の統一モデル]]
+- AIエージェントの構造化（本資料の延長線） → [[03_AIエージェントの正体はプロンプトだった]]・[[02_Prompt to Graph Engineering 5層の統一モデル]]

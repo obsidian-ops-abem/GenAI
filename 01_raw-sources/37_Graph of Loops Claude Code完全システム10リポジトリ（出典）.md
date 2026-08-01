@@ -15,7 +15,7 @@ created: 2026-08-01
 - 形態: X 長文ポスト（10リポジトリ解説）
 - タイトル: **A Graph of Loops: Build a Full Claude Code Agent System From GitHub - One Repo Per Step**
 
-要約は [[11_Graph of Loops Claude Code完全システム10リポジトリ]] を参照。
+要約は [[03_Graph of Loops Claude Code完全システム10リポジトリ]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文（全編・英語）を提供したため、それに基づき転記・再構成。星数・ライセンスは GitHub API から取得（公開時点）。
@@ -167,8 +167,8 @@ created: 2026-08-01
 
 ## 関連（ボルト内）
 
-- Graph+Loop の二層 → [[08_Agent Harness vs Loop vs Graph Engineering]]・[[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]
-- Loop層の信頼性（ゲート・検証） → [[09_Loop Engineering Claude,GPT 実戦で効くもの]]・[[01_エージェントファクトリの作り方 ビルダーズガイド]]
-- Graph層のファンアウト・隔離 → [[10_1チャットをエージェントチームへ Opus5 12ステップ]]（worktree）
+- Graph+Loop の二層 → [[04_Agent Harness vs Loop vs Graph Engineering]]・[[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]
+- Loop層の信頼性（ゲート・検証） → [[02_Loop Engineering Claude,GPT 実戦で効くもの]]・[[01_エージェントファクトリの作り方 ビルダーズガイド]]
+- Graph層のファンアウト・隔離 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]（worktree）
 - 「doneを取り戻せる」= 根拠ベース停止 → [[02_24時間自走する自律型AIエージェントの設計図]]
-- Graph は必要な時だけ → [[10_Graph Engineering 最大の間違い Loop↔Graph判断]]・[[07_Graph Engineering Clearly Explained]]
+- Graph は必要な時だけ → [[02_Graph Engineering 最大の間違い Loop↔Graph判断]]・[[02_Graph Engineering Clearly Explained]]

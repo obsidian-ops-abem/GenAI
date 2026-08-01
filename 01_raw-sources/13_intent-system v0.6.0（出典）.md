@@ -13,4 +13,4 @@ created: 2026-07-29
 - リポジトリ本体: https://github.com/J-Tech-Japan/intent-system
 - 種別: GitHub公開リポジトリ（Apache-2.0ライセンス、C#/.NET 10）
 
-要約は [[03_intent-system 意図駆動開発のオーケストレーションCLI]] を参照。
+要約は [[01_intent-system 意図駆動開発のオーケストレーションCLI]] を参照。

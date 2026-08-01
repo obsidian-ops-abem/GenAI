@@ -16,4 +16,4 @@ created: 2026-07-29
 - 公開: 2026年7月26日 21:30
 - 形態: Xポスト（図＋解説文）。同著者による続編記事「Graph Engineering Clearly Explained」（2026年7月26日）への言及あり（未取り込み）
 
-要約は [[04_Prompt to Graph Engineering 5層の統一モデル]] を参照。
+要約は [[02_Prompt to Graph Engineering 5層の統一モデル]] を参照。

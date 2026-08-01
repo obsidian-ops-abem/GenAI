@@ -85,15 +85,15 @@ Claude Code では effort を直接設定可能。claude.ai にはトグルが�
 ## 本ボルト内の位置付け
 
 - **モデル選定の実用基準**を与える。本ボルトは Claude Code で運用されるため、いつ Fable/Sonnet/Haiku/Opus を選ぶかの判断材料。特に「単純タスクでテストすると能力を過小評価」「長く曖昧な問題で真価」は本ボルトの Ingest/Query/Lint 各操作のモデル割当てと関連
-- **effort = ダイヤル**と **classifier 再ルーティング**は、ハーネスの Execution Control（model selection / approval gates）の一要素 → [[08_Agent Harness vs Loop vs Graph Engineering]] の Harness 6要素と整合
-- **「止まる時を指示」「推論を見るなら structured thinking output」** は Loop の stop rule（証拠で止まる）・観測性と通底 → [[08_Agent Harness vs Loop vs Graph Engineering]]・[[15_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]]（テストで仕様表現）
-- **1M コンテキストウィンドウ**が「全ボルトを1リクエストに収める」可能性を開く → [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（1M が retrieval pipeline を不要化）と直結
+- **effort = ダイヤル**と **classifier 再ルーティング**は、ハーネスの Execution Control（model selection / approval gates）の一要素 → [[04_Agent Harness vs Loop vs Graph Engineering]] の Harness 6要素と整合
+- **「止まる時を指示」「推論を見るなら structured thinking output」** は Loop の stop rule（証拠で止まる）・観測性と通底 → [[04_Agent Harness vs Loop vs Graph Engineering]]・[[03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]]（テストで仕様表現）
+- **1M コンテキストウィンドウ**が「全ボルトを1リクエストに収める」可能性を開く → [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（1M が retrieval pipeline を不要化）と直結
 
 ---
 
 ## 関連
 
-- ハーネスの model selection / approval gates → [[08_Agent Harness vs Loop vs Graph Engineering]]
-- テストで仕様表現・証拠で止まる → [[15_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]]
-- 1M コンテキストが第二の脳を変える → [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
+- ハーネスの model selection / approval gates → [[04_Agent Harness vs Loop vs Graph Engineering]]
+- テストで仕様表現・証拠で止まる → [[03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]]
+- 1M コンテキストが第二の脳を変える → [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
 - モデル探索のコツ（Hugging Face） → [[06_Hugging Faceでモデルを探すコツ]]

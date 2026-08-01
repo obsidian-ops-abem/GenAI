@@ -16,7 +16,7 @@ updated: 2026-07-31
 - 形態: X 記事機能（長文ポスト）
 - タイトル: **The 3 AI Agent Systems Every Builder Must Understand**（LOOP vs GRAPH vs HARNESS ENGINEERING）
 
-要約は [[02_LOOP vs GRAPH vs HARNESS ENGINEERING]] を参照。
+要約は [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]] を参照。
 
 > [!info] 本文取得について
 > 2026-07-29 初回取り込み時は X 記事のログイン壁により本文を保存せずスタブとしていた。2026-07-31、ユーザーが Clippings フォルダへクリップした**完全な原文**を提供されたため、下記に全文を転記・保存した。
@@ -291,11 +291,11 @@ That is the whole framework.
 
 ## 関連（ボルト内）
 
-- 要約 → [[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]
+- 要約 → [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]
 - 同著者の「第二の脳」記事 → [[01_Claude×Obsidianで第二の脳を作る]]
-- Graph層の深掘り → [[01_Graph Engineering エージェントを行列から解放する]]・[[07_Graph Engineering Clearly Explained]]
-- Loop層のロードマップ → [[05_ループエンジニアリング14ステップ]]・[[09_Loop Engineering Claude,GPT 実戦で効くもの]]
-- 3層パイプライン実装 → [[03_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]]
-- 5層統一モデル → [[04_Prompt to Graph Engineering 5層の統一モデル]]
+- Graph層の深掘り → [[01_Graph Engineering エージェントを行列から解放する]]・[[02_Graph Engineering Clearly Explained]]
+- Loop層のロードマップ → [[01_ループエンジニアリング14ステップ]]・[[02_Loop Engineering Claude,GPT 実戦で効くもの]]
+- 3層パイプライン実装 → [[01_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する]]
+- 5層統一モデル → [[02_Prompt to Graph Engineering 5層の統一モデル]]
 - Harness層の実務ツール → [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]
-- 3層整理（別著者） → [[08_Agent Harness vs Loop vs Graph Engineering]]
+- 3層整理（別著者） → [[04_Agent Harness vs Loop vs Graph Engineering]]

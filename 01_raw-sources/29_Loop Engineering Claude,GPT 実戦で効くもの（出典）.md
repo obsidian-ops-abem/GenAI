@@ -150,8 +150,8 @@ Claude↔GPT 切替は主に**中央の脳**を入れ替えるだけ。設計し
 
 ## 関連（ボルト内）
 
-- Loop層のロードマップ → [[05_ループエンジニアリング14ステップ]]
-- Harness/Loop/Graph の3層整理 → [[08_Agent Harness vs Loop vs Graph Engineering]]
-- 5層統一モデル（Loop層の位置付け） → [[04_Prompt to Graph Engineering 5層の統一モデル]]
-- 自己検証の限界 → [[06_AIエージェントの正体はプロンプトだった]]
-- Context規律（ループ内の窓管理） → [[08_Context Engineering Claude Codeの文脈設計]]
+- Loop層のロードマップ → [[01_ループエンジニアリング14ステップ]]
+- Harness/Loop/Graph の3層整理 → [[04_Agent Harness vs Loop vs Graph Engineering]]
+- 5層統一モデル（Loop層の位置付け） → [[02_Prompt to Graph Engineering 5層の統一モデル]]
+- 自己検証の限界 → [[03_AIエージェントの正体はプロンプトだった]]
+- Context規律（ループ内の窓管理） → [[06_Context Engineering Claude Codeの文脈設計]]

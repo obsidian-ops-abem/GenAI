@@ -15,7 +15,7 @@ created: 2026-08-02
 - 形態: X 長文ポスト（ガイド）
 - タイトル: **Graph Engineering with Claude. What It Is and How to Actually Use It**
 
-要約は [[15_Graph Engineering 入門 What It Is]] を参照。
+要約は [[05_Graph Engineering 入門 What It Is]] を参照。
 
 ---
 

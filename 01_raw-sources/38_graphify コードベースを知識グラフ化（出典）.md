@@ -154,5 +154,5 @@ GraphRAG [[02_GraphRAG 知識グラフでRAGを置き換える]] の「コード
 - GraphRAG（知識グラフでRAG置換） → [[02_GraphRAG 知識グラフでRAGを置き換える]]
 - 視覚ベースRAG（別アプローチ） → [[04_PixelRAG スクショで検索するRAG]]
 - 信頼度タグ・検証 → [[01_エージェントファクトリの作り方 ビルダーズガイド]]
-- Context節約（serena の16kトークン問題と関連） → [[37_Graph of Loops（仮）]] L3・[[08_Context Engineering Claude Codeの文脈設計]]
+- Context節約（serena の16kトークン問題と関連） → [[37_Graph of Loops（仮）]] L3・[[06_Context Engineering Claude Codeの文脈設計]]
 - エージェントのContextからコードベース理解 → [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]

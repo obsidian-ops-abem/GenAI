@@ -15,7 +15,7 @@ created: 2026-08-02
 - 形態: X ポスト（日本語訳・図解付き）
 - タイトル: **Claude Code の6層アーキテクチャを視覚的に解説**
 
-要約は [[16_Claude Codeの6層アーキテクチャ ダムループ]] を参照。
+要約は [[05_Claude Codeの6層アーキテクチャ ダムループ]] を参照。
 
 > [!note] 本クリップは日本語訳ポスト。参照元の Avi Chawla 記事（@_avichawla, 2026-05-02）を @DailyDoseOfDS_ が日本語で図解解説したもの。コメント欄に実務共感（@DevCalledFede / @aditya_sarade14 / @Elev_30 / @lfrodriguesit / @MartineliAi / @ajs6888）を含む。
 

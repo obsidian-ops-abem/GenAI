@@ -41,7 +41,7 @@ status: 未着手
 
 ## 次にやること
 
-- [ ] `anthropics/skills` と `awesome-mcp-servers` を実際に覗き、このボルトのCLAUDE.md運用や[[03_intent-system 意図駆動開発のオーケストレーションCLI]]の話に転用できるものがないか確認する
+- [ ] `anthropics/skills` と `awesome-mcp-servers` を実際に覗き、このボルトのCLAUDE.md運用や[[01_intent-system 意図駆動開発のオーケストレーションCLI]]の話に転用できるものがないか確認する
 - [ ] `system-prompts-and-models-of-ai-tools` の内容の真正性を個別に確認する
 
 関連: [[index]]

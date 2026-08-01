@@ -77,7 +77,7 @@ Mastra の **observability** 機能の一部として組み込み（別売り OS
 
 - **技術の新規性**より**統合の新規性**。UMAP+HDBSCAN は既存手法だが、エージェントトレースという新領域に「4シグナル抽出→埋め込み→クラスタリング→時系列」というパイプラインを適用し、プラットフォームに直接組み込んだ点が主張
 - 汎用 LLM観測性ツール（LangSmith / Langfuse / Arize 等）と比較される位置づけ。差別化は「プラットフォーム直結」と「4シグナル自動分類」
-- **[[08_Context Engineering Claude Codeの文脈設計]]** で述べられた Distraction/Confusion モードの「実際に起きているか」を、トレース群から定量的に把握するツールと言える。観測して初めて文脈設計の効果が測れる
+- **[[06_Context Engineering Claude Codeの文脈設計]]** で述べられた Distraction/Confusion モードの「実際に起きているか」を、トレース群から定量的に把握するツールと言える。観測して初めて文脈設計の効果が測れる
 - クラスタリングの精度・4シグナルの妥当性は、実際のベータ利用による外部検証が必要。発表時点では事例・数字の外部検証なし
 - Mastra 自体は OSS（[mastra-ai/mastra](https://github.com/mastra-ai/mastra)）だが、Trace Intelligence を含む observability はプラットフォーム（マネージド）側の機能
 
@@ -87,4 +87,4 @@ Mastra の **observability** 機能の一部として組み込み（別売り OS
 - [ ] 既存のトレース観測アプローチ（LangSmith/Langfuse）との比較ページを作るか検討
 - [ ] エージェント評価パイプライン（観測→実験→改善）をこのボルトの Lint プロセスに類推できないか検討
 
-関連: [[00_インデックス]] / [[08_Context Engineering Claude Codeの文脈設計]]
+関連: [[00_インデックス]] / [[06_Context Engineering Claude Codeの文脈設計]]

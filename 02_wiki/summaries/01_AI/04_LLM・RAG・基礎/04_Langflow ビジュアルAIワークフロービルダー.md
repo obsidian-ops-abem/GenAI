@@ -73,4 +73,4 @@ AI/LLM統合が必要な開発者、ノーコード/ローコードでエージ�
 - [ ] 実際にローカルで起動して、redmine-mcp-serverのような自作ツールをLangflow経由でMCPサーバー化できるか試す
 - [ ] Graph Engineering記事の6トポロジー（Fan-out/Fan-in/ダイヤモンド/ルーティング/検証/収束サイクル）をLangflow上でどう表現するか対応関係を確認する
 
-関連: [[index]] / [[01_Graph Engineering エージェントを行列から解放する]] / [[02_LOOP vs GRAPH vs HARNESS ENGINEERING]] / [[03_LangChain エージェント・エンジニアリング・プラットフォーム]]
+関連: [[index]] / [[01_Graph Engineering エージェントを行列から解放する]] / [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]] / [[03_LangChain エージェント・エンジニアリング・プラットフォーム]]

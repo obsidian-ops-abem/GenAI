@@ -100,12 +100,12 @@ AI ツールの「プロジェクトの指示」やシステムプロンプト�
 
 - [[02_24時間自走する自律型AIエージェントの設計図]] の **Guardrail 層**（安全に止まる・原因を残す）は、本記事の「検証」の3点に対応。自動化を進めても**人が検証で関与する点は残す**べきという思想で通底
 - [[01_エージェントファクトリの作り方 ビルダーズガイド]] の **証明ステーション（Proving）** と **6テスト** は、型③「2層レビュー」の工場スケール版
-- [[09_Loop Engineering Claude,GPT 実戦で効くもの]] の **接地検証器（grounding verifier）** や [[02_LOOP vs GRAPH vs HARNESS ENGINEERING]] の **根拠ベースの停止** は、型③「結論を仮説に決め手だけ検証」の技術的実装と言える
-- プロンプト/発注の基礎論として [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]（プロンプト Tips）や [[08_Context Engineering Claude Codeの文脈設計]]（文脈設計）とも補完
+- [[02_Loop Engineering Claude,GPT 実戦で効くもの]] の **接地検証器（grounding verifier）** や [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]] の **根拠ベースの停止** は、型③「結論を仮説に決め手だけ検証」の技術的実装と言える
+- プロンプト/発注の基礎論として [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]（プロンプト Tips）や [[06_Context Engineering Claude Codeの文脈設計]]（文脈設計）とも補完
 
 ## 関連
 
 - 人間の関与ポイント（Guardrail・検証） → [[02_24時間自走する自律型AIエージェントの設計図]]
 - 工場スケールの検証 → [[01_エージェントファクトリの作り方 ビルダーズガイド]]
-- 接地検証器・根拠ベース停止 → [[09_Loop Engineering Claude,GPT 実戦で効くもの]]・[[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]
-- プロンプト/文脈設計の基礎 → [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]・[[08_Context Engineering Claude Codeの文脈設計]]
+- 接地検証器・根拠ベース停止 → [[02_Loop Engineering Claude,GPT 実戦で効くもの]]・[[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]
+- プロンプト/文脈設計の基礎 → [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]・[[06_Context Engineering Claude Codeの文脈設計]]
