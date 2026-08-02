@@ -54,6 +54,7 @@ updated: 2026-08-02
 - [[02_Graph Engineering 最大の間違い Loop↔Graph判断]] — wandermist(@wandermist)による「最大の間違い＝必要でないのにグラフを作ること」。ループは1ノードのグラフ、グラフ昇格を正当化する5シグナル・30秒決定木・6項目チェックリストでLoop↔Graphを判定。懐疑派の冷却材（本文はユーザー提供クリップから再構成）の要約
 - [[03_Graph of Loops Claude Code完全システム10リポジトリ]] — Granite0x(@Granite0x)によるGraph+Loop二層統合の実践ガイド。Graph(G1-G4)とLoop(L1-L6)の10実リポジトリをソースコードレベルで解説。「doneを取り戻せるか」が全10を採点。bernstein/agent-worktree/wshobson-agents/beads/serena/superpowers等（本文はユーザー提供クリップから再構成）の要約
 - [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]] — undefinedKi(@undefinedKi)による自己レビューエージェントのGraph構築8ステップ完全ガイド。Anthropicの9語「you do not fix the code, you fix the process」。judge先構築→わざと壊す→ルールブック→3アイテムストレステスト→state ディスク→見えない2人のレビューア→コスト別チェック配置→高価な操作の直列化。実証: Anthropic/Jarred Sumner(Bun, $165k)/Mike Krieger(165k行TS)。03_のverifier 3パターンを具体実装（本文はユーザー提供クリップから再構成）の要約
+- [[05_マージゲート4シグナル 信頼スコアの罠とレーン分離]] — @hanakoxbtによるマージゲート設計。4シグナル(決定論的チェック/評価の軌跡/リバート履歴/信頼スコア)のうちエージェントが影響できるのは信頼スコア1つ(最も弱い変数)なのにそこに最大加重を置くミス。賭け(可逆性)で3レーン分離・不可逆は99%でも開かず人間のレーン。シャドウモードで導入。「証拠でなく自信でループする」のゲート版（本文はユーザー提供クリップから再構成）の要約
 
 #### 02_Claude Code実践（使い方・ワークフロー・MCP・スキル）
 
@@ -71,6 +72,7 @@ updated: 2026-08-02
 - [[02_Claude Code 計画と実行を分けるワークフロー]] — Claude Codeで「計画」と「実行」を分離して手戻りを減らす実践ワークフローの要約
 - [[03_Claude Code 8時間を1時間にする10の方法]] — CLAUDE.md/サブエージェント/planモード/MCP等で8時間作業を1時間に圧縮した10のTips集の要約
 - [[04_Stop Vibe Coding Spec駆動開発の5ブロック]] — Jey(@0xJeyx)によるspec-driven development実践ガイド。AI出力を予測可能にするのはプロンプトでなくspec(実行計画)。PRD(人)/design doc(エンジニア)/spec(エージェント)の峻別。5ブロック(Why/What/Constraints/Out of scope/Tasks)+5ステップループ。業界4巨頭(Amazon Kiro/GitHub Spec Kit/Google/Microsoft)が道具を出荷。「決定は自分のものに」（本文はユーザー提供クリップから再構成）の要約
+- [[05_claude-code-prompt-improver 送信瞬間に前提を補完]] — @opensourcelab9紹介/severity1作成のOSS(★1831・MIT・Python)。Claude Codeへの曖昧指示を送信瞬間にフックが割り込み3か所(曖昧指示に質問/重い依頼で進め方決定/長コマンド裏動かし/大成果物に型)へ「足りない前提」を先に注ぐ。言葉を直すのでなく後から足すはずだった条件を最初から積む・直しの往復減（本文はユーザー提供クリップのポストから再構成・詳細はリポジトリ要確認）の要約
 
 ##### 03_MCPとスキルとアーキテクチャ（MCP/Skills・ハーネス理解・学習教材・5層/6層実行エンジン）
 
@@ -105,6 +107,7 @@ updated: 2026-08-02
 - [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]] — デジタル庁(2023/06)の非エンジニア向けGPT API実践ガイド。ブラックボックス相手の心構え・messages構成・プロンプトTips・他システム連携・従来NLPとの使い分けを網羅（全46ページ）の要約
 - [[06_Hugging Faceでモデルを探すコツ]] — AI難民キャンプによる初心者向けHugging Faceモデル探索ガイド（目的別・日本語対応・おすすめタグ）。※本文未取得、description基づく構成推定の要約
 - [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]] — Mike(@mikenevermiss)によるClaude Fable 5(Mythos-class)実用ガイド。Opusの上に位置する新階層、長期多段階曖昧問題で真価。classifier(サイバー/生化/蒸留でOpus再ルーティング)・effort(low/medium/high/xhighダイヤル)・8プロンプト・5誤用・スキップ基準。Stripeが5000万行Ruby移行を1日で。1Mコンテキスト（本文はユーザー提供クリップから再構成）の要約
+- [[08_LangGraph Academy エージェント構築のコース]] — LangChain公式LangGraph Academyコース(Module1-6)。Chain(固定制御)vs Agent(LLM定義制御)・「信頼性曲線を曲げる」。Graph(node/edge)・ReAct(Act→Observe→Reason)・state/reducer・memory(checkpoint/filtering/trimming)・TaskMestro(長期記憶3型・Trustcall+Spy)・LangGraph Platform(scheduling/background runs/double texting・HTTP+Queue worker・Redis+Postgres)（本文はユーザー提供トランスクリプトから主題別再構成）の要約
 
 ### 02_ツール
 
