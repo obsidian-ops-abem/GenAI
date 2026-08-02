@@ -26,7 +26,7 @@ Claude / Cowork がこのボルトを編集するときに従うルール。Andr
   - `02_wiki/daily/` — デイリーノート
   - `02_wiki/howto/` — 運用・使い方メモ
 - `index.md` — 内容志向のカタログ。全ページをリンク＋一行説明で列挙。Ingest のたびに更新する
-- `log.md` — 時系列の追記専用ログ。Ingest / Query / Lint を実行するたびに1行追記する
+- `log.md` — 時系列ログ。**新しい順（降順）** で記載し、新しいエントリは **頭（上）に** 追加する。Ingest / Query / Lint / Restructure を実行するたびに、`- YYYY-MM-DD HH:MM <種別>: <要約>` の形式で1行追加する（**日付＋時刻** を必ず付ける）
 - `99_to_delete/` — 削除候補の退避先（この環境からはファイル削除できないため移動で代用）
 
 ## Ingest（資料の取り込み）
@@ -35,12 +35,12 @@ Claude / Cowork がこのボルトを編集するときに従うルール。Andr
 2. 要点を抽出し `02_wiki/summaries/` に要約ページを作る（frontmatter は最低限 `title` / `tags` / `source` / `created`）
 3. 関連する `02_wiki/concepts/` や `02_wiki/projects/` の既存ページがあれば、内容を反映して更新する。矛盾があれば明記する
 4. `index.md` に新規ページへのリンクと一行説明を追記する
-5. `log.md` に `- YYYY-MM-DD Ingest: <資料名>` を追記する
+5. `log.md` の **先頭（最新側）** に `- YYYY-MM-DD HH:MM Ingest: <資料名>` を追記する
 6. 触ったファイルを全部提示する
 
 ## Query（質問への回答）
 
-`index.md` から関連ページを探し、開いて根拠付きで回答する。良い回答は `02_wiki/` へ新規ページとして書き戻せる。`log.md` に `- YYYY-MM-DD Query: <質問の要約>` を追記する。
+`index.md` から関連ページを探し、開いて根拠付きで回答する。良い回答は `02_wiki/` へ新規ページとして書き戻せる。`log.md` の **先頭（最新側）** に `- YYYY-MM-DD HH:MM Query: <質問の要約>` を追記する。
 
 ## Lint（定期点検・週1回目安）
 
@@ -51,7 +51,7 @@ Claude / Cowork がこのボルトを編集するときに従うルール。Andr
 - 繰り返し言及されるのに専用ページがない概念
 - `01_raw-sources/` の新しい資料から見て古くなった記述
 
-レポートは `02_wiki/lint-report.md` に書き、`log.md` に `- YYYY-MM-DD Lint: <要約>` を追記する。
+レポートは `02_wiki/lint-report.md` に書き、`log.md` の **先頭（最新側）** に `- YYYY-MM-DD HH:MM Lint: <要約>` を追記する。
 
 ## 命名・frontmatter規約
 

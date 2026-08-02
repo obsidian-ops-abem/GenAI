@@ -1,5 +1,5 @@
 ---
-title: "15_AIフレンドリーなCLIを開発するテクニック"
+title: "08_AIフレンドリーなCLIを開発するテクニック"
 tags: [summary, ai, claude-code, cli, oss, agent-skill, documentation, ai-friendly]
 source: https://zenn.dev/shunsuke_suzuki/articles/make-cli-ai-friendly
 author: shunsuke_suzuki

@@ -1,5 +1,5 @@
 ---
-title: "16_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト"
+title: "05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト"
 tags: [summary, ai, langgraph, agent-design, testing, langsmith, rag, trajectory-eval]
 source: https://x.com/leopardracer/status/2081361600833790109
 author: LangChain チーム（ワークショップ）

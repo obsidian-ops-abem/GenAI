@@ -40,6 +40,7 @@ updated: 2026-08-02
 
 - [[01_ループエンジニアリング14ステップ]] — プロンプターからループ設計者への14ステップ・3段階ロードマップの要約
 - [[02_Loop Engineering Claude,GPT 実戦で効くもの]] — Khairallah(@eng_khairallah1)によるloop engineering実戦解説。Loop vs Chainの判定・Claude/GPT両エコシステムの収束・実戦5原則(done定義/接地検証器/階層的終了/コスト規律/不可逆前チェック)・実戦4罠を示す（本文はユーザー提供クリップから再構成）の要約
+- [[03_ループ仕様 論文 コーディングエージェントの実行レイヤ]] — beamnxw(@beamnxw)紹介のCS論文(arXiv 2607.00038)。コーディングエージェントのための「欠けていた実行レイヤ」としてループ仕様(明示的トリガー/検証可能目標/停止ルール/メモリの4要素)を定義。手動プロンプティングを境界付き自己修正ループで置換。実世界の70%が決定論的チェッカー・終端状態・メイカークリティック分割で自律ゾーン実行。02_実戦5原則の学術的定式化（本文はユーザー提供クリップから再構成・論文本文未取得）の要約
 
 ##### 03_Graph実装（Graph 実装マニュアル・ロードマップ）
 
@@ -47,6 +48,7 @@ updated: 2026-08-02
 - [[02_Graph Engineering Clearly Explained]] — 5層モデル(02_Prompt to Graph)の続編。Graph層を掘り下げ、nodes/edges/shared state・始め方・ルーティング・いつ過剰かを実践解説（本文は再構成）の要約
 - [[03_Graph Engineering with Claude 14-Step roadmap]] — 0xCodez(@0xCodez)によるGraph版14ステップ完全コース。[[01_ループエンジニアリング14ステップ]](Loop版)の対。直線エージェントを退化グラフと見なし「次ステップは前の出力を読むか?」で無駄待ちを切る。node契約/schema・fan-out→reduce→synthesizeのdiamond・verifier(adversarial/diverse/judge)・worktree隔離・loop-until-dry(見たもの全てにdedupe)・model tier・pipeline優先・dynamic workflows自己ルーティング。Claude Code実装完全マニュアル（本文はユーザー提供クリップから再構成）の要約
 - [[04_Graph Architectへの20ステップ5フェーズ]] — Khairallah(@eng_khairallah1)によるグラフアーキテクトへの20ステップ5フェーズ学習ロードマップ。[[02_Loop Engineering Claude,GPT 実戦で効くもの]](同著者Loop実戦)の延長。Phase1 Loop必習(verifierが全て/4失敗モード)→Phase2 グラフモデル(nodes/edges/state/全ノードがLLMでない/LangGraph)→Phase3 5パターン(router/orchestrator-worker/fan-out fan-in/evaluator-optimizer/HITL gate)→Phase4 信頼性(validation gate/リカバリ/state永続化/観測可能性)→Phase5「グラフにしない」判断。03_(実装完全マニュアル)の対で学習の道筋（本文はユーザー提供クリップから再構成）の要約
+- [[05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト]] — LangChainチームによる3時間ワークショップ(文字起こし)。Chain vs React agentの中間としてLangGraphを位置づけ。trajectory(ツール呼び出し軌跡)評価でLangGraphはローカルモデルでも一貫性保証・ReactはGPT-4oでも軌跡乱れる。「The model is not the moat」。Corrective RAG・ルーターノード・RAG for tools・indexing/generation分離・loss-in-the-middle（本文はユーザー提供文字起こしから再構成・後半ASR障害あり）の要約
 
 ##### 04_Graph判断と検証（Loop↔Graph判断・検証器・一気通貫・リポジトリ）
 
@@ -83,6 +85,7 @@ updated: 2026-08-02
 - [[05_Claude Codeの6層アーキテクチャ ダムループ]] — DailyDoseOfDS(@DailyDoseOfDS_)/Avi Chawla(@_avichawla)によるClaude Code内部構造6層(入力/知識/実行/統合/マルチエージェント/観測可能性)の図解。モデルはループ内の1ノード、ループ自体は意図的シングルスレッドの「ダムループ」。コンテキスト95%到達で要約でなく構造化抽出(pruning beats summarizing)・エージェントチームはworktree分離（本文はユーザー提供クリップから再構成）の要約
 - [[06_Context Engineering Claude Codeの文脈設計]] — 発話前の約7,850トークンを設計対象とし、削除優先・段階的開示・サブエージェント委譲で窓を保つ規律（/context・4失敗モード・6ジョブ）の要約
 - [[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]] — Boris Cherny(@chaobon・Claude Codeリード)講演。モデル毎にシステムプロンプト80%削除・ハーネス一から再構築。product overhang（製品がモデル能力を邪魔する）/ unhobbling。BunのZig→Rust書き換え11日・プロダクション採用。dynamic workflows（新しいテスト時計算）とルーチンでClaude Code自身を自律保守。「同僚のように扱う・過剰指定しない・経験主義」（本文はユーザー提供トランスクリプトから主題別再構成）の要約
+- [[08_AIフレンドリーなCLIを開発するテクニック]] — shunsuke_suzuki(Zenn)によるOSS CLIをAIが扱いやすくする設計論。AIは知られたOSSでないと知識を持たず・闇雲なWeb Fetchは効率悪く要約で情報落ち。help/ログにagent向けメッセージ・docsコマンドでWeb Fetch不要・Authの人間とagentの責務分離・ドキュメントとAgent Skillの共通化・構造化出力。ghtkn実践に基づく一般論（本文はユーザー提供クリップから再構成）の要約
 
 ##### 04_マルチエージェントとモデル運用（サブエージェント・チーム化・モデル/effort/コスト・コーディングエージェント実践）
 
@@ -97,6 +100,7 @@ updated: 2026-08-02
 - [[02_24時間自走する自律型AIエージェントの設計図]] — AIテック(@aitech_jp)による長時間運用エージェントの日本語実務ガイド。4層(Trigger/Workflow/Agent/Guardrail)・「状態機械を先に」・5つの壊れる理由・7設計原則・5実行環境(/loop/Routines/Modal・Trigger.dev/Agent SDK/Managed Agents)・15チェック・設計プロンプト付き（本文はユーザー提供クリップから再構成）の要約
 - [[03_AI協業の発注の型 HITL実務]] — sh-fukaya(Qiita)によるHITL実務レシピ。AIの成果物を一括で受け取らず依頼・承認・検証の3点だけに人が関与。3つの型(結論ファースト+構成承認／決め手ポイント1問ずつ／結論を仮説に決め手だけ検証の2層レビュー)＋コピペ可能なプロンプト（本文はユーザー提供クリップから再構成）の要約
 - [[04_YC QM マルチプレイヤーエージェントハーネス]] — Y Combinator(@ycombinator)が社内使用していたマルチエージェントハーネス「QM」をMITでOSS化(yc-software/qm)。会社全体(会計/法律/イベント/エンジニアリング)で役立つ。クラウドファースト・Slack/UI ネイティブ・企業ブレインコネクタ・マルチプレイヤー。「脳と手を分離」戦略。Hermes/OpenClaw/Funky類似（本文はユーザー提供クリップから再構成）の要約
+- [[05_Company OS 自律型企業運営のアーキテクチャ]] — ai_hakase_(@ai_hakase_)紹介のLLMを企業基幹業務を自律的にこなす「OS」として機能させる設計論。Single Shared State(全エージェントが同じ状態を参照・不整合物理防止)・Gate(ポリシー違反でApprove→Override強制切替・人間介入)・100万トークン$0.30・9ファイルのシンプルコードベース。エージェントを「補助ツール」から「自律的な組織のメンバー」へ（本文はユーザー提供クリップのポストから再構成・動画ベース）の要約
 
 #### 04_LLM・RAG・基礎（LLM基礎・RAG・モデル選定・プラットフォーム）
 
@@ -148,6 +152,7 @@ updated: 2026-08-02
 - [[01_科学論文での図表作成のルール]] — 医学論文の図表作成の作法を全体20＋表20＋図5ルールで体系化した解説（JIS X 4051準拠）の要約
 - [[02_段取り八分とリスク・備えの3段階]] — pokamaru3(@pokamaru3)による生産技術のリスクマネジメント作法。段取り八分を土台に不確実性を事前に分かる/推定できる/現物でしか分からないの3つに切り分け、備え方を物の備え/事の備え/後付け可能の3段階から選ぶ。「過剰備えと無備えは同じ判断放棄」。AI直接関係ないが計画と実行の分離・guardrail・過剰設計警告と通底（本文はユーザー提供クリップから再構成）の要約
 - [[03_要件定義 基本設計 詳細設計の流れ]] — nyanchu(Zenn・ラクスAC2023)によるソフトウェア開発プロセスの体系復習。要件定義(What・ビジネス)／基本設計(How・IT全体像)／詳細設計(プログラム詳細・エンジニア向け)の3層。機能要件/非機能要件(可用性・性能・拡張性・セキュリティ・移行性・運用保守性)の峻別・要件定義6ステップ。AI直接関係ないがspec駆動・HITL承認・DDDとの対比基準（本文はユーザー提供クリップを構造化）の要約
+- [[04_リモートワーカーとしての振る舞い]] — sat(satoru-takeuchi・はてなブログ)による10年フルリモートの実務知見。リモートは難易度がオフィスより高い(コミュニケーション限定ゆえ)。ブラックホールにならず・フロー情報(分報)とストック情報(集中管理)の使い分け・5つの実践。AI直接関係ないが状態可視化・非同期⇄同期切替・log.md/index.mdの2層と通底（本文はユーザー提供クリップから再構成）の要約
 
 ---
 
