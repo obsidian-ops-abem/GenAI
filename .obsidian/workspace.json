@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/openaicodex-plugin-cc Use Codex from Claude Code to review code or delegate tasks.md",
+                "file": "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "openaicodex-plugin-cc Use Codex from Claude Code to review code or delegate tasks"
+              "title": "07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang"
             }
           }
         ]
@@ -199,8 +199,15 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
-    "Clippings/要件定義、基本設計、詳細設計の流れを総復習.md",
+    "log.md.tmp.3324.5154bf1c4173",
+    "index.md.tmp.3324.1a4840d7ab21",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/06_Context Engineering Claude Codeの文脈設計.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/05_Claude Codeの6層アーキテクチャ ダムループ.md",
     "Clippings/openaicodex-plugin-cc Use Codex from Claude Code to review code or delegate tasks.md",
+    "01_raw-sources/61_Boris Cherny 講演 Claude Codeハーネンス設計とproduct overhang（出典）.md",
+    "01_raw-sources/61_Boris Cherny 講演 Claude Codeハーネンス設計とproduct overhang（出典）.md.tmp.3324.6002d5466795",
+    "Clippings/要件定義、基本設計、詳細設計の流れを総復習.md",
     "Clippings/Post by @cursorvers on X.md",
     "log.md.tmp.3324.40025225cd05",
     "CLAUDE.md.tmp.3324.360a1b9a1ec7",
@@ -227,14 +234,7 @@
     "_prefix_backup_20260802/02_ツール/05_Vibe Kanban コーディングエージェント用Kanbanワークスペース.md",
     "_prefix_backup_20260802/02_ツール/13_GitHub公式スタックPRとgh-stackスキル.md",
     "_prefix_backup_20260802/02_ツール/11_Playwright業務E2Eテストの統合アーキテクチャ.md",
-    "_prefix_backup_20260802/02_ツール/09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤.md",
-    "_prefix_backup_20260802/02_ツール/10_agent-skill-creator ワークフローをAIスキル化.md",
-    "_prefix_backup_20260802/02_ツール/06_agmsg CLIエージェント間メッセージング.md",
-    "_prefix_backup_20260802/02_ツール/04_PixelRAG スクショで検索するRAG.md",
-    "_prefix_backup_20260802/02_ツール/01_Brevio ローカル完結の492種類ツール集.md",
     "_prefix_backup_20260802/02_ツール",
-    "log.md.tmp.3324.4dff2fcab640",
-    "log.md.tmp.3324.5c6aa8e3481a",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]

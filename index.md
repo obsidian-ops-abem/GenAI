@@ -80,6 +80,7 @@ updated: 2026-08-02
 - [[04_Claudeは多層実行エンジン Chatでない]] — HeyAnjula(@HeyAnjula)によるClaude 5層(Chat/Code/MCP/Skills/CLAUDE.md)の整理。チャットでなく多層実行エンジン。Skills+MCPの組み合わせが「提案」から「実行」への境界。ツール接続+スキル+永続コンテキストでAIチームメイト化。本ボルトはこの多層を実装・運用（本文はユーザー提供クリップから再構成）の要約
 - [[05_Claude Codeの6層アーキテクチャ ダムループ]] — DailyDoseOfDS(@DailyDoseOfDS_)/Avi Chawla(@_avichawla)によるClaude Code内部構造6層(入力/知識/実行/統合/マルチエージェント/観測可能性)の図解。モデルはループ内の1ノード、ループ自体は意図的シングルスレッドの「ダムループ」。コンテキスト95%到達で要約でなく構造化抽出(pruning beats summarizing)・エージェントチームはworktree分離（本文はユーザー提供クリップから再構成）の要約
 - [[06_Context Engineering Claude Codeの文脈設計]] — 発話前の約7,850トークンを設計対象とし、削除優先・段階的開示・サブエージェント委譲で窓を保つ規律（/context・4失敗モード・6ジョブ）の要約
+- [[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]] — Boris Cherny(@chaobon・Claude Codeリード)講演。モデル毎にシステムプロンプト80%削除・ハーネス一から再構築。product overhang（製品がモデル能力を邪魔する）/ unhobbling。BunのZig→Rust書き換え11日・プロダクション採用。dynamic workflows（新しいテスト時計算）とルーチンでClaude Code自身を自律保守。「同僚のように扱う・過剰指定しない・経験主義」（本文はユーザー提供トランスクリプトから主題別再構成）の要約
 
 ##### 04_マルチエージェントとモデル運用（サブエージェント・チーム化・モデル/effort/コスト・コーディングエージェント実践）
 
