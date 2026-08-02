@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Post by @cursorvers on X.md",
+                "file": "Clippings/要件定義、基本設計、詳細設計の流れを総復習.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Post by @cursorvers on X"
+              "title": "要件定義、基本設計、詳細設計の流れを総復習"
             }
           }
         ]
@@ -199,6 +199,8 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
+    "Clippings/Post by @cursorvers on X.md",
+    "Clippings/要件定義、基本設計、詳細設計の流れを総復習.md",
     "log.md.tmp.3324.40025225cd05",
     "CLAUDE.md.tmp.3324.360a1b9a1ec7",
     "index.md.tmp.3324.df3275babf20",
@@ -230,11 +232,9 @@
     "_prefix_backup_20260802/02_ツール/04_PixelRAG スクショで検索するRAG.md",
     "_prefix_backup_20260802/02_ツール/01_Brevio ローカル完結の492種類ツール集.md",
     "_prefix_backup_20260802/02_ツール/07_graphify コードベースを知識グラフ化.md",
-    "_prefix_backup_20260802/02_ツール/03_Mastra Trace Intelligence.md",
     "_prefix_backup_20260802/02_ツール",
     "log.md.tmp.3324.4dff2fcab640",
     "log.md.tmp.3324.5c6aa8e3481a",
-    "CLAUDE.md.tmp.3324.fb9006a9816d",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
