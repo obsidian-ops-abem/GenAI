@@ -111,7 +111,7 @@ Graph Engineering 系の**学習ロードマップ**。本ボルトの Graph 系
 - **Step 14（HITL gate）** は [[03_AI協業の発注の型 HITL実務]]（依頼・承認・検証の3点関与）のシステム側実装。不可逆なものは必ず人の承認を通す
 - **Phase 4（信頼性）** は [[02_24時間自走する自律型AIエージェントの設計図]]（Guardrail・状態機械・安全な停止・再開）と通底。validation gate・リカバリパス・state 永続化・観測可能性は長時間運用の核心
 - **5パターン（Step 10-14）** は [[01_Graph Engineering エージェントを行列から解放する]]（6トポロジー）の実務5選。orchestrator-worker は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]、parallel fan-out/fan-in は [[03_Graph of Loops Claude Code完全システム10リポジトリ]] の骨格
-- **Step 6（全ノードが LLM ではない）** は [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]（Runtime・Observability はコードでトークンゼロ）や 12_ の step04（エッジは無料）と同じ「LLM を判断にだけ使う」思想
+- **Step 6（全ノードが LLM ではない）** は [[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]（Runtime・Observability はコードでトークンゼロ）や 12_ の step04（エッジは無料）と同じ「LLM を判断にだけ使う」思想
 
 ## 関連
 
@@ -122,4 +122,4 @@ Graph Engineering 系の**学習ロードマップ**。本ボルトの Graph 系
 - 信頼性・長時間運用（Phase 4） → [[02_24時間自走する自律型AIエージェントの設計図]]・[[01_エージェントファクトリの作り方 ビルダーズガイド]]
 - グラフの概念・6トポロジー → [[01_Graph Engineering エージェントを行列から解放する]]・[[02_Graph Engineering Clearly Explained]]
 - orchestrator-worker / fan-out → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]
-- LLM は判断だけ・エッジはコード → [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
+- LLM は判断だけ・エッジはコード → [[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]

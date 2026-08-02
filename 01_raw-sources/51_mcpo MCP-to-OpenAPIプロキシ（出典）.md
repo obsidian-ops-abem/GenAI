@@ -18,7 +18,7 @@ created: 2026-08-01
 - 形態: X ポスト（OSS 紹介）＋ GitHub README
 - ライセンス: MIT
 
-要約は [[12_mcpo MCP-to-OpenAPIプロキシ]] を参照。
+要約は [[03_mcpo MCP-to-OpenAPIプロキシ]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文（日本語ポスト）を提供。※ポストは紹介のみ、機能詳細は言及から再構成。

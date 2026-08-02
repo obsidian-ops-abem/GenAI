@@ -18,7 +18,7 @@ created: 2026-08-01
 - 形態: X ポスト（v1.1.12 リリース報告）
 - タイトル: **agmsg — Cross-agent messaging for CLI AI agents**
 
-要約は [[06_agmsg CLIエージェント間メッセージング]] を参照。
+要約は [[02_agmsg CLIエージェント間メッセージング]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文を提供したため、それに基づき転記。

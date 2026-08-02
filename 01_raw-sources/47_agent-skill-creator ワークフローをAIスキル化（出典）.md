@@ -18,7 +18,7 @@ created: 2026-08-01
 - 形態: X ポスト（OSS 紹介）＋ GitHub README
 - スター（ポスト時点）: 約2,000
 
-要約は [[10_agent-skill-creator ワークフローをAIスキル化]] を参照。
+要約は [[01_agent-skill-creator ワークフローをAIスキル化]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文（日本語ポスト）を提供。※ポストは紹介のみで README 転記なし。機能の詳細はポストの description・言及から再構成。

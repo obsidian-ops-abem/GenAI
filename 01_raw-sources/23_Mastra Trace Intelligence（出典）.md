@@ -16,7 +16,7 @@ created: 2026-07-30
 - 形態: Xポスト（製品発表）+ Mastra Blog の発表記事
 - ベータサインアップ: mastra.ai/trace-intelligence
 
-要約は [[03_Mastra Trace Intelligence]] を参照。
+要約は [[01_Mastra Trace Intelligence]] を参照。
 
 ---
 

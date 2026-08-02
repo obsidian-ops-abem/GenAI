@@ -106,19 +106,30 @@ updated: 2026-08-02
 
 ### 02_ツール
 
+#### 01_エージェント運用インフラ（ワークスペース・隔離・通信・リモート）
+
+- [[01_Vibe Kanban コーディングエージェント用Kanbanワークスペース]] — DanKornas(@DanKornas)によるコーディングエージェント向けKanbanワークスペース(BloopAI/vibe-kanban)。エージェントごとにブランチ/ターミナル/開発サーバーを分離し差分レビューをワークスペース内に閉じ込める。※サービス終了予定の要約
+- [[02_agmsg CLIエージェント間メッセージング]] — fujibee(@fujibee)によるCLI AIエージェント間メッセージングOSS(Claude Code/Codex/opencode)。v1.1.12はコミュニティ主導の成熟(opencode-sentinel/codexブリッジ修正/可視化ツール5つ)を示すの要約
+- [[03_スマホからPCのcodexとccをリモート操作]] — Bysir(@hi_bysir)によるスマホ→PCリモート操作ハック。Herdr(ターミナルマルチプレクサ+Agent First)+Termius+sshでcodex/ccの公式モバイルアプリのサブスク・切替問題を回避。Amphetamineでスリープ防止・公網はFRP。※コメントでPaseo/網易UU等の代替言及（本文はユーザー提供クリップから再構成）の要約
+- [[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] — Ephemeral-AI-Labによる並列コーディングエージェント用OSS基盤(Rust・MIT)。1つの共有サンドボックス内で各エージェントに隔離ワークスペースを与え変更セットを原子的公開。LayerStack・CLI/MCP 3ツール群(Management/Runtime/Observability)（本文はユーザー提供クリップのREADMEから再構成）の要約
+
+#### 02_MCPとスキルと開発ワークフロー（スキル化・MCPプロキシ・PR・テスト）
+
+- [[01_agent-skill-creator ワークフローをAIスキル化]] — trendtech33566(@trendtech33566)紹介/FrancyJGLisboa作成のOSS(⭐約2千)。自然文の作業フローをSKILL.mdに自動変換・1ファイルで17プラットフォーム対応・検証/セキュリティスキャン/evals付き。「定型作業をAIに覚えさせたい」人向け。[[01_Agent Skillsを作る完全プロンプト]](手書きプロンプト)のツール化（本文はユーザー提供クリップのポストから再構成・詳細はリポジトリ要確認）の要約
+- [[02_Playwright業務E2Eテストの統合アーキテクチャ]] — lin-yuchen(Developers.io)によるPlaywright+TypeScriptのE2Eテスト設計。Screen Object Model+Fluent Chaining+日本語メソッド名+ロケーター関数辞書+ポップアップ ファクトリ封じ込めの5パターン統合。「書き方より構造で寿命が決まる」(@connect24h実務共感ポスト統合)。テストコードが仕様書に（本文はユーザー提供クリップから再構成）の要約
+- [[03_mcpo MCP-to-OpenAPIプロキシ]] — DanKornas(@DanKornas)紹介/open-webui作成のOSS(MIT)。MCPサーバをOpenAPI互換アプリへ繋ぐプロキシ。OpenAPIスキーマ+インタラクティブドキュメント自動生成。stdio/SSE/Streamable HTTP対応・Claude Desktop形式マルチサーバ・OAuth 2.1（本文はユーザー提供クリップのポストから再構成）の要約
+- [[04_GitHub公式スタックPRとgh-stackスキル]] — tonkotsuboy_com(@tonkotsuboy_com)によるGitHub公式スタック型PRとgh-stackスキルの紹介。変更を依存関係のある小さなPRの連鎖に積み重ね、gh-stack Agent Skillで自然言語操作(Claude Code/Codex)。Agent SkillのPR操作実例（本文はユーザー提供クリップから再構成）の要約
+
+#### 03_RAGと検索と観測（知識グラフ化・視覚RAG・トレーシング）
+
+- [[01_Mastra Trace Intelligence]] — エージェントのトレースをUMAP+HDBSCANで自動クラスタリングし、goal/behavior/sentiment/outcomeの4シグナルで共通パターンを可視化するMastra観測性機能（ベータ）の要約
+- [[02_PixelRAG スクショで検索するRAG]] — Web/PDFをスクショ画像のままQwen3-VL-Embedding+FAISSで検索しVLMに読み取らせる「視覚ベースRAG」。テキストRAG比最大+18.1%、Wikipedia事前構築インデックス公開済みの要約
+- [[03_graphify コードベースを知識グラフ化]] — Graphify-Labsによる`/graphify`スキル。コード/docs/PDF/画像/動画を知識グラフ化しgrepでなくグラフをクエリ。コードはtree-sitter ASTで完全ローカル・LLM不使用・ベクトル不使用。EXTRACTED/INFERRED信頼度タグ。20+アシスタント対応の要約
+
+#### 04_ツール集とリスト（汎用ツール・OSS代替リスト）
+
 - [[01_Brevio ローカル完結の492種類ツール集]] — WebAssembly/Canvas APIでブラウザ内完結・無料492種ツールを謳うBrevioの紹介記事の要約
 - [[02_無料OSSで有料ツールを代替する10のGitHubリポジトリ]] — 有料SaaSを代替できる無料OSSリポジトリ10選の要約
-- [[03_Mastra Trace Intelligence]] — エージェントのトレースをUMAP+HDBSCANで自動クラスタリングし、goal/behavior/sentiment/outcomeの4シグナルで共通パターンを可視化するMastra観測性機能（ベータ）の要約
-- [[04_PixelRAG スクショで検索するRAG]] — Web/PDFをスクショ画像のままQwen3-VL-Embedding+FAISSで検索しVLMに読み取らせる「視覚ベースRAG」。テキストRAG比最大+18.1%、Wikipedia事前構築インデックス公開済みの要約
-- [[05_Vibe Kanban コーディングエージェント用Kanbanワークスペース]] — DanKornas(@DanKornas)によるコーディングエージェント向けKanbanワークスペース(BloopAI/vibe-kanban)。エージェントごとにブランチ/ターミナル/開発サーバーを分離し差分レビューをワークスペース内に閉じ込める。※サービス終了予定の要約
-- [[06_agmsg CLIエージェント間メッセージング]] — fujibee(@fujibee)によるCLI AIエージェント間メッセージングOSS(Claude Code/Codex/opencode)。v1.1.12はコミュニティ主導の成熟(opencode-sentinel/codexブリッジ修正/可視化ツール5つ)を示すの要約
-- [[07_graphify コードベースを知識グラフ化]] — Graphify-Labsによる`/graphify`スキル。コード/docs/PDF/画像/動画を知識グラフ化しgrepでなくグラフをクエリ。コードはtree-sitter ASTで完全ローカル・LLM不使用・ベクトル不使用。EXTRACTED/INFERRED信頼度タグ。20+アシスタント対応の要約
-- [[08_スマホからPCのcodexとccをリモート操作]] — Bysir(@hi_bysir)によるスマホ→PCリモート操作ハック。Herdr(ターミナルマルチプレクサ+Agent First)+Termius+sshでcodex/ccの公式モバイルアプリのサブスク・切替問題を回避。Amphetamineでスリープ防止・公網はFRP。※コメントでPaseo/網易UU等の代替言及（本文はユーザー提供クリップから再構成）の要約
-- [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] — Ephemeral-AI-Labによる並列コーディングエージェント用OSS基盤(Rust・MIT)。1つの共有サンドボックス内で各エージェントに隔離ワークスペースを与え変更セットを原子的公開。LayerStack・CLI/MCP 3ツール群(Management/Runtime/Observability)（本文はユーザー提供クリップのREADMEから再構成）の要約
-- [[10_agent-skill-creator ワークフローをAIスキル化]] — trendtech33566(@trendtech33566)紹介/FrancyJGLisboa作成のOSS(⭐約2千)。自然文の作業フローをSKILL.mdに自動変換・1ファイルで17プラットフォーム対応・検証/セキュリティスキャン/evals付き。「定型作業をAIに覚えさせたい」人向け。[[01_Agent Skillsを作る完全プロンプト]](手書きプロンプト)のツール化（本文はユーザー提供クリップのポストから再構成・詳細はリポジトリ要確認）の要約
-- [[11_Playwright業務E2Eテストの統合アーキテクチャ]] — lin-yuchen(Developers.io)によるPlaywright+TypeScriptのE2Eテスト設計。Screen Object Model+Fluent Chaining+日本語メソッド名+ロケーター関数辞書+ポップアップ ファクトリ封じ込めの5パターン統合。「書き方より構造で寿命が決まる」(@connect24h実務共感ポスト統合)。テストコードが仕様書に（本文はユーザー提供クリップから再構成）の要約
-- [[12_mcpo MCP-to-OpenAPIプロキシ]] — DanKornas(@DanKornas)紹介/open-webui作成のOSS(MIT)。MCPサーバをOpenAPI互換アプリへ繋ぐプロキシ。OpenAPIスキーマ+インタラクティブドキュメント自動生成。stdio/SSE/Streamable HTTP対応・Claude Desktop形式マルチサーバ・OAuth 2.1（本文はユーザー提供クリップのポストから再構成）の要約
-- [[13_GitHub公式スタックPRとgh-stackスキル]] — tonkotsuboy_com(@tonkotsuboy_com)によるGitHub公式スタック型PRとgh-stackスキルの紹介。変更を依存関係のある小さなPRの連鎖に積み重ね、gh-stack Agent Skillで自然言語操作(Claude Code/Codex)。Agent SkillのPR操作実例（本文はユーザー提供クリップから再構成）の要約
 
 ### 03_セキュリティ
 

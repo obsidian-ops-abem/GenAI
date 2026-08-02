@@ -74,7 +74,7 @@ Claude Code の内部構造を6層（入力 / 知識 / 実行 / 統合 / マル�
 
 - **「モデルはループ内の1ノード」「ダムループ」** は [[04_Agent Harness vs Loop vs Graph Engineering]] の Harness（環境・インフラ）・Loop（制御フロー）の分離を、Claude Code の実装として具体化。Harness 6要素（Context Injection / Action Surfaces / Persistence / Execution Control / Safety / Observability）がほぼ1:1で6層に対応
 - **コンテキスト圧縮 = pruning beats summarizing** は [[06_Context Engineering Claude Codeの文脈設計]]（削除優先・段階的開示・サブエージェント委譲）の実装詳細。本ボルトの Ingest/Query でも要約でなく構造化抽出（frontmatter・Wikilink・index）を保つ方針と整合
-- **worktree 分離** は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]（構造的深さキャップ・ワーカー隔離）・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]（worktree隔離）・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]（並列隔離基盤）と同系の並列隔離
+- **worktree 分離** は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]（構造的深さキャップ・ワーカー隔離）・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]（worktree隔離）・[[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]（並列隔離基盤）と同系の並列隔離
 - **イベントバス・観測可能性** は本ボルトの `log.md`（全操作を1行追記）と同じ監査トレイル思想。AIのアクションと決定の完全記録
 - **「エージェントアーキテクチャが競争優位」** は本ボルトの存在意義そのもの（Claude Code + Obsidian のハーネスを運用）
 - 「ダムループ・シングルスレッド」は Graph の checker node（[[05_Graph Engineering 入門 What It Is]]）や verifier（[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]）が「ループの外」にあることの根拠
@@ -86,5 +86,5 @@ Claude Code の内部構造を6層（入力 / 知識 / 実行 / 統合 / マル�
 - Harness/Loop/Graph 3層（6層はHarnessの具体化） → [[04_Agent Harness vs Loop vs Graph Engineering]]
 - Context Engineering（pruning beats summarizing） → [[06_Context Engineering Claude Codeの文脈設計]]
 - サブエージェント・worktree 隔離 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]
-- 並列隔離基盤 → [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
+- 並列隔離基盤 → [[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
 - checker node / verifier はループの外 → [[05_Graph Engineering 入門 What It Is]]

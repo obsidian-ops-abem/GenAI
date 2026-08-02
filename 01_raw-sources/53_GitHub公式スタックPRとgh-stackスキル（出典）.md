@@ -15,7 +15,7 @@ created: 2026-08-01
 - 形態: X ポスト（図解紹介・日本語）
 - 解説記事: https://zenn.dev/ubie_dev/articles/gh-stack-introduction
 
-要約は [[13_GitHub公式スタックPRとgh-stackスキル]] を参照。
+要約は [[04_GitHub公式スタックPRとgh-stackスキル]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文（日本語）を提供。図解4枚を含むが、本出典では図解の内容をテキストで要約。

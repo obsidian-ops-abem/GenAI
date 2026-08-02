@@ -90,7 +90,7 @@ Graph Engineering 系の**実装完全マニュアル**。本ボルトの Graph 
 - **判定系**: [[02_Graph Engineering 最大の間違い Loop↔Graph判断]]（ループはデフォルト・5シグナルで Graph 昇格）は「いつ Graph にするか」。本記事は「Graph にした後の14の実装手」
 - **同著者対**: [[01_ループエンジニアリング14ステップ]]（Loop 版）と本記事（Graph 版）は、@0xCodez による **14ステップ形式の双子コース**。Loop で信頼性を担保した上で、本記事で並列へ広げる
 - **検証系**: step09（verifier）は [[02_Loop Engineering Claude,GPT 実戦で効くもの]]（接地検証器）・[[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]（根拠ベース停止）・[[03_AI協業の発注の型 HITL実務]]（検証の3点関与）と同じ「信頼度を構造で生む」系譜。adversarial/perspective-diverse/judge-panel の3パターンは工場スケール（[[01_エージェントファクトリの作り方 ビルダーズガイド]]）にも通底
-- **隔離系**: step10（worktree）は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]（agent-worktree G2）・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]（共有ベース+隔離ワークスペース）と同概念
+- **隔離系**: step10（worktree）は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]（agent-worktree G2）・[[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]（共有ベース+隔離ワークスペース）と同概念
 - **収束系**: step11（loop-until-dry・見たもの全てに dedupe）は長時間運用（[[02_24時間自走する自律型AIエージェントの設計図]]）の「収束する cycle」の具体実装
 
 ## 関連
@@ -99,6 +99,6 @@ Graph Engineering 系の**実装完全マニュアル**。本ボルトの Graph 
 - グラフの概念（ノード/エッジ/トポロジー） → [[01_Graph Engineering エージェントを行列から解放する]]・[[02_Graph Engineering Clearly Explained]]
 - いつ Graph にするか → [[02_Graph Engineering 最大の間違い Loop↔Graph判断]]・[[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]
 - verifier・接地検証 → [[02_Loop Engineering Claude,GPT 実戦で効くもの]]・[[01_エージェントファクトリの作り方 ビルダーズガイド]]・[[03_AI協業の発注の型 HITL実務]]
-- worktree 隔離 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
+- worktree 隔離 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]・[[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
 - 学習ロードマップ版（本記事＝実装完全マニュアルの対） → [[04_Graph Architectへの20ステップ5フェーズ]]（@eng_khairallah1。Loop 必習→5パターン→信頼性→「グラフにしない」判断。本記事は Claude Code 実装、13_ は学習の道筋）
 - Anthropic メソッドの実証・プロセス設計（verifier 3パターンの具体実装・Bun 実証例共有） → [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]

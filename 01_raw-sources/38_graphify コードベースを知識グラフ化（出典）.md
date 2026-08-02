@@ -17,7 +17,7 @@ created: 2026-08-01
 - パッケージ: PyPI `graphifyy`（double-y、CLIコマンドは `graphify`）
 - タイトル: **graphify — Turn any codebase into a queryable knowledge graph**
 
-要約は [[07_graphify コードベースを知識グラフ化]] を参照。
+要約は [[03_graphify コードベースを知識グラフ化]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした README 全文を提供したため、それに基づき転記・再構成。
@@ -152,7 +152,7 @@ GraphRAG [[02_GraphRAG 知識グラフでRAGを置き換える]] の「コード
 ## 関連（ボルト内）
 
 - GraphRAG（知識グラフでRAG置換） → [[02_GraphRAG 知識グラフでRAGを置き換える]]
-- 視覚ベースRAG（別アプローチ） → [[04_PixelRAG スクショで検索するRAG]]
+- 視覚ベースRAG（別アプローチ） → [[02_PixelRAG スクショで検索するRAG]]
 - 信頼度タグ・検証 → [[01_エージェントファクトリの作り方 ビルダーズガイド]]
 - Context節約（serena の16kトークン問題と関連） → [[37_Graph of Loops（仮）]] L3・[[06_Context Engineering Claude Codeの文脈設計]]
 - エージェントのContextからコードベース理解 → [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]

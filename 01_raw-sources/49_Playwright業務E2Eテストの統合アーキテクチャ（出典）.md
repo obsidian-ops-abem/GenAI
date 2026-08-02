@@ -15,7 +15,7 @@ created: 2026-08-01
 - 形態: ブログ記事（技術解説・コード例多数）
 - 環境: Playwright（`playwright` ライブラリ版・`@playwright/test` でない）+ TypeScript・業務 B2B ポータル
 
-要約は [[11_Playwright業務E2Eテストの統合アーキテクチャ]] を参照。
+要約は [[02_Playwright業務E2Eテストの統合アーキテクチャ]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした全文を提供したため、それに基づき転記。

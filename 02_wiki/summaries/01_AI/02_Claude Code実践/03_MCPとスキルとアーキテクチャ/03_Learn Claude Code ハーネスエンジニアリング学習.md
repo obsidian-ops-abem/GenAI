@@ -54,7 +54,7 @@ created: 2026-08-01
 - [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[04_Agent Harness vs Loop vs Graph Engineering]] が「Harness はエージェントが立つ床・必須の併用レイヤー」と概念論じるのに対し、本プロジェクトは**その Harness を20レッスンで1から構築**する実装教材
 - **エージェントループ → ツール → 許可 → コンテキスト → 操作** の5領域は、[[04_Graph Architectへの20ステップ5フェーズ]]（@eng_khairallah1）の5フェーズ（Loop→グラフモデル→パターン→信頼性→判断）と対になる学習パス。前者が「概念を学ぶ」、本プロジェクトが「ハーネスを実装する」
 - **許可システム（境界・停止条件・承認）** は [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・ルールブック）・[[02_24時間自走する自律型AIエージェントの設計図]]（Guardrail・安全な停止）のハーネス版
-- **ワークツリー分離** は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] と同概念の学習実装
+- **ワークツリー分離** は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]・[[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] と同概念の学習実装
 - **コンテキストとメモリ**（スキル読み込み・圧縮）は [[06_Context Engineering Claude Codeの文脈設計]]・[[01_Agent Skillsを作る完全プロンプト]] のハーネス統合
 
 ## 関連
@@ -62,5 +62,5 @@ created: 2026-08-01
 - Harness の概念（3層） → [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[04_Agent Harness vs Loop vs Graph Engineering]]
 - 学習ロードマップ（対になる軸） → [[04_Graph Architectへの20ステップ5フェーズ]]
 - 許可・judge・Guardrail → [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]・[[02_24時間自走する自律型AIエージェントの設計図]]
-- ワークツリー分離 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
+- ワークツリー分離 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]]
 - コンテキスト・スキル → [[06_Context Engineering Claude Codeの文脈設計]]・[[01_Agent Skillsを作る完全プロンプト]]

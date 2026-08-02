@@ -85,7 +85,7 @@ mizchi が Cline（Roo Code）を2ヶ月使い込み、「強い実行権限 + �
 ## 本ボルト内の位置付け
 
 - **CLAUDE.md / .clinerules による文脈設計** → [[06_Context Engineering Claude Codeの文脈設計]]・[[02_Claude Code×Obsidianで第二の脳を作る 2000時間の設計ルール]] と同系。mizchi はそれを「ドメインエキスパートの価値」と位置付ける
-- **サンドボックス・許可システム** → [[03_Learn Claude Code ハーネスエンジニアリング学習]]（ハーネス5領域の許可システム）・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] と並ぶセキュリティ層。mizchi は deno パーミッションで実践
+- **サンドボックス・許可システム** → [[03_Learn Claude Code ハーネスエンジニアリング学習]]（ハーネス5領域の許可システム）・[[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] と並ぶセキュリティ層。mizchi は deno パーミッションで実践
 - **テストで仕様を表現** → [[05_Graph Engineering 入門 What It Is]]（checker node も「出力の検証」）・[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge先構築）と通底。「証拠でループする」 ([[04_Agent Harness vs Loop vs Graph Engineering]]) の実践
 - **計画と実行の分離・1タスクずつ** → [[02_Claude Code 計画と実行を分けるワークフロー]]・[[03_AI協業の発注の型 HITL実務]]（承認ポイントを絞る）と同構造
 - 2025-02-26 の記事だが、本ボルトが「Claude Code + Obsidian で第二の脳」を運用する前提（強いエージェント + 人間が文脈を設計）を先取りした実感として参照価値が高い

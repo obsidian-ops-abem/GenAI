@@ -18,7 +18,7 @@ created: 2026-08-01
 - 実装: Rust（ヘッドレスコア）。ブラウザ UI は別リポジトリ [Ephemeral Sandbox Console](https://github.com/Ephemeral-AI-Lab/ephemeral-sandbox-console)
 - 外部テスト・ベンチマーク: https://github.com/Ephemeral-AI-Lab/ephemeral-sandbox-test
 
-要約は [[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] を参照。
+要約は [[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] を参照。
 
 > [!info] 本文取得について
 > 本記事はユーザーが Clippings フォルダへクリップした README 全文を提供したため、それに基づき転記。

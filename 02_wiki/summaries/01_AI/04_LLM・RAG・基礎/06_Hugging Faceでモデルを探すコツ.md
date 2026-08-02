@@ -42,5 +42,5 @@ Hugging Face（huggingface.co/models）でモデルを探すコツとおすす�
 
 ## 関連
 
-- RAG・LLM関連（モデル選定の前提） → [[04_PixelRAG スクショで検索するRAG]]・[[02_GraphRAG 知識グラフでRAGを置き換える]]
+- RAG・LLM関連（モデル選定の前提） → [[02_PixelRAG スクショで検索するRAG]]・[[02_GraphRAG 知識グラフでRAGを置き換える]]
 - LLM の基礎 → [[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]
