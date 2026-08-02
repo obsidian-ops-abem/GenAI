@@ -6,11 +6,11 @@ created: 2026-07-29
 status: 未着手
 ---
 
-# intent-system: 意図駆動開発のオーケストレーションCLI (v0.6.0)
+# intent-system: 意図駆動開発のオーケストレーションCLI (v0.6.0 / v0.6.2更新)
 
 > [!info] 出典
-> [J-Tech-Japan/intent-system](https://github.com/J-Tech-Japan/intent-system) v0.6.0リリース（GitHub、Apache-2.0）
-> 詳細メタデータ: [[13_intent-system v0.6.0（出典）]]
+> [J-Tech-Japan/intent-system](https://github.com/J-Tech-Japan/intent-system) v0.6.0リリース（GitHub、Apache-2.0）。v0.6.2（2026-08）のガイド修正（G555/G556/G557）を追記
+> 詳細メタデータ: [[13_intent-system v0.6.0（出典）]]・v0.6.2 リリースノート（Clippings → 処理済みフォルダへ移動済み・本ノートに統合）
 
 GitHub上で「意図駆動開発（intent-driven development）」を回すための決定論的な支援ツール（CLI名: `intent-cli`）。C#/.NET 10、日英両方のドキュメントを持つ。
 
@@ -35,6 +35,31 @@ GitHub上で「意図駆動開発（intent-driven development）」を回すた�
 dotnet tool install -g JTechJapan.IntentSystem.Cli --version 0.6.0
 ```
 
+## v0.6.2（2026-08）— 実運用インシデント3件からのガイド修正
+
+v0.6.2 は CLI 表面を変えないパッチリリース（G555/G556/G557）。いずれも「同日に起きた3件のフィールドインシデント」を踏まえたガイド修正で、**プロセスを直すのでなくコードを生んだプロセスを直す**（[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]] と同思想）系譜。
+
+### G555: 共有マシン上のクロスプロジェクト分離
+- **インシデント**: 複数プロジェクトチームが同一マシンで稼働中、あるプロジェクトの設計スレッドが**別プロジェクトの資源を破損**。運用者が手動介入せざるを得なかった
+- **修正**: `guide orchestrator-thread` にクロスプロジェクト分離セクション追加。監督スレッドが操作できる**対象**を自チームのものに限定（操作の**種類**は制限せず・監督権限境界は不変）
+- **重要な原則**:
+  - **帰属確認を変異の前に**（Mutation before attribution）— 鍵注入・プロセス kill・ワークスペース再構築の前に、4キー（ワークスペースラベル・pane cwd・プロセス cwd・agmsg `(team, role)` 命名）で所有権を確立。**検証不能な帰属は読取のみ**（見る・報告する・エスカレートする・推測で変異させない）
+  - **チーム毎に1ワークスペース**（チーム名ラベル・再利用・流用禁止）・チーム専用ロールフォルダ
+  - **非破壊リカバリ** — 別プロジェクトの破損成果物は保存・退避（壊れた成果物も所有者の証拠）。自分のものは新規再構築。**リカバリは cleanup でなく recreate がデフォルト**
+
+> **ccc との接続**: G555 は ccc の5ロール（采/計/作/査/析）が Forgejo Actions 等で並列稼働する場合の**チーム間分離**に直接関連。「検証不能な帰属は読取のみ」「リカバリは cleanup でなく recreate」は ccc の権限境界設計の指針。[[03_ccc関連事例調査 ボルト内の同じアプローチ]] 参照
+
+### G556: 検証済み生存確認 — 起動報告 ≠ 準備完了
+- **インシデント**: 2つの codex エージェントが起動完了報告を送り**数秒後に死亡**（共有リモート app-server が websocket transport reset で消失・両 TUI がシェルプロンプトへ落下）。監督設計スレッドは「起動報告待ち」のまま全エージェントが既に死亡
+- **修正**: ロールは起動報告到着後 **かつ settle delay 後**に3つが全て pass した時にプロビジョニング完了とする: ① pane が agent TUI をホストしている（pane を読む・**メッセージは過去についての主張・pane が ground truth**）② agmsg ping-pong 往復が**今**成功 ③ codex の bridge が安定 app-server 接続で武装済み
+- **settle delay は負荷のかかる部品**: 失敗は報告の数秒後に起きるので即時再チェックは報告が述べた瞬間を再観察するだけ
+- **早期死亡は正常モード**: TUI がシェルプロンプトへ退出（transport reset 後・再開ヒントを残すのが典型）。その pane は普通の端末に見えるため dialog-only scan が見逃す。失敗時は**再報告を待たず再チェック・リカバリ**（死んだエージェントは何も送らないので待つのは永遠に待つこと）
+
+> **ccc との接続**: G556 の「報告は過去についての主張・pane/実機が ground truth」「検証不能なら読取のみ」「早期死亡は正常モード」は、ccc の査の検証（実機ホスト接続を伴う事後独立検証）・伝言ゲーム問題（報告が伝言で厳密さを失う）に直接対応。[[02_ccc-forgejo-actions自動配備]] の9件目メタ誤りと同根。
+
+### G557: テスト/リリースフローのホットフィックス
+（G555/G556 の修正自体が生んだ失敗を閉じるもの。詳細は v0.6.2 リリースノート参照）
+
 ## 所感・関連
 
 - [[01_ループエンジニアリング14ステップ]] の理論がそのまま実装として出てきた印象。特に「状態ファイル」（`queue-state.json`の永続化・整合性保護）、「Ralph Wiggumループ（静かに失敗するループ）」への対策（停滞検知3種）、「人間の承認ゲート」（AIを運転席に残しintent-cli自身はAIを起動しない設計）が具体的に対応している
@@ -45,5 +70,6 @@ dotnet tool install -g JTechJapan.IntentSystem.Cli --version 0.6.0
 
 - [ ] 実際に `intent-cli` を試し、停滞検知の設定（`backlog-ready-idle`の45分など）が自分のワークフローに合うか確認する
 - [ ] このボルトの `log.md`（状態ファイル）と `queue-state.json` の設計思想を比較する
+- [ ] v0.6.2 の G555/G556（クロスプロジェクト分離・検証済み生存確認）を ccc 運用へ反映
 
-関連: [[index]] / [[01_ループエンジニアリング14ステップ]] / [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]
+関連: [[index]] / [[01_ループエンジニアリング14ステップ]] / [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]] / [[03_ccc関連事例調査 ボルト内の同じアプローチ]] / [[05_herdr+agmsgでintent-cli開発 スレッド分離オーケストレーション]]（intent-cli 自身での dogfooding 実例）

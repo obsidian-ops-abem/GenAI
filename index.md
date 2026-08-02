@@ -87,6 +87,7 @@ updated: 2026-08-02
 - [[01_知識グラフメモリをOpus5で安く運用する]] — 時系列知識グラフの取り込みコストをOpus5のキャッシュ/バッチで下げる手法の要約
 - [[02_1チャットをエージェントチームへ Opus5 12ステップ]] — Rody(@0x_rody)によるClaude Codeサブエージェントのチーム化12ステップ。最初のワーカーから3階層ツリーまで、モデル/effortルーティング・構造的深さキャップ(ワーカーからAgent削除)・仕事をしなかった検証器・20分セットアップを示す（本文はユーザー提供クリップから再構成）の要約
 - [[03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]] — mizchi(@mizchi)によるCline宣言的エッセイ(2025-02)。暴走列車のような強い実行権限+圧倒的試行錯誤速度が魔法でありパンドラの箱。人間の判断がボトルネック、ドライバー席を譲る。AI時代プログラマ3能力(コンテキスト/ドメイン記述/AI性能直感)・静的型付けがループ速度に直結・セキュリティはコンテナ/WASM（本文はユーザー提供クリップから再構成）の要約
+- [[04_Claudeはorchestrator専念 hook強制の分業]] — @cursorversによる個人開発のClaude運用。Claude(高価)はorchestrator専念(要件対話/タスク振り分け/検証/合議)・実装は別モデル(Codex/GLM/Kimi/Grok/NIM/ローカルLLM)のworker。分業の境界を規約でなくhookで構造的強制(Claude直接編集block・subagent丸投げdefault-deny)。「判断と実装を同じモデルに握らせると自己採点になる」cccの思想のフック軽量版（本文はユーザー提供クリップから再構成）の要約
 
 #### 03_エージェント運用・ガバナンス（長時間運用・ファクトリ・品質保証）
 
@@ -113,6 +114,7 @@ updated: 2026-08-02
 - [[02_agmsg CLIエージェント間メッセージング]] — fujibee(@fujibee)によるCLI AIエージェント間メッセージングOSS(Claude Code/Codex/opencode)。v1.1.12はコミュニティ主導の成熟(opencode-sentinel/codexブリッジ修正/可視化ツール5つ)を示すの要約
 - [[03_スマホからPCのcodexとccをリモート操作]] — Bysir(@hi_bysir)によるスマホ→PCリモート操作ハック。Herdr(ターミナルマルチプレクサ+Agent First)+Termius+sshでcodex/ccの公式モバイルアプリのサブスク・切替問題を回避。Amphetamineでスリープ防止・公網はFRP。※コメントでPaseo/網易UU等の代替言及（本文はユーザー提供クリップから再構成）の要約
 - [[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] — Ephemeral-AI-Labによる並列コーディングエージェント用OSS基盤(Rust・MIT)。1つの共有サンドボックス内で各エージェントに隔離ワークスペースを与え変更セットを原子的公開。LayerStack・CLI/MCP 3ツール群(Management/Runtime/Observability)（本文はユーザー提供クリップのREADMEから再構成）の要約
+- [[05_herdr+agmsgでintent-cli開発 スレッド分離オーケストレーション]] — @tomohisaによるherdr+agmsgでのintent-cli自身の開発実例。Claudeデスクトップアプリ内の設計スレッド(人間対話)とherdr内の3スレッド(orchestration/設計/レビュー)を分離。レビューがrequest-updateでPR問題指摘→実装が修正開始。cccのRedmine+Forgejo型に対するherdr+agmsg軽量実装版（本文はユーザー提供クリップから再構成・動画詳細未確認）の要約
 
 #### 02_MCPとスキルと開発ワークフロー（スキル化・MCPプロキシ・PR・テスト）
 
@@ -120,12 +122,14 @@ updated: 2026-08-02
 - [[02_Playwright業務E2Eテストの統合アーキテクチャ]] — lin-yuchen(Developers.io)によるPlaywright+TypeScriptのE2Eテスト設計。Screen Object Model+Fluent Chaining+日本語メソッド名+ロケーター関数辞書+ポップアップ ファクトリ封じ込めの5パターン統合。「書き方より構造で寿命が決まる」(@connect24h実務共感ポスト統合)。テストコードが仕様書に（本文はユーザー提供クリップから再構成）の要約
 - [[03_mcpo MCP-to-OpenAPIプロキシ]] — DanKornas(@DanKornas)紹介/open-webui作成のOSS(MIT)。MCPサーバをOpenAPI互換アプリへ繋ぐプロキシ。OpenAPIスキーマ+インタラクティブドキュメント自動生成。stdio/SSE/Streamable HTTP対応・Claude Desktop形式マルチサーバ・OAuth 2.1（本文はユーザー提供クリップのポストから再構成）の要約
 - [[04_GitHub公式スタックPRとgh-stackスキル]] — tonkotsuboy_com(@tonkotsuboy_com)によるGitHub公式スタック型PRとgh-stackスキルの紹介。変更を依存関係のある小さなPRの連鎖に積み重ね、gh-stack Agent Skillで自然言語操作(Claude Code/Codex)。Agent SkillのPR操作実例（本文はユーザー提供クリップから再構成）の要約
+- [[05_openai codex-plugin-cc Claude CodeからCodexへ委譲]] — OpenAI公式プラグイン。Claude Code内からCodexを呼び出し/codex:review(読取専用)・/codex:adversarial-review(挑戦的レビュー・方向性を疑う)・/codex:rescue(タスク委譲)。@cursorvers「Claude orchestrator+別モデルworker」を公式に支える道具。adversarial-reviewはcccの査(別モデル検証)の簡易版（本文はユーザー提供クリップのREADMEから再構成）の要約
 
 #### 03_RAGと検索と観測（知識グラフ化・視覚RAG・トレーシング）
 
 - [[01_Mastra Trace Intelligence]] — エージェントのトレースをUMAP+HDBSCANで自動クラスタリングし、goal/behavior/sentiment/outcomeの4シグナルで共通パターンを可視化するMastra観測性機能（ベータ）の要約
 - [[02_PixelRAG スクショで検索するRAG]] — Web/PDFをスクショ画像のままQwen3-VL-Embedding+FAISSで検索しVLMに読み取らせる「視覚ベースRAG」。テキストRAG比最大+18.1%、Wikipedia事前構築インデックス公開済みの要約
 - [[03_graphify コードベースを知識グラフ化]] — Graphify-Labsによる`/graphify`スキル。コード/docs/PDF/画像/動画を知識グラフ化しgrepでなくグラフをクエリ。コードはtree-sitter ASTで完全ローカル・LLM不使用・ベクトル不使用。EXTRACTED/INFERRED信頼度タグ。20+アシスタント対応の要約
+- [[04_オントロジーでClaude性能向上 知識グラフの実測]] — @claudecode_labによる知識グラフ(オントロジー)実測編。同じ作業をグラフあり/なしで比較:コスト26%減・応答29%短縮・キャッシュ読取33%減。資料間の「書かれていない関係」をエンティティ/リレーション(型付き)/オブザベーションで明示。導入はmemory MCPサーバー(@modelcontextprotocol/server-memory)で3ステップ・10分。リポジトリ大ほど効果大（本文はユーザー提供クリップから再構成）の要約
 
 #### 04_ツール集とリスト（汎用ツール・OSS代替リスト）
 
@@ -140,6 +144,7 @@ updated: 2026-08-02
 
 - [[01_科学論文での図表作成のルール]] — 医学論文の図表作成の作法を全体20＋表20＋図5ルールで体系化した解説（JIS X 4051準拠）の要約
 - [[02_段取り八分とリスク・備えの3段階]] — pokamaru3(@pokamaru3)による生産技術のリスクマネジメント作法。段取り八分を土台に不確実性を事前に分かる/推定できる/現物でしか分からないの3つに切り分け、備え方を物の備え/事の備え/後付け可能の3段階から選ぶ。「過剰備えと無備えは同じ判断放棄」。AI直接関係ないが計画と実行の分離・guardrail・過剰設計警告と通底（本文はユーザー提供クリップから再構成）の要約
+- [[03_要件定義 基本設計 詳細設計の流れ]] — nyanchu(Zenn・ラクスAC2023)によるソフトウェア開発プロセスの体系復習。要件定義(What・ビジネス)／基本設計(How・IT全体像)／詳細設計(プログラム詳細・エンジニア向け)の3層。機能要件/非機能要件(可用性・性能・拡張性・セキュリティ・移行性・運用保守性)の峻別・要件定義6ステップ。AI直接関係ないがspec駆動・HITL承認・DDDとの対比基準（本文はユーザー提供クリップを構造化）の要約
 
 ---
 
