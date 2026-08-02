@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/AI フレンドリーな CLI を開発するテクニック.md",
+                "file": "Clippings/Post by @ai_hakase_ on X.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI フレンドリーな CLI を開発するテクニック"
+              "title": "Post by @ai_hakase_ on X"
             }
           }
         ]
@@ -199,8 +199,9 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
-    "01_raw-sources/67_LangGraph Academy コース Module1-6（出典）.md",
     "Clippings/AI フレンドリーな CLI を開発するテクニック.md",
+    "Clippings/Post by @ai_hakase_ on X.md",
+    "01_raw-sources/67_LangGraph Academy コース Module1-6（出典）.md",
     "01_raw-sources/68_マージゲート4シグナル 信頼スコアの罠（出典）.md",
     "01_raw-sources/69_claude-code-prompt-improver 曖昧指示を送信瞬間に補完（出典）.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/08_LangGraph Academy エージェント構築のコース.md",
@@ -234,7 +235,6 @@
     "log.md.tmp.3324.3d5a0d5b811d",
     "02_wiki/summaries/04_論文執筆/03_要件定義 基本設計 詳細設計の流れ.md",
     "01_raw-sources/66_要件定義 基本設計 詳細設計の流れを総復習（出典）.md",
-    "02_wiki/summaries/02_ツール/03_RAGと検索と観測/04_オントロジーでClaude性能向上 知識グラフの実測.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
