@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/01_エージェント設計論/03_Graph実装/05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト.md",
+                "file": "Clippings/herdr を使いこなす 複数 AI エージェントの連携から自作プラグインまで.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト"
+              "title": "herdr を使いこなす 複数 AI エージェントの連携から自作プラグインまで"
             }
           }
         ]
@@ -199,6 +199,8 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/01_エージェント設計論/03_Graph実装/05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト.md",
+    "Clippings/herdr を使いこなす 複数 AI エージェントの連携から自作プラグインまで.md",
     "log.md.tmp.42416.d9a8ab14b70d",
     "index.md.tmp.42416.2da730e003f8",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/06_Sam Altman スタンフォード システム設計とスケール.md",
@@ -209,7 +211,6 @@
     "log.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/02_Loop実践/02_Loop Engineering Claude,GPT 実戦で効くもの.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/02_Loop実践/03_ループ仕様 論文 コーディングエージェントの実行レイヤ.md",
-    "02_wiki/summaries/01_AI/01_エージェント設計論/03_Graph実装/05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト.md",
     "CLAUDE.md.tmp.42416.db7cb59fcbeb",
     "CLAUDE.md.tmp.42416.84ae75aeb0e7",
     "CLAUDE.md.tmp.42416.5ee1a722296e",
@@ -220,7 +221,6 @@
     "Clippings/2026-08-03/Post by @beamnxw on X.md",
     "Clippings/2026-08-03/Post by @ai_hakase_ on X.md",
     "Clippings/2026-08-03/AI フレンドリーな CLI を開発するテクニック.md",
-    "Clippings/2026-08-03",
     "index.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/02_ワークフローと発注/05_claude-code-prompt-improver 送信瞬間に前提を補完.md",
     "02_wiki/summaries/04_論文執筆/04_リモートワーカーとしての振る舞い.md",
