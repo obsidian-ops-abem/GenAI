@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/06_Sam Altman スタンフォード システム設計とスケール.md",
+                "file": "Clippings/Post by @LanaElys on X.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06_Sam Altman スタンフォード システム設計とスケール"
+              "title": "Post by @LanaElys on X"
             }
           }
         ]
@@ -199,12 +199,13 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/06_Sam Altman スタンフォード システム設計とスケール.md",
+    "Clippings/Post by @LanaElys on X.md",
     "log.md",
     "Clippings/herdr を使いこなす 複数 AI エージェントの連携から自作プラグインまで.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/03_Graph実装/05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト.md",
     "log.md.tmp.42416.d9a8ab14b70d",
     "index.md.tmp.42416.2da730e003f8",
-    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/06_Sam Altman スタンフォード システム設計とスケール.md",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/06_Sam Altman スタンフォード システム設計とスケール.md.tmp.42416.343e96fd5d54",
     "01_raw-sources/60_Sam Altman スタンフォードシステム設計クラス Q&A（出典）.md",
     "01_raw-sources/60_Sam Altman スタンフォードシステム設計クラス Q&A（出典）.md.tmp.42416.974c4b858823",
@@ -234,7 +235,6 @@
     "02_wiki/summaries/01_AI/01_エージェント設計論/15_ループ仕様 論文 コーディングエージェントの実行レイヤ.md",
     "01_raw-sources/57_ループ仕様 論文 arxiv 2607.00038（出典）.md",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/05_Company OS 自律型企業運営のアーキテクチャ.md",
-    "01_raw-sources/56_Company OS 自律型企業運営のアーキテクチャ（出典）.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
