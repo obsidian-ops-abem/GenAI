@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
+                "file": "01_raw-sources/78_intent-cli v0.9.1 グローバル名前空間の罠と修正（出典）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07_Boris対談 Anthropic内部Claude運用とエージェント設計"
+              "title": "78_intent-cli v0.9.1 グローバル名前空間の罠と修正（出典）"
             }
           }
         ]
@@ -200,10 +200,17 @@
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
     "log.md",
+    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
+    "99_to_delete/Post by @tomohisa on X.md",
+    "99_to_delete/Post by @seeconvm on X.md",
+    "99_to_delete/How to Become a Graph Architect With Zero Experience (Full Course).md",
+    "01_raw-sources/78_intent-cli v0.9.1 グローバル名前空間の罠と修正（出典）.md",
+    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/08_Claudeを会社にする 42スキルの組織図.md",
+    "01_raw-sources/77_Claudeを会社に 42スキル組織図（出典）.md",
+    "01_raw-sources/77_Claudeを会社に 42スキル組織図（出典）.md.tmp.13876.85c6b86c0da9",
     "Clippings/Post by @seeconvm on X.md",
     "Clippings/Post by @tomohisa on X.md",
     "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
-    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
     "log.md.tmp.13876.950f90c2c21b",
     "index.md.tmp.13876.d3684df568b5",
     "01_raw-sources/76_Boris对談 Anthropic内部Claude運用とエージェント設計（出典）.md",
@@ -217,7 +224,6 @@
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/05_Claude Codeの6層アーキテクチャ ダムループ.md",
     "index.md.tmp.13876.a794095bd060",
     "index.md.tmp.13876.ab70786c37d6",
-    "index.md.tmp.13876.53b42b4e365a",
     "99_to_delete/herdr を使いこなす 複数 AI エージェントの連携から自作プラグインまで.md",
     "99_to_delete/You Were Taught to Fear Randomness and Called It Bad Luck. The Real Thing Can Be Calculated.md",
     "99_to_delete/Post by @nicos_ai on X.md",
@@ -229,12 +235,6 @@
     "02_wiki/summaries/01_AI/01_エージェント設計論/01_概念と入門/06_5層モデル各層の作業単位 プロンプトからグラフへ.md",
     "02_wiki/summaries/02_ツール/02_MCPとスキルと開発ワークフロー/06_Tsumugu AI時代のZero Config ドキュメントサーバー.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/02_ワークフローと発注/06_intent-cliでHerdr開発 止まらないオーケストレーション.md",
-    "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/06_herdrを使いこなす エージェント連携と自作プラグイン.md",
-    "01_raw-sources/75_Randomnessを測る 定量思考が確率を形にする（出典）.md",
-    "01_raw-sources/74_AIの意識ベクトル 安全チューニングが壊すもの（出典）.md",
-    "01_raw-sources/73_5層モデル各層の作業単位 プロンプトからグラフへ（出典）.md",
-    "01_raw-sources/72_Tsumugu AI時代のZero Config ドキュメントサーバー（出典）.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/03_Learn Claude Code ハーネスエンジニアリング学習.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
