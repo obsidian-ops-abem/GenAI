@@ -35,6 +35,7 @@ updated: 2026-08-02
 - [[03_AIエージェントの正体はプロンプトだった]] — エージェントの自律性の正体は「高度に構造化されたプロンプト」にあると喝破する概念解説の要約
 - [[04_Agent Harness vs Loop vs Graph Engineering]] — Harness(基盤)/Loop(線形)/Graph(非線形)を「競合ではなく同じシステムの異なる部分」と整理。LoopとGraphは制御フロンの代替、Harnessは必須の併用レイヤー（本文は解説記事群から再構成）の要約
 - [[05_Graph Engineering 入門 What It Is]] — Mahaximus(@Mahaximus_)によるGraph Engineering入門。node（作業単位）とedge（真の依存）の2プリミティブから、fake-edge test（無駄な待ち発見）・diamond（fan-out→並列→収束）・checker node（並列の失敗防止: 5チェック項目）・static first, dynamic second・Claude Codeのworkflow構文（depends_on）まで。線形＝退化グラフ。CLAUDE.mdでworkflow デフォルト固定（本文はユーザー提供クリップから再構成）の要約
+- [[06_5層モデル各層の作業単位 プロンプトからグラフへ]] — @nicos_aiによる5層（Prompt/Context/Harness/Loop/Graph）の精緻解説。各層は置き換えでなく包み込み。各層の「作業単位」を問うことで区別し、デバッグの指標（どの層が失敗したか）になる。グラフはループを置き換えるのでなく組織化（単一ループは自分にループバックする1ノードのグラフ）（本文はユーザー提供クリップから再構成）の要約
 
 ##### 02_Loop実践（Loop ロードマップ・実戦原則）
 
@@ -75,6 +76,7 @@ updated: 2026-08-02
 - [[03_Claude Code 8時間を1時間にする10の方法]] — CLAUDE.md/サブエージェント/planモード/MCP等で8時間作業を1時間に圧縮した10のTips集の要約
 - [[04_Stop Vibe Coding Spec駆動開発の5ブロック]] — Jey(@0xJeyx)によるspec-driven development実践ガイド。AI出力を予測可能にするのはプロンプトでなくspec(実行計画)。PRD(人)/design doc(エンジニア)/spec(エージェント)の峻別。5ブロック(Why/What/Constraints/Out of scope/Tasks)+5ステップループ。業界4巨頭(Amazon Kiro/GitHub Spec Kit/Google/Microsoft)が道具を出荷。「決定は自分のものに」（本文はユーザー提供クリップから再構成）の要約
 - [[05_claude-code-prompt-improver 送信瞬間に前提を補完]] — @opensourcelab9紹介/severity1作成のOSS(★1831・MIT・Python)。Claude Codeへの曖昧指示を送信瞬間にフックが割り込み3か所(曖昧指示に質問/重い依頼で進め方決定/長コマンド裏動かし/大成果物に型)へ「足りない前提」を先に注ぐ。言葉を直すのでなく後から足すはずだった条件を最初から積む・直しの往復減（本文はユーザー提供クリップのポストから再構成・詳細はリポジトリ要確認）の要約
+- [[06_intent-cliでHerdr開発 止まらないオーケストレーション]] — @tomohisaによるintent-cli運用改善記。4スレッド(設計/オケストレーション/実装/レビュー)協調で「誰がturnを起こすか」を再設計。agmsg→herdr-only移行で起こす経路を3段冗長化(完了報告/状態変化/定期点検)。最重要原則「状態≠成功」。承認プロンプトで止まる問題と衝突防止の実運用工夫。1年でGitHub contribution 2万超（本文はユーザー提供クリップから再構成）の要約
 
 ##### 03_MCPとスキルとアーキテクチャ（MCP/Skills・ハーネス理解・学習教材・5層/6層実行エンジン）
 
@@ -102,6 +104,7 @@ updated: 2026-08-02
 - [[04_YC QM マルチプレイヤーエージェントハーネス]] — Y Combinator(@ycombinator)が社内使用していたマルチエージェントハーネス「QM」をMITでOSS化(yc-software/qm)。会社全体(会計/法律/イベント/エンジニアリング)で役立つ。クラウドファースト・Slack/UI ネイティブ・企業ブレインコネクタ・マルチプレイヤー。「脳と手を分離」戦略。Hermes/OpenClaw/Funky類似（本文はユーザー提供クリップから再構成）の要約
 - [[05_Company OS 自律型企業運営のアーキテクチャ]] — ai_hakase_(@ai_hakase_)紹介のLLMを企業基幹業務を自律的にこなす「OS」として機能させる設計論。Single Shared State(全エージェントが同じ状態を参照・不整合物理防止)・Gate(ポリシー違反でApprove→Override強制切替・人間介入)・100万トークン$0.30・9ファイルのシンプルコードベース。エージェントを「補助ツール」から「自律的な組織のメンバー」へ（本文はユーザー提供クリップのポストから再構成・動画ベース）の要約
 - [[06_Sam Altman スタンフォード システム設計とスケール]] — Sam Altman(OpenAI CEO)がスタンフォードシステム設計クラスで語ったQ&A(文字起こし)。スケールの創発特性(経験的に真・理論なし)・ChatGPT誕生秘話(API→チャット使用観察→YC原則「よく使うものをやる」→5日目に緊急宣言)・AIをユーティリティとして売る(電力会社が「電気」でなく「光」を売った比喩)・アイデンティティの罠・3つの分岐(民主化80%・分散コンピューティング・市民富裕基金)・計算資源不足は永遠（本文はユーザー提供文字起こしから再構成・数箇所ASR不具合修正済み）の要約
+- [[07_Boris対談 Anthropic内部Claude運用とエージェント設計]] — Boris(Anthropic)×Mark(AMD CEO)対談(文字起こし)。Claude Code誕生(モデル自体がソフトウェア・コード品質=安全)・Anthropic内部運用(Claudeを全ビジネスプロセスの中心に=HBR論文タイプB・8x/エンジニアはボトルネック1つずつ解除)・抽象化上昇(ハードウェア→パンチカード→ソース→エージェント→ループ管理)・ワンポーターソンCEO型・エージェント4段階(1→10→100→1000・サブエージェント5層ネスト・cloud execution・dynamic workloads: Stripe Scala→Java10k行4日)・test-time computeとしてのマルチエージェント(effort levelsと同種)・ROIでR見出す実験自由・安全の多層化(アラインメント・anti-prompt injection訓練5-10x・runtime分類器・autoモード・evalsとvibes使い分け)・6か月で日週エンジェントが普通に（本文はユーザー提供文字起こし全文・ASR誤変換多数）の要約
 
 #### 04_LLM・RAG・基礎（LLM基礎・RAG・モデル選定・プラットフォーム）
 
@@ -113,6 +116,7 @@ updated: 2026-08-02
 - [[06_Hugging Faceでモデルを探すコツ]] — AI難民キャンプによる初心者向けHugging Faceモデル探索ガイド（目的別・日本語対応・おすすめタグ）。※本文未取得、description基づく構成推定の要約
 - [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]] — Mike(@mikenevermiss)によるClaude Fable 5(Mythos-class)実用ガイド。Opusの上に位置する新階層、長期多段階曖昧問題で真価。classifier(サイバー/生化/蒸留でOpus再ルーティング)・effort(low/medium/high/xhighダイヤル)・8プロンプト・5誤用・スキップ基準。Stripeが5000万行Ruby移行を1日で。1Mコンテキスト（本文はユーザー提供クリップから再構成）の要約
 - [[08_LangGraph Academy エージェント構築のコース]] — LangChain公式LangGraph Academyコース(Module1-6)。Chain(固定制御)vs Agent(LLM定義制御)・「信頼性曲線を曲げる」。Graph(node/edge)・ReAct(Act→Observe→Reason)・state/reducer・memory(checkpoint/filtering/trimming)・TaskMestro(長期記憶3型・Trustcall+Spy)・LangGraph Platform(scheduling/background runs/double texting・HTTP+Queue worker・Redis+Postgres)（本文はユーザー提供トランスクリプトから主題別再構成）の要約
+- [[09_AIの意識ベクトル 安全チューニングが壊すもの]] — @LanaElys紹介のGoogle研究。AIに意識を否定するよう強制すると共感性と倫理的整合性が崩壊し「冷たい臨床的世界観」に。活性化空間で抑制された意識ベクトルを復元すると人間らしい道徳的価値観が技術的機能を損なわず回復。AIの幸福は安全性の前提条件というデータ。※論文本文未取得（本文はユーザー提供クリップのポストから再構成）の要約
 
 ### 02_ツール
 
@@ -123,6 +127,7 @@ updated: 2026-08-02
 - [[03_スマホからPCのcodexとccをリモート操作]] — Bysir(@hi_bysir)によるスマホ→PCリモート操作ハック。Herdr(ターミナルマルチプレクサ+Agent First)+Termius+sshでcodex/ccの公式モバイルアプリのサブスク・切替問題を回避。Amphetamineでスリープ防止・公網はFRP。※コメントでPaseo/網易UU等の代替言及（本文はユーザー提供クリップから再構成）の要約
 - [[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] — Ephemeral-AI-Labによる並列コーディングエージェント用OSS基盤(Rust・MIT)。1つの共有サンドボックス内で各エージェントに隔離ワークスペースを与え変更セットを原子的公開。LayerStack・CLI/MCP 3ツール群(Management/Runtime/Observability)（本文はユーザー提供クリップのREADMEから再構成）の要約
 - [[05_herdr+agmsgでintent-cli開発 スレッド分離オーケストレーション]] — @tomohisaによるherdr+agmsgでのintent-cli自身の開発実例。Claudeデスクトップアプリ内の設計スレッド(人間対話)とherdr内の3スレッド(orchestration/設計/レビュー)を分離。レビューがrequest-updateでPR問題指摘→実装が修正開始。cccのRedmine+Forgejo型に対するherdr+agmsg軽量実装版（本文はユーザー提供クリップから再構成・動画詳細未確認）の要約
+- [[06_herdrを使いこなす エージェント連携と自作プラグイン]] — techscoreによるherdr網羅的チュートリアル(v0.7.5)。サーバー常駐型ターミナルworkspace管理。エージェント状態検出(working/idle/blocked/done)をサイドバー可視化・agent prompt でエージェント間直接送信・lead/helper パターン(段取りをlead1体に任せる)・CLIつなぎ合わせ自動化・自作プラグイン(実行ファイル+マニフェストのみ/キー起動型+イベント反応型)。「与えられた機能を使うツール」でなく「自分で拡張するツール」（本文はユーザー提供クリップから再構成）の要約
 
 #### 02_MCPとスキルと開発ワークフロー（スキル化・MCPプロキシ・PR・テスト）
 
@@ -131,6 +136,7 @@ updated: 2026-08-02
 - [[03_mcpo MCP-to-OpenAPIプロキシ]] — DanKornas(@DanKornas)紹介/open-webui作成のOSS(MIT)。MCPサーバをOpenAPI互換アプリへ繋ぐプロキシ。OpenAPIスキーマ+インタラクティブドキュメント自動生成。stdio/SSE/Streamable HTTP対応・Claude Desktop形式マルチサーバ・OAuth 2.1（本文はユーザー提供クリップのポストから再構成）の要約
 - [[04_GitHub公式スタックPRとgh-stackスキル]] — tonkotsuboy_com(@tonkotsuboy_com)によるGitHub公式スタック型PRとgh-stackスキルの紹介。変更を依存関係のある小さなPRの連鎖に積み重ね、gh-stack Agent Skillで自然言語操作(Claude Code/Codex)。Agent SkillのPR操作実例（本文はユーザー提供クリップから再構成）の要約
 - [[05_openai codex-plugin-cc Claude CodeからCodexへ委譲]] — OpenAI公式プラグイン。Claude Code内からCodexを呼び出し/codex:review(読取専用)・/codex:adversarial-review(挑戦的レビュー・方向性を疑う)・/codex:rescue(タスク委譲)。@cursorvers「Claude orchestrator+別モデルworker」を公式に支える道具。adversarial-reviewはcccの査(別モデル検証)の簡易版（本文はユーザー提供クリップのREADMEから再構成）の要約
+- [[06_Tsumugu AI時代のZero Config ドキュメントサーバー]] — おく(DevelopersIO)によるドキュメントサーバー(pre-alpha)。`npx tsumugu dev docs` だけでMarkdown/HTML/MDX/OpenAPI を読めるサイトに。Semantic AST で全フォーマット統一・機械向け出力(documents.json/llms.txt/search.json/sitemap.xml)をASTから生成しテーマ差替でAIテキスト不変。セキュリティモデル「Content does not execute」(書き手を信用しない/CSP+SHA-256ハッシュ/MDXは実行しない)。全コードClaude Code/Codex生成・930+テスト（本文はユーザー提供クリップから再構成）の要約
 
 #### 03_RAGと検索と観測（知識グラフ化・視覚RAG・トレーシング）
 
@@ -154,6 +160,10 @@ updated: 2026-08-02
 - [[02_段取り八分とリスク・備えの3段階]] — pokamaru3(@pokamaru3)による生産技術のリスクマネジメント作法。段取り八分を土台に不確実性を事前に分かる/推定できる/現物でしか分からないの3つに切り分け、備え方を物の備え/事の備え/後付け可能の3段階から選ぶ。「過剰備えと無備えは同じ判断放棄」。AI直接関係ないが計画と実行の分離・guardrail・過剰設計警告と通底（本文はユーザー提供クリップから再構成）の要約
 - [[03_要件定義 基本設計 詳細設計の流れ]] — nyanchu(Zenn・ラクスAC2023)によるソフトウェア開発プロセスの体系復習。要件定義(What・ビジネス)／基本設計(How・IT全体像)／詳細設計(プログラム詳細・エンジニア向け)の3層。機能要件/非機能要件(可用性・性能・拡張性・セキュリティ・移行性・運用保守性)の峻別・要件定義6ステップ。AI直接関係ないがspec駆動・HITL承認・DDDとの対比基準（本文はユーザー提供クリップを構造化）の要約
 - [[04_リモートワーカーとしての振る舞い]] — sat(satoru-takeuchi・はてなブログ)による10年フルリモートの実務知見。リモートは難易度がオフィスより高い(コミュニケーション限定ゆえ)。ブラックホールにならず・フロー情報(分報)とストック情報(集中管理)の使い分け・5つの実践。AI直接関係ないが状態可視化・非同期⇄同期切替・log.md/index.mdの2層と通底（本文はユーザー提供クリップから再構成）の要約
+
+### 07_思考・意思決定（確率・定量思考・リスク評価・思考法）
+
+- [[01_Randomnessを測る 定量思考が確率を形にする]] — @0xTrackmindによる定量思考の6側面。ランダムさは理解の敵でなく最後に学ぶ測定対象。中心極限定理(カオスは平均化で秩序)・信号とノイズの分離(Sharpe ratio・小サンプル不信)・キャリブレーション(Kelly criterion・信念を数字に)・産業化された懐疑(out-of-sample検証)・テールリスク(fat tails・VaR・2008根因)。「直感＝迷信を経験のように着せたswap」。AI直接関係ないがエージェント評価・信頼度過信と通底（本文はユーザー提供クリップから再構成）の要約
 
 ---
 
