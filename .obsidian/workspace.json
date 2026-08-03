@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "log.md",
+                "file": "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "How to Become a Graph Architect With Zero Experience (Full Course)"
             }
           }
         ]
@@ -199,9 +199,11 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
+    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
+    "log.md",
     "log.md.tmp.13876.950f90c2c21b",
     "index.md.tmp.13876.d3684df568b5",
-    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
     "01_raw-sources/76_Boris对談 Anthropic内部Claude運用とエージェント設計（出典）.md",
     "01_raw-sources/76_Boris对談 Anthropic内部Claude運用とエージェント設計（出典）.md.tmp.13876.a2e5c86a972f",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/09_AIの意識ベクトル 安全チューニングが壊すもの.md",
@@ -209,7 +211,6 @@
     "index.md.tmp.13876.1ddbd8701d17",
     "02_wiki/summaries/01_AI/01_エージェント設計論/04_Graph判断と検証/05_マージゲート4シグナル 信頼スコアの罠とレーン分離.md",
     "index.md.tmp.13876.c15c4269abaf",
-    "log.md",
     "index.md.tmp.13876.bd895dd2dc65",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/05_Claude Codeの6層アーキテクチャ ダムループ.md",
     "index.md.tmp.13876.a794095bd060",
@@ -223,7 +224,6 @@
     "99_to_delete/Graph Engineering with Claude. What It Is and How to Actually Use It.md",
     "99_to_delete/AI 時代の docs のために、Zero Config なドキュメントサーバー「Tsumugu」を作った — Semantic AST で Markdown・HTML・MDX・OpenAPI をつなぐ.md",
     "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md",
-    "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md.tmp.13876.2e24dee725d7",
     "02_wiki/summaries/01_AI/01_エージェント設計論/01_概念と入門/06_5層モデル各層の作業単位 プロンプトからグラフへ.md",
     "02_wiki/summaries/02_ツール/02_MCPとスキルと開発ワークフロー/06_Tsumugu AI時代のZero Config ドキュメントサーバー.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/02_ワークフローと発注/06_intent-cliでHerdr開発 止まらないオーケストレーション.md",
