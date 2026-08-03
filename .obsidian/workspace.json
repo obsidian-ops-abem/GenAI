@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/You Were Taught to Fear Randomness and Called It Bad Luck. The Real Thing Can Be Calculated.md",
+                "file": "Clippings/Graph Engineering with Claude. What It Is and How to Actually Use It.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "You Were Taught to Fear Randomness and Called It Bad Luck. The Real Thing Can Be Calculated"
+              "title": "Graph Engineering with Claude. What It Is and How to Actually Use It"
             }
           }
         ]
@@ -199,8 +199,9 @@
   },
   "active": "89bac682efefb389",
   "lastOpenFiles": [
-    "Clippings/Post by @nicos_ai on X.md",
     "Clippings/You Were Taught to Fear Randomness and Called It Bad Luck. The Real Thing Can Be Calculated.md",
+    "Clippings/Graph Engineering with Claude. What It Is and How to Actually Use It.md",
+    "Clippings/Post by @nicos_ai on X.md",
     "Clippings/AI 時代の docs のために、Zero Config なドキュメントサーバー「Tsumugu」を作った — Semantic AST で Markdown・HTML・MDX・OpenAPI をつなぐ.md",
     "Clippings/Herdr で止まらず、精度の高い開発を進める工夫 ─ intent-cli で意図をもとに開発する.md",
     "Clippings/Post by @LanaElys on X.md",
@@ -234,7 +235,6 @@
     "02_wiki/summaries/01_AI/01_エージェント設計論/16_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト.md",
     "01_raw-sources/59_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト（出典）.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang.md",
-    "02_wiki/summaries/04_論文執筆/03_リモートワーカーとしての振る舞い.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
