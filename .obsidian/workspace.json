@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
+                "file": "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to Become a Graph Architect With Zero Experience (Full Course)"
+              "title": "07_Boris対談 Anthropic内部Claude運用とエージェント設計"
             }
           }
         ]
@@ -199,9 +199,11 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
-    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
     "log.md",
+    "Clippings/Post by @seeconvm on X.md",
+    "Clippings/Post by @tomohisa on X.md",
+    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
+    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
     "log.md.tmp.13876.950f90c2c21b",
     "index.md.tmp.13876.d3684df568b5",
     "01_raw-sources/76_Boris对談 Anthropic内部Claude運用とエージェント設計（出典）.md",
@@ -233,8 +235,6 @@
     "01_raw-sources/73_5層モデル各層の作業単位 プロンプトからグラフへ（出典）.md",
     "01_raw-sources/72_Tsumugu AI時代のZero Config ドキュメントサーバー（出典）.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/03_Learn Claude Code ハーネスエンジニアリング学習.md",
-    "03_claudecode/20260801-forgejo-actions-auto-deploy-progress.md",
-    "01_raw-sources/71_intent-cliでHerdr開発 止まらないオーケストレーション（出典）.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
