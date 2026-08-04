@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/01_エージェント設計論/04_Graph判断と検証/01_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する.md",
+                "file": "Clippings/【初心者向け】今さら聞けない！SKILL.mdって何？.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する"
+              "title": "【初心者向け】今さら聞けない！SKILL.mdって何？"
             }
           }
         ]
@@ -199,6 +199,8 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/01_エージェント設計論/04_Graph判断と検証/01_LOOP→GRAPH→HARNESSパイプラインを一気通貫で実装する.md",
+    "Clippings/【初心者向け】今さら聞けない！SKILL.mdって何？.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/12_AIエージェントのメモリシステム 4層構造とRAG.md",
     "01_raw-sources/82_AIエージェントのメモリシステム 4層構造とRAG（出典）.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/04_Graph判断と検証/03_Graph of Loops Claude Code完全システム10リポジトリ.md",
@@ -228,8 +230,6 @@
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/08_Claudeを会社にする 42スキルの組織図.md",
     "01_raw-sources/77_Claudeを会社に 42スキル組織図（出典）.md",
     "01_raw-sources/77_Claudeを会社に 42スキル組織図（出典）.md.tmp.13876.85c6b86c0da9",
-    "Clippings/Post by @seeconvm on X.md",
-    "Clippings/Post by @tomohisa on X.md",
     "log.md.tmp.13876.950f90c2c21b",
     "index.md.tmp.13876.d3684df568b5",
     "01_raw-sources/76_Boris对談 Anthropic内部Claude運用とエージェント設計（出典）.md.tmp.13876.a2e5c86a972f",
