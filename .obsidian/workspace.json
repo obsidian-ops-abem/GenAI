@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_raw-sources/78_intent-cli v0.9.1 グローバル名前空間の罠と修正（出典）.md",
+                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/10_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "78_intent-cli v0.9.1 グローバル名前空間の罠と修正（出典）"
+              "title": "10_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADK"
             }
           }
         ]
@@ -200,11 +200,14 @@
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
     "log.md",
+    "01_raw-sources/78_intent-cli v0.9.1 グローバル名前空間の罠と修正（出典）.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/10_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADK.md",
+    "01_raw-sources/79_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADKコース（出典）.md",
+    "01_raw-sources/79_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADKコース（出典）.md.tmp.13876.b8efee7f52be",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/07_Boris対談 Anthropic内部Claude運用とエージェント設計.md",
     "99_to_delete/Post by @tomohisa on X.md",
     "99_to_delete/Post by @seeconvm on X.md",
     "99_to_delete/How to Become a Graph Architect With Zero Experience (Full Course).md",
-    "01_raw-sources/78_intent-cli v0.9.1 グローバル名前空間の罠と修正（出典）.md",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/08_Claudeを会社にする 42スキルの組織図.md",
     "01_raw-sources/77_Claudeを会社に 42スキル組織図（出典）.md",
     "01_raw-sources/77_Claudeを会社に 42スキル組織図（出典）.md.tmp.13876.85c6b86c0da9",
@@ -223,7 +226,6 @@
     "index.md.tmp.13876.bd895dd2dc65",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/05_Claude Codeの6層アーキテクチャ ダムループ.md",
     "index.md.tmp.13876.a794095bd060",
-    "index.md.tmp.13876.ab70786c37d6",
     "99_to_delete/herdr を使いこなす 複数 AI エージェントの連携から自作プラグインまで.md",
     "99_to_delete/You Were Taught to Fear Randomness and Called It Bad Luck. The Real Thing Can Be Calculated.md",
     "99_to_delete/Post by @nicos_ai on X.md",
@@ -233,8 +235,6 @@
     "99_to_delete/AI 時代の docs のために、Zero Config なドキュメントサーバー「Tsumugu」を作った — Semantic AST で Markdown・HTML・MDX・OpenAPI をつなぐ.md",
     "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/01_概念と入門/06_5層モデル各層の作業単位 プロンプトからグラフへ.md",
-    "02_wiki/summaries/02_ツール/02_MCPとスキルと開発ワークフロー/06_Tsumugu AI時代のZero Config ドキュメントサーバー.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/02_ワークフローと発注/06_intent-cliでHerdr開発 止まらないオーケストレーション.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]

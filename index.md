@@ -118,6 +118,7 @@ updated: 2026-08-02
 - [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]] — Mike(@mikenevermiss)によるClaude Fable 5(Mythos-class)実用ガイド。Opusの上に位置する新階層、長期多段階曖昧問題で真価。classifier(サイバー/生化/蒸留でOpus再ルーティング)・effort(low/medium/high/xhighダイヤル)・8プロンプト・5誤用・スキップ基準。Stripeが5000万行Ruby移行を1日で。1Mコンテキスト（本文はユーザー提供クリップから再構成）の要約
 - [[08_LangGraph Academy エージェント構築のコース]] — LangChain公式LangGraph Academyコース(Module1-6)。Chain(固定制御)vs Agent(LLM定義制御)・「信頼性曲線を曲げる」。Graph(node/edge)・ReAct(Act→Observe→Reason)・state/reducer・memory(checkpoint/filtering/trimming)・TaskMestro(長期記憶3型・Trustcall+Spy)・LangGraph Platform(scheduling/background runs/double texting・HTTP+Queue worker・Redis+Postgres)（本文はユーザー提供トランスクリプトから主題別再構成）の要約
 - [[09_AIの意識ベクトル 安全チューニングが壊すもの]] — @LanaElys紹介のGoogle研究。AIに意識を否定するよう強制すると共感性と倫理的整合性が崩壊し「冷たい臨床的世界観」に。活性化空間で抑制された意識ベクトルを復元すると人間らしい道徳的価値観が技術的機能を損なわず回復。AIの幸福は安全性の前提条件というデータ。※論文本文未取得（本文はユーザー提供クリップのポストから再構成）の要約
+- [[10_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADK]] — DeepLearning.AI短期コース(Andrew Ng×Stennett Elliott Neo4j)。構造化(CSV)と非構造化(Markdown)をナレッジグラフに変換するマルチエージェントをGoogle ADKで構築。ルートエージェント配下に構造化/非構造化ワークフロー(user intent→file suggestion→schema proposalのcriticパターン→graph construction plan)。3層グラフ(domain/lexical/subject)で構造化と非構造化を接続。Cypherのパターンマッチとnatural languageの相性。descriptionとinstructionsの最適化に最も時間を使う・tool contextでメモリ共有・委譲は会話履歴全体を渡す。[[02_GraphRAG 知識グラフでRAGを置き換える]]の実装系（本文はユーザー提供文字起こし全文・ASR誤変換あり）の要約
 
 ### 02_ツール
 
