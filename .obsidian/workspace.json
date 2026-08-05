@@ -11,10 +11,14 @@
             "id": "57b62f7551877b5f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "16_QWen Image Edit 軽量QLoRAでジブリ風画像生成"
             }
           }
         ]
@@ -195,6 +199,13 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
+    "log.md",
+    "log.md.tmp.43340.a2143cb7836f",
+    "index.md.tmp.43340.6b74b7fccdff",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/11_Thoric講演 Fableフィールドガイド unhobblingとunknowns.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/11_Thoric講演 Fableフィールドガイド unhobblingとunknowns.md.tmp.43340.311e52b8ba08",
+    "01_raw-sources/91_Thoric講演 Fableフィールドガイド unhobblingとunknowns（出典）.md",
     "Clippings/Post by @beamnxw on X.md",
     "Clippings/2026-08-05/Post by @beamnxw on X.md",
     "Clippings/2026-08-05/Post by @ai_hakase_ on X.md",
@@ -215,22 +226,14 @@
     "02_wiki/summaries/04_論文執筆/03_要件定義 基本設計 詳細設計の流れ.md",
     "02_wiki/summaries/04_論文執筆/04_リモートワーカーとしての振る舞い.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/14_Memory Engineer 4研究所の記憶設計15ステップ.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/09_SKILL.md入門 新人研修マニュアル.md",
-    "log.md",
     "CLAUDE.md",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/10_Claude Code共同製作者 Light Cone対談.md",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/10_Claude Code共同製作者 Light Cone対談.md.tmp.13876.d35b15e8085d",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md.tmp.13876.b30dfecc6b01",
     "01_raw-sources/88_Claude Code共同製作者 Light Cone対談（出典）.md",
     "01_raw-sources/87_OmniAppワークショップ マルチモーダルAIエージェント（出典）.md",
     "index.md",
     "02_wiki/summaries/01_AI/01_エージェント設計論/03_Graph実装/04_Graph Architectへの20ステップ5フェーズ.md",
-    "99_to_delete/【初心者向け】今さら聞けない！SKILL.mdって何？.md",
-    "99_to_delete/Stop Vibe Coding How to Get Perfect AI Code Every Time.md",
-    "99_to_delete/I Replaced a $2,000 Assistant With a $20 Second Brain.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md.tmp.13876.25fb6c3756ef",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/11_LLM数学基礎 トークン化からTransformerまで.md.tmp.13876.41932e077c8b",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
