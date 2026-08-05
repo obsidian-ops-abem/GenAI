@@ -126,3 +126,8 @@ created: 2026-07-29
 - 2026-07-29 Restructure: ボルトを3層構造（raw-sources / wiki / schema）に再編。CLAUDE.md・log.md・index.md を新設
 - 2026-07-29 Ingest: 記事「Claude×Obsidian 海外で『良すぎるから違法にしろ』と言われた第二の脳の作り方」を取り込み、[[01_Claude×Obsidianで第二の脳を作る]] を作成
 - 2026-07-28 Setup: ボルト作成。テストノート6件作成（インデックス／使い方／プロジェクト／デイリーノート／用語集2件）
+- 2026-08-05 Ingest（Clippings溜まり3件処理・1件は重複で移動のみ・実質2新規ページ）:
+  - Xポスト「QWen Image Edit」(@ai_hakase_紹介)を取り込み、[[16_QWen Image Edit 軽量QLoRAでジブリ風画像生成]] を作成（01_AI/04_LLM・RAG・基礎 カテゴリ・画像生成AI技術解説として配置）。本文は Clippings/ の全文を使用。SDXLをQLoRA 4bitで軽量化しRTX 3070Tiクラスで約1分・4-6ステップでジブリ風画像生成。3種Ghibli LoRA+Canny/Grad-CAM/セグメンテーション。本ボルト主軸の周縁
+  - Xポスト「Memory Engineering」(@beamnxw)を取り込み、[[10_Memory Engineering 最も見過ごされる層]] を作成（01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ カテゴリ）。本文は Clippings/ の全文を使用。Context engineering(今見るもの)vs Memory engineering(来週知っているもの)。4要素(write policy/storage backends/hierarchical retrieval/active maintenance)。「write policy beats bigger windows」。本ボルトのLint・Ingest規則=write policy・nightly compiler化の指針
+  - X article「How to Become a Graph Architect With Zero Experience」(@eng_khairallah1)は [[04_Graph Architectへの20ステップ5フェーズ]](03_Graph実装)・出典 [[44_Graph Architectへの20ステップ5フェーズ（出典）]] として既に取り込み済みのため重複ノート作成回避。処理済みクリップとして Clippings/2026-08-05/ へ移動のみ
+  - 処理済みクリップ3件を Clippings/2026-08-05/ へ移動（Ingest処理日基準）

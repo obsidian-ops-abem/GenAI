@@ -11,14 +11,10 @@
             "id": "57b62f7551877b5f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/Post by @ai_hakase_ on X.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Post by @ai_hakase_ on X"
+              "title": "新規タブ"
             }
           }
         ]
@@ -199,8 +195,22 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
+    "Clippings/Post by @beamnxw on X.md",
+    "Clippings/2026-08-05/Post by @beamnxw on X.md",
+    "Clippings/2026-08-05/Post by @ai_hakase_ on X.md",
+    "Clippings/2026-08-05/How to Become a Graph Architect With Zero Experience (Full Course).md",
+    "Clippings/2026-08-05",
+    "log.md.tmp.26332.968679cb0059",
+    "index.md.tmp.26332.833748174312",
+    "index.md.tmp.26332.04e144f6a51c",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/10_Memory Engineering 最も見過ごされる層.md",
+    "01_raw-sources/90_Memory Engineering 最も見過ごされる層（出典）.md",
+    "01_raw-sources/90_Memory Engineering 最も見過ごされる層（出典）.md.tmp.26332.d892c6ba135b",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+    "01_raw-sources/89_QWen Image Edit 軽量QLoRAでジブリ風画像生成（出典）.md",
+    "01_raw-sources/89_QWen Image Edit 軽量QLoRAでジブリ風画像生成（出典）.md.tmp.26332.0cae27fae2cd",
     "Clippings/Post by @ai_hakase_ on X.md",
+    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
     "03_claudecode/20260801-forgejo-actions-auto-deploy-progress.md",
     "02_wiki/summaries/04_論文執筆/03_要件定義 基本設計 詳細設計の流れ.md",
     "02_wiki/summaries/04_論文執筆/04_リモートワーカーとしての振る舞い.md",
@@ -219,22 +229,8 @@
     "99_to_delete/【初心者向け】今さら聞けない！SKILL.mdって何？.md",
     "99_to_delete/Stop Vibe Coding How to Get Perfect AI Code Every Time.md",
     "99_to_delete/I Replaced a $2,000 Assistant With a $20 Second Brain.md",
-    "99_to_delete/How to be a Memory Engineer, from the perspective of Stanford, Microsoft, Anthropic and Nvidia.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/01_PKMと第二の脳/06_20ドルSecond Brain Claudeでアシスタント置換.md",
-    "01_raw-sources/85_20ドルSecond Brain Claudeでアシスタント置換（出典）.md",
-    "01_raw-sources/86_SKILL.md入門 新人研修マニュアル（出典）.md",
-    "01_raw-sources/85_0 Second Brain Claudeでアシスタント置換（出典）.md",
-    "01_raw-sources/84_Memory Engineer 4研究所の記憶設計15ステップ（出典）.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md",
-    "02_wiki/summaries/01_AI/01_エージェント設計論/03_Graph実装/05_LangGraphワークショップ 信頼性のあるエージェントの構築とテスト.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md.tmp.13876.25fb6c3756ef",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/11_LLM数学基礎 トークン化からTransformerまで.md.tmp.13876.41932e077c8b",
-    "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/09_ジェネレータ×エバリュエータハーネスで長時間走るエージェント.md.tmp.13876.93c5a8310fa7",
-    "01_raw-sources/80_Anthropicハーネスジェネレータ×エバリュエータで長時間走るエージェント（出典）.md.tmp.13876.620da19d596d",
-    "01_raw-sources/79_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADKコース（出典）.md.tmp.13876.b8efee7f52be",
-    "01_raw-sources/77_Claudeを会社に 42スキル組織図（出典）.md.tmp.13876.85c6b86c0da9",
-    "log.md.tmp.13876.950f90c2c21b",
-    "index.md.tmp.13876.d3684df568b5",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
