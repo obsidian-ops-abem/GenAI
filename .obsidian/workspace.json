@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/04_Claudeはorchestrator専念 hook強制の分業.md",
+                "file": "02_wiki/summaries/04_論文執筆/01_科学論文での図表作成のルール.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_Claudeはorchestrator専念 hook強制の分業"
+              "title": "01_科学論文での図表作成のルール"
             }
           }
         ]
@@ -199,6 +199,10 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "Clippings/Amazon DynamoDB now supports real-time vector search.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
+    "log.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/04_Claudeはorchestrator専念 hook強制の分業.md",
     "log.md.tmp.43340.ba550f21a225",
     "index.md.tmp.43340.fcea24e4e5d2",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/12_Lmas講演 Context EngineeringとMemory Systemsの祭具.md",
@@ -207,8 +211,6 @@
     "01_raw-sources/92_Lmas講演 Context EngineeringとMemory Systemsの祭具（出典）.md.tmp.43340.be62e903fddd",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/11_Thoric講演 Fableフィールドガイド unhobblingとunknowns.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
-    "log.md",
     "log.md.tmp.43340.a2143cb7836f",
     "index.md.tmp.43340.6b74b7fccdff",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/11_Thoric講演 Fableフィールドガイド unhobblingとunknowns.md.tmp.43340.311e52b8ba08",
@@ -220,7 +222,6 @@
     "Clippings/2026-08-05",
     "log.md.tmp.26332.968679cb0059",
     "index.md.tmp.26332.833748174312",
-    "index.md.tmp.26332.04e144f6a51c",
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/10_Memory Engineering 最も見過ごされる層.md",
     "01_raw-sources/90_Memory Engineering 最も見過ごされる層（出典）.md",
     "01_raw-sources/89_QWen Image Edit 軽量QLoRAでジブリ風画像生成（出典）.md",
@@ -234,7 +235,6 @@
     "CLAUDE.md",
     "02_wiki/summaries/01_AI/03_エージェント運用・ガバナンス/10_Claude Code共同製作者 Light Cone対談.md",
     "01_raw-sources/88_Claude Code共同製作者 Light Cone対談（出典）.md",
-    "01_raw-sources/87_OmniAppワークショップ マルチモーダルAIエージェント（出典）.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
