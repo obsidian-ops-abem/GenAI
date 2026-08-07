@@ -93,6 +93,7 @@ updated: 2026-08-02
 - [[10_Memory Engineering 最も見過ごされる層]] — @beamnxwによるMemory Engineeringの重要性提起。Context engineering(今モデルが見るもの)vs Memory engineering(来週も知っているもの)。明確なwrite policyなきシステムは全てを等しく信じ期限切れにせずS/N比崩壊。4要素(write policy/storage backends/hierarchical retrieval: working memory→semantic search→trust/recency filters/active maintenance: TTL・confidence decay・dedup・compression)。「write policy beats bigger windows」。本ボルトのLint・Ingest規則=write policy・nightly compiler化の指針（本文はユーザー提供クリップから再構成）の要約
 - [[11_Thoric講演 Fableフィールドガイド unhobblingとunknowns]] — Thoric(Dropac on Claude Code @ Anthropic)講演。Fableロールアウト同期。「モデルは設計でなく育つ・ハーネスはClaudeへの理解の関数」・capability overhang(スパイク状に賢く・ツールで解放)・システムプロンプト3段階進化(Fable級は小プロンプト・例は制約)。「地図は領土でない」unknowns発見6手法(blind spot pass/ブレストプロトタイプ/interview/references/implementation notes/quiz me)・grief(LLM以前のコーディングの困難)・「トレードオフは実在しない・不合理であれ・good fast cheap pick three」。（本文はユーザー提供トランスクリプトから主題別再構成）の要約
 - [[12_Lmas講演 Context EngineeringとMemory Systemsの祭具]] — Lmas(Anthropic Applied AI・startup/founder向け)講演。「知性はcontextで乗算される」・context engineering 4段階進化(CLAUDE.md→memory tools→skills[progressive disclosure]→file systems as memory[SOTA])・production 4原則(versioning/hashing[楽観的並行制御]/permissioning[階層]/portability)・in-band memoryの限界(focus競合・可視性制限)→dreaming(out-of-band・学校の比喩・cross-sessionパターン発見・transcript+ツールコール審査・人間がaccept/reject)。「針に糸を通す・harnessへcodify」。本ボルトLintのdreaming化が次段階。（本文はユーザー提供トランスクリプトから主題別再構成）の要約
+- [[13_Thoric講義2 ビデオ編集case studyとunknown unknowns]] — Thoric(Claude Codeチーム)小規模イベント講演・[[11_Thoric講演]]の前日試論版。AIはまだバリュエーション未達・capability overhang。**ビデオ編集case study**(Claude Codeで編集・color grading=shaderのunknown unknownsを可視化で削減・glaze over突破)。Q&A: ask_user_questions進化史(1回→チェーン→HTML・形式切り替えで能力アンロックは今はアート)・プロトタイプ反復(spec→interview→prototype→reset)。[[12_Lmas講演]]のfile systems as memoryと一致・非コーディング領域の具体例（本文はユーザー提供トランスクリプトから主題別再構成）の要約
 
 ##### 04_マルチエージェントとモデル運用（サブエージェント・チーム化・モデル/effort/コスト・コーディングエージェント実践）
 
@@ -159,6 +160,7 @@ updated: 2026-08-02
 - [[02_PixelRAG スクショで検索するRAG]] — Web/PDFをスクショ画像のままQwen3-VL-Embedding+FAISSで検索しVLMに読み取らせる「視覚ベースRAG」。テキストRAG比最大+18.1%、Wikipedia事前構築インデックス公開済みの要約
 - [[03_graphify コードベースを知識グラフ化]] — Graphify-Labsによる`/graphify`スキル。コード/docs/PDF/画像/動画を知識グラフ化しgrepでなくグラフをクエリ。コードはtree-sitter ASTで完全ローカル・LLM不使用・ベクトル不使用。EXTRACTED/INFERRED信頼度タグ。20+アシスタント対応の要約
 - [[04_オントロジーでClaude性能向上 知識グラフの実測]] — @claudecode_labによる知識グラフ(オントロジー)実測編。同じ作業をグラフあり/なしで比較:コスト26%減・応答29%短縮・キャッシュ読取33%減。資料間の「書かれていない関係」をエンティティ/リレーション(型付き)/オブザベーションで明示。導入はmemory MCPサーバー(@modelcontextprotocol/server-memory)で3ステップ・10分。リポジトリ大ほど効果大（本文はユーザー提供クリップから再構成）の要約
+- [[05_DynamoDB Vector Search リアルタイムベクトル検索GA]] — AWS発表。DynamoDBのネイティブベクトル検索GA。1桁ms・99%+recall・兆ベクトルスケール。ベクトル埋め込みを他属性と並列保存・partition keyでスケール・属性フィルタ。serverless(インフラ/ダウンタイム/メンテナンスゼロ)。AIエージェントのメモリに意味検索を追加しagentic grounding強化・RAG/類似検索/レコメンド。[[10_Memory Engineering 最も見過ごされる層]]のsemantic retrieval層のバックエンド候補（本文はクリップ全文を使用）の要約
 
 #### 04_ツール集とリスト（汎用ツール・OSS代替リスト）
 
