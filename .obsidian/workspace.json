@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/01_Claude×Obsidianで第二の脳を作る.md",
+                "file": "Clippings/The self-improving AI trading machine is mostly built. One piece left.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Claude×Obsidianで第二の脳を作る"
+              "title": "The self-improving AI trading machine is mostly built. One piece left"
             }
           }
         ]
@@ -199,6 +199,9 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
+    "Clippings/The self-improving AI trading machine is mostly built. One piece left.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/01_Claude×Obsidianで第二の脳を作る.md",
     "Clippings/2026-08-06/Amazon DynamoDB now supports real-time vector search.md",
     "Clippings/2026-08-06",
     "log.md.tmp.26264.cb2b28ae705a",
@@ -232,9 +235,6 @@
     "Clippings/Post by @beamnxw on X.md",
     "Clippings/2026-08-05/Post by @beamnxw on X.md",
     "Clippings/2026-08-05/Post by @ai_hakase_ on X.md",
-    "Clippings/2026-08-05/How to Become a Graph Architect With Zero Experience (Full Course).md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/10_Memory Engineering 最も見過ごされる層.md",
-    "01_raw-sources/90_Memory Engineering 最も見過ごされる層（出典）.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
