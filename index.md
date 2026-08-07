@@ -58,6 +58,7 @@ updated: 2026-08-02
 - [[03_Graph of Loops Claude Code完全システム10リポジトリ]] — Granite0x(@Granite0x)によるGraph+Loop二層統合の実践ガイド。Graph(G1-G4)とLoop(L1-L6)の10実リポジトリをソースコードレベルで解説。「doneを取り戻せるか」が全10を採点。bernstein/agent-worktree/wshobson-agents/beads/serena/superpowers等（本文はユーザー提供クリップから再構成）の要約
 - [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]] — undefinedKi(@undefinedKi)による自己レビューエージェントのGraph構築8ステップ完全ガイド。Anthropicの9語「you do not fix the code, you fix the process」。judge先構築→わざと壊す→ルールブック→3アイテムストレステスト→state ディスク→見えない2人のレビューア→コスト別チェック配置→高価な操作の直列化。実証: Anthropic/Jarred Sumner(Bun, $165k)/Mike Krieger(165k行TS)。03_のverifier 3パターンを具体実装（本文はユーザー提供クリップから再構成）の要約
 - [[05_マージゲート4シグナル 信頼スコアの罠とレーン分離]] — @hanakoxbtによるマージゲート設計。4シグナル(決定論的チェック/評価の軌跡/リバート履歴/信頼スコア)のうちエージェントが影響できるのは信頼スコア1つ(最も弱い変数)なのにそこに最大加重を置くミス。賭け(可逆性)で3レーン分離・不可逆は99%でも開かず人間のレーン。シャドウモードで導入。「証拠でなく自信でループする」のゲート版（本文はユーザー提供クリップから再構成）の要約
+- [[06_自己改善型AIトレード機械 6段階ループと未解決の6番目]] — @antpalkinによる自己改善型AIトレードエージェント分析。quant deskの6段階ループ(Research→Code→Backtest→Live→Post-mortem→Fine-tune)のうち5段階は解決済み。未解決の6番目=Fine-tune(負の結果を記憶する永続的仮説グラフ)だけが複利改善の鍵。破壊者agent(adversarial verifier)・kill switchはコードでプロンプトでない・preregistration(テスト前に予想を不変保存)・critic agentがジャーナルからパターン発見。全構成要素(vector memory/LangGraph)は存在するが未組み上げ。（本文はユーザー提供クリップから再構成・プロモーション色強いが構造分析は汎用）の要約
 
 #### 02_Claude Code実践（使い方・ワークフロー・MCP・スキル）
 

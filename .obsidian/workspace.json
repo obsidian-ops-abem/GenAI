@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/The self-improving AI trading machine is mostly built. One piece left.md",
+                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The self-improving AI trading machine is mostly built. One piece left"
+              "title": "15_OmniAppワークショップ マルチモーダルAIエージェント"
             }
           }
         ]
@@ -199,9 +199,26 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "log.md",
+    "index.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md",
+    "Clippings/2026-08-08/The self-improving AI trading machine is mostly built. One piece left.md",
+    "Clippings/2026-08-08/How to Become a Graph Architect With Zero Experience (Full Course).md",
+    "Clippings/2026-08-08",
+    "log.md.tmp.26264.217923067d8c",
+    "02_wiki/summaries/01_AI/01_エージェント設計論/04_Graph判断と検証/06_自己改善型AIトレード機械 6段階ループと未解決の6番目.md",
+    "01_raw-sources/95_自己改善型AIトレード機械 6段階ループと未解決の6番目（出典）.md",
+    "01_raw-sources/95_自己改善型AIトレード機械 6段階ループと未解決の6番目（出典）.md.tmp.26264.449d62eff17b",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/12_AIエージェントのメモリシステム 4層構造とRAG.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/01_PKMと第二の脳/05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/01_PKMと第二の脳/02_Claude Code×Obsidianで第二の脳を作る 2000時間の設計ルール.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/01_Claude×Obsidianで第二の脳を作る.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/02_GraphRAG 知識グラフでRAGを置き換える.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/11_LLM数学基礎 トークン化からTransformerまで.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/09_AIの意識ベクトル 安全チューニングが壊すもの.md",
     "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
     "Clippings/The self-improving AI trading machine is mostly built. One piece left.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/01_Claude×Obsidianで第二の脳を作る.md",
     "Clippings/2026-08-06/Amazon DynamoDB now supports real-time vector search.md",
     "Clippings/2026-08-06",
     "log.md.tmp.26264.cb2b28ae705a",
@@ -214,27 +231,10 @@
     "02_wiki/summaries/04_論文執筆/04_リモートワーカーとしての振る舞い.md",
     "02_wiki/summaries/04_論文執筆/03_要件定義 基本設計 詳細設計の流れ.md",
     "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md",
-    "03_claudecode/20260801-forgejo-actions-auto-deploy-progress.md",
-    "01_raw-sources/94_DynamoDB Vector Search リアルタイムベクトル検索GA（出典）.md",
     "01_raw-sources/94_DynamoDB Vector Search リアルタイムベクトル検索GA（出典）.md.tmp.26264.609f2fb87042",
-    "log.md",
     "log.md.tmp.26264.452b32620666",
     "index.md.tmp.26264.28e1827c8663",
-    "Clippings/Amazon DynamoDB now supports real-time vector search.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/13_Thoric講義2 ビデオ編集case studyとunknown unknowns.md",
-    "01_raw-sources/93_Thoric講義2 ビデオ編集case studyとunknown unknowns（出典）.md",
     "01_raw-sources/93_Thoric講義2 ビデオ編集case studyとunknown unknowns（出典）.md.tmp.26264.6dcd2d0732f4",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/04_Claudeはorchestrator専念 hook強制の分業.md",
-    "log.md.tmp.43340.ba550f21a225",
-    "index.md.tmp.43340.fcea24e4e5d2",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/12_Lmas講演 Context EngineeringとMemory Systemsの祭具.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/12_Lmas講演 Context EngineeringとMemory Systemsの祭具.md.tmp.43340.8cae472827f6",
-    "01_raw-sources/92_Lmas講演 Context EngineeringとMemory Systemsの祭具（出典）.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/11_Thoric講演 Fableフィールドガイド unhobblingとunknowns.md",
-    "01_raw-sources/91_Thoric講演 Fableフィールドガイド unhobblingとunknowns（出典）.md",
-    "Clippings/Post by @beamnxw on X.md",
-    "Clippings/2026-08-05/Post by @beamnxw on X.md",
-    "Clippings/2026-08-05/Post by @ai_hakase_ on X.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
