@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use.md",
+                "file": "Clippings/Post by @connect24h on X.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use"
+              "title": "Post by @connect24h on X"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/summaries/AI/Prompt to Graph Engineering 5層の統一モデル.md",
+                "file": "Clippings/Post by @connect24h on X.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Prompt to Graph Engineering 5層の統一モデルへのバックリンク"
+              "title": "バックリンク"
             }
           },
           {
@@ -177,13 +177,11 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,8 +197,9 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "Clippings/Stop Switching Between Claude, GPT and Grok. Run Them All at Once.md",
     "Clippings/Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use.md",
+    "Clippings/Post by @connect24h on X.md",
+    "Clippings/Stop Switching Between Claude, GPT and Grok. Run Them All at Once.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
     "log.md",
     "index.md",
@@ -230,7 +229,6 @@
     "02_wiki/summaries/02_ツール/03_RAGと検索と観測/05_DynamoDB Vector Search リアルタイムベクトル検索GA.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/06_Hugging Faceでモデルを探すコツ.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
-    "02_wiki/summaries/04_論文執筆/04_リモートワーカーとしての振る舞い.md",
     "01_raw-sources/94_DynamoDB Vector Search リアルタイムベクトル検索GA（出典）.md.tmp.26264.609f2fb87042",
     "log.md.tmp.26264.452b32620666",
     "index.md.tmp.26264.28e1827c8663",
