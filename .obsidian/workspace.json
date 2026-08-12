@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "log.md",
+                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "15_OmniAppワークショップ マルチモーダルAIエージェント"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "log.md",
+                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,6 +197,28 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "clippings_index_20260813.md",
+    "clippings_index_20260813.md.tmp.9112.0b60ba9284f9",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/14_Memory Engineer 4研究所の記憶設計15ステップ.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/12_AIエージェントのメモリシステム 4層構造とRAG.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/11_LLM数学基礎 トークン化からTransformerまで.md",
+    "log.md",
+    "01_raw-sources/105_connect24h Playwright E2E責務分離（出典）.md",
+    "01_raw-sources/104_Higgsfield Supercomputer マルチモデル統合（出典）.md",
+    "01_raw-sources/103_opc-skills ソロプレナー向けAgent Skills（出典）.md",
+    "01_raw-sources/102_superpowers Agentic Skills Framework（出典）.md",
+    "01_raw-sources/102_superpowers Agentic Skills Framework（出典）.md.tmp.9112.b2156a28b599",
+    "01_raw-sources/101_RAG vs Graph RAG vs Agentic RAG（出典）.md",
+    "01_raw-sources/100_ループエンジニアリング実践 Cloud Loggingエラー検知→修正（出典）.md",
+    "01_raw-sources/100_ループエンジニアリング実践 Cloud Loggingエラー検知→修正（出典）.md.tmp.9112.f0cc14d9c931",
+    "01_raw-sources/99_intent-cli v0.6.2 クロスプロジェクト分離と検証済み生存（出典）.md",
+    "01_raw-sources/98_富士通デザイン思考テキストブック Transformation by Design（出典）.md",
+    "01_raw-sources/98_富士通デザイン思考テキストブック Transformation by Design（出典）.md.tmp.9112.0d888f0ea540",
+    "01_raw-sources/97_AI協業の発注の型 HITL実務（出典）.md",
+    "01_raw-sources/97_AI協業の発注の型 HITL実務（出典）.md.tmp.9112.a47993bb8b8d",
+    "01_raw-sources/96_Graph Engineering 11-Step Roadmap Obsidian→Fable5（出典）.md",
+    "01_raw-sources/96_Graph Engineering 11-Step Roadmap Obsidian→Fable5（出典）.md.tmp.9112.2cb017621c85",
     "transcription_index_20260813.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
     "transcription_index_20260813.md.tmp.9112.7a0dc4141b09",
@@ -207,32 +229,10 @@
     "Clippings/Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use.md",
     "Clippings/Stop Switching Between Claude, GPT and Grok. Run Them All at Once.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
-    "log.md",
     "index.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md",
-    "Clippings/2026-08-08/The self-improving AI trading machine is mostly built. One piece left.md",
-    "Clippings/2026-08-08/How to Become a Graph Architect With Zero Experience (Full Course).md",
     "Clippings/2026-08-08",
     "log.md.tmp.26264.217923067d8c",
-    "02_wiki/summaries/01_AI/01_エージェント設計論/04_Graph判断と検証/06_自己改善型AIトレード機械 6段階ループと未解決の6番目.md",
-    "01_raw-sources/95_自己改善型AIトレード機械 6段階ループと未解決の6番目（出典）.md",
     "01_raw-sources/95_自己改善型AIトレード機械 6段階ループと未解決の6番目（出典）.md.tmp.26264.449d62eff17b",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/12_AIエージェントのメモリシステム 4層構造とRAG.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/01_PKMと第二の脳/05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/01_PKMと第二の脳/02_Claude Code×Obsidianで第二の脳を作る 2000時間の設計ルール.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/01_Claude×Obsidianで第二の脳を作る.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/02_GraphRAG 知識グラフでRAGを置き換える.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/11_LLM数学基礎 トークン化からTransformerまで.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/09_AIの意識ベクトル 安全チューニングが壊すもの.md",
-    "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
-    "Clippings/The self-improving AI trading machine is mostly built. One piece left.md",
-    "Clippings/2026-08-06",
-    "log.md.tmp.26264.cb2b28ae705a",
-    "index.md.tmp.26264.c28286b7a47e",
-    "01_raw-sources/94_DynamoDB Vector Search リアルタイムベクトル検索GA（出典）.md.tmp.26264.609f2fb87042",
-    "log.md.tmp.26264.452b32620666",
-    "index.md.tmp.26264.28e1827c8663",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
