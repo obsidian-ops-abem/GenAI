@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Claude Code で「ループエンジニアリング」を実践してみた.md",
+                "file": "log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Claude Code で「ループエンジニアリング」を実践してみた"
+              "title": "log"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Claude Code で「ループエンジニアリング」を実践してみた.md",
+                "file": "log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,8 +197,11 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "Clippings/Post by @trendtech33566 on X.md",
+    "transcription_index_20260813.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+    "transcription_index_20260813.md.tmp.9112.7a0dc4141b09",
     "Clippings/Claude Code で「ループエンジニアリング」を実践してみた.md",
+    "Clippings/Post by @trendtech33566 on X.md",
     "Clippings/Post by @DailyDoseOfDS_ on X.md",
     "Clippings/Post by @connect24h on X.md",
     "Clippings/Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use.md",
@@ -224,15 +227,12 @@
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/09_AIの意識ベクトル 安全チューニングが壊すもの.md",
     "Clippings/How to Become a Graph Architect With Zero Experience (Full Course).md",
     "Clippings/The self-improving AI trading machine is mostly built. One piece left.md",
-    "Clippings/2026-08-06/Amazon DynamoDB now supports real-time vector search.md",
     "Clippings/2026-08-06",
     "log.md.tmp.26264.cb2b28ae705a",
     "index.md.tmp.26264.c28286b7a47e",
-    "02_wiki/summaries/04_論文執筆/01_科学論文での図表作成のルール.md",
     "01_raw-sources/94_DynamoDB Vector Search リアルタイムベクトル検索GA（出典）.md.tmp.26264.609f2fb87042",
     "log.md.tmp.26264.452b32620666",
     "index.md.tmp.26264.28e1827c8663",
-    "01_raw-sources/93_Thoric講義2 ビデオ編集case studyとunknown unknowns（出典）.md.tmp.26264.6dcd2d0732f4",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
