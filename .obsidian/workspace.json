@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
+                "file": "log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15_OmniAppワークショップ マルチモーダルAIエージェント"
+              "title": "log"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
+                "file": "log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,6 +197,16 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+    "Clippings/2026-08-02/Stop Switching Between Claude, GPT and Grok. Run Them All at Once.md",
+    "Clippings/2026-08-08/Post by @trendtech33566 on X.md",
+    "Clippings/2026-08-07/Post by @connect24h on X.md",
+    "Clippings/2026-08-07/Post by @DailyDoseOfDS_ on X.md",
+    "Clippings/2026-08-07",
+    "Clippings/2026-08-02/Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use.md",
+    "Clippings/2026-08-02/Claude Code で「ループエンジニアリング」を実践してみた.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
     "clippings_index_20260813.md",
     "clippings_index_20260813.md.tmp.9112.0b60ba9284f9",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/14_Memory Engineer 4研究所の記憶設計15ステップ.md",
@@ -220,19 +230,9 @@
     "01_raw-sources/96_Graph Engineering 11-Step Roadmap Obsidian→Fable5（出典）.md",
     "01_raw-sources/96_Graph Engineering 11-Step Roadmap Obsidian→Fable5（出典）.md.tmp.9112.2cb017621c85",
     "transcription_index_20260813.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
     "transcription_index_20260813.md.tmp.9112.7a0dc4141b09",
-    "Clippings/Claude Code で「ループエンジニアリング」を実践してみた.md",
-    "Clippings/Post by @trendtech33566 on X.md",
-    "Clippings/Post by @DailyDoseOfDS_ on X.md",
-    "Clippings/Post by @connect24h on X.md",
-    "Clippings/Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use.md",
-    "Clippings/Stop Switching Between Claude, GPT and Grok. Run Them All at Once.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
-    "index.md",
     "Clippings/2026-08-08",
     "log.md.tmp.26264.217923067d8c",
-    "01_raw-sources/95_自己改善型AIトレード機械 6段階ループと未解決の6番目（出典）.md.tmp.26264.449d62eff17b",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
