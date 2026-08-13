@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/CLAUDE LOOP ENGINEERING HOW TO BUILD AN AGENT THAT WORKS WHILE YOU SLEEP.md",
+                "file": "Clippings/Graph Engineering How to Stop Building AI Agents That Wait in Line.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE LOOP ENGINEERING HOW TO BUILD AN AGENT THAT WORKS WHILE YOU SLEEP"
+              "title": "Graph Engineering How to Stop Building AI Agents That Wait in Line"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/CLAUDE LOOP ENGINEERING HOW TO BUILD AN AGENT THAT WORKS WHILE YOU SLEEP.md",
+                "file": "Clippings/Graph Engineering How to Stop Building AI Agents That Wait in Line.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,8 +197,9 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "log.md",
     "Clippings/CLAUDE LOOP ENGINEERING HOW TO BUILD AN AGENT THAT WORKS WHILE YOU SLEEP.md",
+    "Clippings/Graph Engineering How to Stop Building AI Agents That Wait in Line.md",
+    "log.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
     "Clippings/2026-08-02/Stop Switching Between Claude, GPT and Grok. Run Them All at Once.md",
@@ -228,7 +229,6 @@
     "01_raw-sources/98_富士通デザイン思考テキストブック Transformation by Design（出典）.md.tmp.9112.0d888f0ea540",
     "01_raw-sources/97_AI協業の発注の型 HITL実務（出典）.md",
     "01_raw-sources/97_AI協業の発注の型 HITL実務（出典）.md.tmp.9112.a47993bb8b8d",
-    "01_raw-sources/96_Graph Engineering 11-Step Roadmap Obsidian→Fable5（出典）.md",
     "01_raw-sources/96_Graph Engineering 11-Step Roadmap Obsidian→Fable5（出典）.md.tmp.9112.2cb017621c85",
     "transcription_index_20260813.md.tmp.9112.7a0dc4141b09",
     "Clippings/2026-08-08",
