@@ -68,4 +68,29 @@ X の「Post by @xxx」という汎用タイトルのため、同名でも**別U
 |-----------|------|
 | 重複クリップの整理（削除検討） | `2026-08-05/How to Become a Graph Architect...`, `2026-08-08/How to Become a Graph Architect...` |
 | 出典ノート `42` と `97` のソースURL照合 | 両者の統合可否判断 |
-| Clippings 直下の5ファイル（日付フォルダ外）の日付振り分け | `Clippings/*.md`（直下5件）を適切な日付サブディレクトリへ移動検討 |
+| ~~Clippings 直下の5ファイル（日付フォルダ外）の日付振り分け~~ | ✅ 実施済み（2026-08-13） |
+
+---
+
+# 追記: 2026-09-20 仕訳（第2弾）
+
+Clippings 直下に追加されていた3件を仕訳。
+
+| クリップ | 判定 | 対応 |
+|---------|------|------|
+| `CLAUDE LOOP ENGINEERING HOW TO BUILD AN AGENT THAT WORKS WHILE YOU SLEEP`（@polydao） | 未仕訳 | ✅ ノート **106** 作成 → `2026-08-13/` へ移動 |
+| `GRAPH ENGINEERING CON OPUS 5`（@angeldot_・スペイン語版14ステップ） | 未仕訳（43番は別作者@0xCodezの英語版） | ✅ ノート **107** 作成 → `2026-09-17/` へ移動 |
+| `Graph Engineering How to Stop Building AI Agents That Wait in Line`（@mikenevermiss） | **重複**（05番ノートと同一URL `2081603616570212372`） | `2026-08-13/` へ移動（原本保持・削除候補） |
+
+## 第2弾の新規ノート
+
+| # | タイトル | 内容ハイライト |
+|---|---------|--------------|
+| 106 | Claude Loop Engineering 寝ている間に働くエージェント | Karpathy 3ファイル事例、4層スタック、ループ5部品、Claude Code 4ループ型（/goal /loop /schedule）、エバリュエータ設計（GAN型・Playwright MCP）、STATE.md+VISION.md |
+| 107 | Graph Engineering con Opus 5 14ステップ（スペイン語版） | 「y luego（そして）」エッジ判定規則、退化グラフからの再描画、ノード契約の schema 強制、4ブロック構成 |
+
+## 第2弾後の状態
+
+- 出典ノート: **107件**（連番重複含め実ファイル113件）
+- Clippings 直下: **0件**（全63ファイルが日付フォルダに整理済み）
+- 日付フォルダ: 2026-07-31 〜 2026-09-17（10フォルダ）
