@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
+                "file": "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/01_Vibe Kanban コーディングエージェント用Kanbanワークスペース.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup)"
+              "title": "01_Vibe Kanban コーディングエージェント用Kanbanワークスペース"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
+                "file": "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/01_Vibe Kanban コーディングエージェント用Kanbanワークスペース.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,8 +197,18 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup) 1.md",
+    "Clippings/2026-09-20/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
+    "transcription_index_20260813.md",
+    "clippings_index_20260813.md",
     "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
+    "Clippings/2026-09-20",
+    "log.md.tmp.64972.fe877de6311a",
+    "index.md.tmp.64972.3825d5e5589c",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/05_Jev Engineering 決定と生成を分離するSystem One.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/05_Jev Engineering 決定と生成を分離するSystem One.md.tmp.64972.ab30532659f8",
+    "01_raw-sources/108_Jev Engineering 最速のAIエージェントブレイン10ステップ（出典）.md",
+    "01_raw-sources/108_Jev Engineering 最速のAIエージェントブレイン10ステップ（出典）.md.tmp.64972.bd743df57693",
+    "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup) 1.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/06_herdrを使いこなす エージェント連携と自作プラグイン.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/02_agmsg CLIエージェント間メッセージング.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/01_Vibe Kanban コーディングエージェント用Kanbanワークスペース.md",
@@ -219,20 +229,10 @@
     "Clippings/2026-08-02/Graph Engineering The 11-Step Roadmap From Obsidian Vault to Graph Fable 5 Can Actually Use.md",
     "Clippings/2026-08-02/Claude Code で「ループエンジニアリング」を実践してみた.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/15_OmniAppワークショップ マルチモーダルAIエージェント.md",
-    "clippings_index_20260813.md",
     "clippings_index_20260813.md.tmp.9112.0b60ba9284f9",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/14_Memory Engineer 4研究所の記憶設計15ステップ.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/12_AIエージェントのメモリシステム 4層構造とRAG.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/11_LLM数学基礎 トークン化からTransformerまで.md",
     "01_raw-sources/102_superpowers Agentic Skills Framework（出典）.md.tmp.9112.b2156a28b599",
     "01_raw-sources/100_ループエンジニアリング実践 Cloud Loggingエラー検知→修正（出典）.md.tmp.9112.f0cc14d9c931",
     "01_raw-sources/98_富士通デザイン思考テキストブック Transformation by Design（出典）.md.tmp.9112.0d888f0ea540",
-    "01_raw-sources/97_AI協業の発注の型 HITL実務（出典）.md.tmp.9112.a47993bb8b8d",
-    "01_raw-sources/96_Graph Engineering 11-Step Roadmap Obsidian→Fable5（出典）.md.tmp.9112.2cb017621c85",
-    "transcription_index_20260813.md.tmp.9112.7a0dc4141b09",
-    "Clippings/2026-08-08",
-    "log.md.tmp.26264.217923067d8c",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
