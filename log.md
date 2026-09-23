@@ -6,7 +6,10 @@ created: 2026-07-29
 
 # log
 
-時系列ログ。**新しい順（降順）** で記載し、新しいエントリは頭（上）に追加する。各エントリに **更新日付＋更新時刻** を付ける。
+時系列ログ。**古い順（昇順）** で記載し、新しいエントリは**末尾に追加**する。各エントリに **更新日付＋更新時刻** を付ける。
+
+> [!note] 2026-09-23是正
+> 本ルールは以前「新しい順（降順）・頭（上）に追加」と記載していたが、2026-07-28〜2026-08-04頃までの初期エントリを除き、実際の運用は一貫して**末尾追加・時系列順（昇順）**であった（2026-08-05以降の全エントリで確認）。既存エントリの並べ替えは重複・欠落のリスクを避けるため行わず、ルール記述のみを実運用に合わせて是正した。以後は本ルール（末尾追加・昇順）に従う。
 
 ---
 
@@ -140,3 +143,11 @@ created: 2026-07-29
   - X article「How to Become a Graph Architect With Zero Experience」(@eng_khairallah1)は [[04_Graph Architectへの20ステップ5フェーズ]](03_Graph実装)として既に取り込み済みのため重複回避。処理済みクリップとして移動のみ
   - 処理済みクリップ2件を Clippings/2026-08-08/ へ移動（Ingest処理日基準）
 - 2026-09-20 Ingest: Xポスト「Jev Engineering: how to build the fastest AI Agent Brain in 10 Steps (Full-Setup)」(@0xMovez)を取り込み、[[05_Jev Engineering 決定と生成を分離するSystem One]] を作成（01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用 カテゴリ）。本文は Clippings/ の全文を使用。Jev by TypeSafe AI（System One決定特化モデル）の10ステップガイド。「テキストを作る操作はLLM・選択/スコア/yes-noはJev・正確なルールはコード」の3分離・3質問型(Choice/Score/Noul)・並行評価・confidence閾値0.85(精度の割合でない)・Dynamic Menu・ハーネス2層(モデルルーター+AutoModeゲート・LangChainミドルウェア1行)・「ハーネスは同じモデルで78%と42%の差」・5ユースケース(ブラウザ7秒$0.0039/1018論文$0.08/500通3.5セント/モデルルーティング/インスタントcompaction 1M→86Kを1秒)。「LLMに調査・計画・執筆。Jevにルート・スコア・承認・エスカレーション。コードに実行」。※プロモーション色強いがSystem One/Two分離・ハーネス設計知見は汎用。[[04_Claudeはorchestrator専念 hook強制の分業]](判断/実装分離の決定特化版)・[[06_Context Engineering Claude Codeの文脈設計]](compaction=関連性フィルタ)と直結。処理済みクリップ1件を Clippings/2026-09-20/ へ移動
+- 2026-09-23 10:39 Restructure（操作者直接依頼・vault内容改善・計から作への作業指示書対応）:
+  - ルート直下の空ファイル `2026-09-23.md`（規約外・未分類・frontmatter無し。日次ノートの体裁と不一致で意図的な日次ノートと判断できる材料なし）を `99_to_delete/` へ移動
+  - index.md の frontmatter `updated:` を、陳腐化していた `2026-08-02` から git log で確認した実際の最終更新日 `2026-09-23` へ更新
+  - log.md の「新しい順（降順）・頭（上）に追加」というルール記述と、実運用（2026-08-05以降は一貫して末尾追加・時系列順）の乖離を是正。既存エントリの並べ替えは重複・欠落のリスクを避け行わず、ルール記述のみを log.md・CLAUDE.md 双方で実運用（末尾追加・昇順）に合わせて修正
+  - CLAUDE.md の Ingest 手順冒頭に、着手前に「vault主旨との一次スクリーニング」を行う旨をステップ0として新設
+- 2026-09-23 10:39 Ingest（02_wiki/summaries/直下に混入していた未Ingestの生クリッピング2件の是正）:
+  - `05_買い物/01_Lenovo_アウトレットセール.md`: vault主旨（AIエージェント設計・PKM）と無関係のため summaries/ から除外し `99_to_delete/` へ移動。空になった `05_買い物/` フォルダも `99_to_delete/summaries_05_買い物_空フォルダ` へ退避
+  - `06_claude/01_Claude Codeの model の仕様.md`（tags:clippings のまま未要約）を取り込み、[[06_Claude Codeのmodelの仕様 セッション別固定とs決定]] を作成（01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用 カテゴリ）。判断根拠（vault主旨内のClaude Code運用Tipsとして受け入れ、既存カテゴリへ分類）は frontmatter の `ingest-note` に明記。出典全文は [[109_Claude Codeのmodelの仕様 セッション別固定とs決定（出典）]] として `01_raw-sources/` へ移設し index.md へ追記。原本は `99_to_delete/` へ移動、空になった `06_claude/` フォルダも `99_to_delete/summaries_06_claude_空フォルダ` へ退避

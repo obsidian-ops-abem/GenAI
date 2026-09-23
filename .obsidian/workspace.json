@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+                "file": "Clippings/2026-09-20/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "16_QWen Image Edit 軽量QLoRAでジブリ風画像生成"
+              "title": "Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup)"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+                "file": "Clippings/2026-09-20/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,8 +195,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57b62f7551877b5f",
+  "active": "c1dd0e146ea6cbd6",
   "lastOpenFiles": [
+    "99_to_delete/summaries_06_claude_空フォルダ",
+    "99_to_delete/summaries_05_買い物_空フォルダ",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+    "CLAUDE.md.tmp.7585.4d4c42844dd6",
+    "CLAUDE.md.tmp.7585.8aff820b4b34",
+    "CLAUDE.md.tmp.7585.1f3bb2d6743d",
+    "log.md.tmp.7585.37c8409d3495",
+    "index.md.tmp.7585.bb32dff66168",
+    "99_to_delete/01_Claude Codeの model の仕様（Ingest済・原本）.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/06_Claude Codeのmodelの仕様 セッション別固定とs決定.md",
+    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/06_Claude Codeのmodelの仕様 セッション別固定とs決定.md.tmp.7585.ce42c4e66f39",
+    "01_raw-sources/109_Claude Codeのmodelの仕様 セッション別固定とs決定（出典）.md",
+    "01_raw-sources/109_Claude Codeのmodelの仕様 セッション別固定とs決定（出典）.md.tmp.7585.1893f999c211",
+    "99_to_delete/01_Lenovo_アウトレットセール.md",
+    "index.md.tmp.7585.671251bf4259",
+    "99_to_delete/2026-09-23.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/10_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADK.md",
     "2026-09-23.md",
@@ -209,11 +225,7 @@
     "clippings_index_20260813.md",
     "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
     "Clippings/2026-09-20",
-    "log.md.tmp.64972.fe877de6311a",
-    "index.md.tmp.64972.3825d5e5589c",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/05_Jev Engineering 決定と生成を分離するSystem One.md.tmp.64972.ab30532659f8",
     "01_raw-sources/108_Jev Engineering 最速のAIエージェントブレイン10ステップ（出典）.md",
-    "01_raw-sources/108_Jev Engineering 最速のAIエージェントブレイン10ステップ（出典）.md.tmp.64972.bd743df57693",
     "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup) 1.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/06_herdrを使いこなす エージェント連携と自作プラグイン.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/02_agmsg CLIエージェント間メッセージング.md",
@@ -221,18 +233,6 @@
     "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md",
     "Clippings/2026-09-17/GRAPH ENGINEERING CON OPUS 5.md",
     "Clippings/Graph Engineering How to Stop Building AI Agents That Wait in Line.md",
-    "Clippings/GRAPH ENGINEERING CON OPUS 5.md",
-    "Clippings/CLAUDE LOOP ENGINEERING HOW TO BUILD AN AGENT THAT WORKS WHILE YOU SLEEP.md",
-    "log.md",
-    "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
-    "Clippings/2026-08-02/Stop Switching Between Claude, GPT and Grok. Run Them All at Once.md",
-    "Clippings/2026-08-08/Post by @trendtech33566 on X.md",
-    "Clippings/2026-08-07",
-    "clippings_index_20260813.md.tmp.9112.0b60ba9284f9",
-    "01_raw-sources/102_superpowers Agentic Skills Framework（出典）.md.tmp.9112.b2156a28b599",
-    "01_raw-sources/100_ループエンジニアリング実践 Cloud Loggingエラー検知→修正（出典）.md.tmp.9112.f0cc14d9c931",
-    "01_raw-sources/98_富士通デザイン思考テキストブック Transformation by Design（出典）.md.tmp.9112.0d888f0ea540",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
