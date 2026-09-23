@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/2026-09-20/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
+                "file": "Clippings/Claude Code×Jevでコンテキストを91%節約する方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup)"
+              "title": "Claude Code×Jevでコンテキストを91%節約する方法"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/2026-09-20/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
+                "file": "Clippings/Claude Code×Jevでコンテキストを91%節約する方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,8 +195,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1dd0e146ea6cbd6",
+  "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/08_LangGraph Academy エージェント構築のコース.md",
+    "Clippings/Claude Code×Jevでコンテキストを91%節約する方法.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/09_AIの意識ベクトル 安全チューニングが壊すもの.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/01_Claude×Obsidianで第二の脳を作る.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/02_GraphRAG 知識グラフでRAGを置き換える.md",
+    "Clippings/2026-09-20/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
     "99_to_delete/summaries_06_claude_空フォルダ",
     "99_to_delete/summaries_05_買い物_空フォルダ",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
@@ -220,19 +226,13 @@
     "02_wiki/summaries/01_AI/02_Claude Code実践/04_マルチエージェントとモデル運用/05_Jev Engineering 決定と生成を分離するSystem One.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/02_ワークフローと発注/03_Claude Code 8時間を1時間にする10の方法.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/01_Vibe Kanban コーディングエージェント用Kanbanワークスペース.md",
-    "Clippings/2026-09-20/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
     "transcription_index_20260813.md",
     "clippings_index_20260813.md",
     "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup).md",
-    "Clippings/2026-09-20",
     "01_raw-sources/108_Jev Engineering 最速のAIエージェントブレイン10ステップ（出典）.md",
     "Clippings/Jev Engineering how to build the fastest AI Agent Brain in 10 Steps (Full-Setup) 1.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/06_herdrを使いこなす エージェント連携と自作プラグイン.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/02_agmsg CLIエージェント間メッセージング.md",
-    "02_wiki/summaries/02_ツール/04_ツール集とリスト/01_Brevio ローカル完結の492種類ツール集.md",
-    "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md",
-    "Clippings/2026-09-17/GRAPH ENGINEERING CON OPUS 5.md",
-    "Clippings/Graph Engineering How to Stop Building AI Agents That Wait in Line.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
