@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Post by @hkunimitsu on X.md",
+                "file": "Clippings/How to train your own Jev for $17.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Post by @hkunimitsu on X"
+              "title": "How to train your own Jev for $17"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Post by @hkunimitsu on X.md",
+                "file": "Clippings/How to train your own Jev for $17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,8 +197,9 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "Clippings/高速な判断に特化したAI - TypeSafe「Jev」 と System One Model｜npaka.md",
     "Clippings/Post by @hkunimitsu on X.md",
+    "Clippings/How to train your own Jev for $17.md",
+    "Clippings/高速な判断に特化したAI - TypeSafe「Jev」 と System One Model｜npaka.md",
     "Clippings/Jev Engineering How to Actually Build Your First AI Agent Brain (from scratch).md",
     "Clippings/Post by @fujibee on X.md",
     "Clippings/jev に 100 問まとめて投げる 2択と 77 択で実際にやったことと、agmsg 1.4.2 で直したこと.md",
@@ -232,7 +233,6 @@
     "02_wiki/summaries/01_AI/02_Claude Code実践/02_ワークフローと発注/03_Claude Code 8時間を1時間にする10の方法.md",
     "02_wiki/summaries/02_ツール/01_エージェント運用インフラ/01_Vibe Kanban コーディングエージェント用Kanbanワークスペース.md",
     "transcription_index_20260813.md",
-    "clippings_index_20260813.md",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"
   ]
