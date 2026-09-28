@@ -100,7 +100,7 @@ Claude Code チームは **Claude Code 自身で Claude Code を保守**。毎�
 - **不要テストの削除**（古いモデル/人が追加した無意味テスト）
 - **「abstraction please」** — 大規模コードベースで散在するほぼ重複の抽象化を毎日全コードベース横断で見つけ統一
 
-毎日数十〜数百（時には数千）エージェントが走り、かつては数十〜数百人のエンジニアが必要だった作業をこなす。完全自動化へ途上。→ [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・保守をエージェントへ）のソフトウェア版
+毎日数十〜数百（時には数千）エージェントが走り、かつては数十〜数百人のエンジニアが必要だった作業をこなす。完全自動化へ途上。→ [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・保守をエージェントへ）のソフトウェア版
 
 ## 9. 優れたビルダーの資質 — 先入観を捨てる
 
@@ -119,7 +119,7 @@ Boris は中学で TI-83 電卓の BASIC を学んだ（数学テストでズル
 - **「モデル毎にハーネスを再構築・システムプロンプト80%削除」** は本ボルト運用ルール（CLAUDE.md・3層・Ingest/Query/Lint）の根拠を揺さぶる重要知見。モデルが賢くなったら CLAUDE.md の指示も削除して試すべき。simple mode はその検証手段 → [[06_Context Engineering Claude Codeの文脈設計]]（削除優先）の極北
 - **product overhang / unhobbling** は Claude Code 自身の誕生秘話であり、本ボルトが「Claude Code + Obsidian でハーネスを組む」方針の正統性を裏付ける。足場を削る思想は [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]（Boris の3原則）と直結
 - **Bun の Zig→Rust 書き換え（11日・プロダクション）** は [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]]（Stripe の5000万行 Ruby 移行1日）と並ぶ「長期多段階タスクで真価」の具体例。検証手段（テストスイート）を与えれば止まらない → [[05_Claude Codeの6層アーキテクチャ ダムループ]]（ダムループ・知性は周囲のレイヤー）の実証
-- **dynamic workflows とルーチン** は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]（サブエージェント・チーム化）・[[04_Graph Engineering with Claude 14-Step roadmap]]（dynamic workflows 自己ルーティング）・[[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・スケジュールドエージェント）を統合するインフラ層
+- **dynamic workflows とルーチン** は [[02_1チャットをエージェントチームへ Opus5 12ステップ]]（サブエージェント・チーム化）・[[03_Graph Engineering with Claude 14-Step roadmap]]（dynamic workflows 自己ルーティング）・[[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・スケジュールドエージェント）を統合するインフラ層
 - **「同僚のように扱う・過剰指定しない」** は [[03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]]（ドライバー席を譲る）・[[04_Stop Vibe Coding Spec駆動開発の5ブロック]]（spec は境界だけ決める）・[[03_AI協業の発注の型 HITL実務]]（承認ポイントを絞る）と同じ人間役割の転換
 - **経験主義・先入観を捨てる** は本ボルトの Query 操作（根拠付きで回答・良い回答は書き戻す）の反復姿勢と一致
 - **「自律ルーチン保守」** は本ボルトの Lint（定期点検）を自動化する道筋。デッドコード掃除・abstraction please はノート群の整理（重複統合・孤立ページ検出）にも直接適用可能
@@ -133,9 +133,9 @@ Boris は中学で TI-83 電卓の BASIC を学んだ（数学テストでズル
 - 6層アーキテクチャ（ダムループ・知性はレイヤー） → [[05_Claude Codeの6層アーキテクチャ ダムループ]]
 - Claude 多層実行エンジン → [[04_Claudeは多層実行エンジン Chatでない]]
 - サブエージェント・チーム化 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]
-- dynamic workflows 自己ルーティング → [[04_Graph Engineering with Claude 14-Step roadmap]]
+- dynamic workflows 自己ルーティング → [[03_Graph Engineering with Claude 14-Step roadmap]]
 - ドライバー席を譲る（同僚扱い） → [[03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]]
 - spec で過剰指定を避ける → [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]
 - HITL承認ポイントを絞る → [[03_AI協業の発注の型 HITL実務]]
 - Fable 5 / 長期多段階タスク → [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]]
-- nightly compiler（保守をエージェントへ） → [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
+- nightly compiler（保守をエージェントへ） → [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]

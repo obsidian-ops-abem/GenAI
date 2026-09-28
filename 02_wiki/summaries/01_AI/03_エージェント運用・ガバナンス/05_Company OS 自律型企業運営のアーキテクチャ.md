@@ -55,8 +55,8 @@ AI エージェントを単なる補助ツールでなく、**自律的な組織
 - **Single Shared State**（全エージェントが同じ状態を参照）は、[[04_YC QM マルチプレイヤーエージェントハーネス]]（企業ブレイン・メモリ・共有ファイル）の核心を一歩進め、**状態を単一に**することで不整合を物理防止する設計。QC の企業ブレインが「会社の知識を共有」なら、Company OS は「会社の状態を共有」
 - **Gate（Approve→Override 強制切替）** は、[[03_AI協業の発注の型 HITL実務]]（不可逆なものは人の承認を通す）・[[02_24時間自走する自律型AIエージェントの設計図]]（Guardrail・安全な停止）を企業資金の領域へ適用。**ポリシー違反時に自動で人間介入を強制**する点が実務的
 - **「OS」としての位置づけ** は、[[02_24時間自走する自律型AIエージェントの設計図]]（4層: Trigger/Workflow/Agent/Guardrail）を企業スケールへ拡張。Trigger/Workflow/Agent/Guardrail が企業の基幹業務を包摂
-- **9ファイルのシンプルコードベース** は、[[10_Graph Engineering 最大の間違い Loop↔Graph判断]]（過剰設計は罠）・[[13_Graph Architectへの20ステップ5フェーズ]]（Step 19 グラフにしない判断）の「必要最小限」思想の企業版。企業 OS を9ファイルで表現する抑制
-- **100万トークン$0.30 の低コスト** は、[[12_Graph Engineering with Claude 14-Step roadmap]]（step12 model tier・安いモデルで退屈なノード）・[[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]（役割でモデル選ぶ）の企業版。低コスト運用を前提に設計
+- **9ファイルのシンプルコードベース** は、[[02_Graph Engineering 最大の間違い Loop↔Graph判断]]（過剰設計は罠）・[[04_Graph Architectへの20ステップ5フェーズ]]（Step 19 グラフにしない判断）の「必要最小限」思想の企業版。企業 OS を9ファイルで表現する抑制
+- **100万トークン$0.30 の低コスト** は、[[03_Graph Engineering with Claude 14-Step roadmap]]（step12 model tier・安いモデルで退屈なノード）・[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（役割でモデル選ぶ）の企業版。低コスト運用を前提に設計
 - **「自律的な組織のメンバー」** は、[[01_エージェントファクトリの作り方 ビルダーズガイド]]（4自律ティア）の最上位（完全自律）を企業運営に適用
 
 ## 関連
@@ -64,6 +64,6 @@ AI エージェントを単なる補助ツールでなく、**自律的な組織
 - 企業ブレイン・共有状態 → [[04_YC QM マルチプレイヤーエージェントハーネス]]
 - Gate・不可逆操作の人間介入 → [[03_AI協業の発注の型 HITL実務]]・[[02_24時間自走する自律型AIエージェントの設計図]]
 - OS 的な4層設計 → [[02_24時間自走する自律型AIエージェントの設計図]]
-- 過剰設計の警告（9ファイルの抑制） → [[10_Graph Engineering 最大の間違い Loop↔Graph判断]]・[[13_Graph Architectへの20ステップ5フェーズ]]
-- 低コスト・model tier → [[12_Graph Engineering with Claude 14-Step roadmap]]・[[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]
+- 過剰設計の警告（9ファイルの抑制） → [[02_Graph Engineering 最大の間違い Loop↔Graph判断]]・[[04_Graph Architectへの20ステップ5フェーズ]]
+- 低コスト・model tier → [[03_Graph Engineering with Claude 14-Step roadmap]]・[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]
 - 自律ティア・工場 → [[01_エージェントファクトリの作り方 ビルダーズガイド]]

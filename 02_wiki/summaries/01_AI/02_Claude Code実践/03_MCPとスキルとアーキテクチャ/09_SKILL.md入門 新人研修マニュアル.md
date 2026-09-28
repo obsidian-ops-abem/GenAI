@@ -100,4 +100,4 @@ SKILL.md 1ファイルだけでも立派に機能。慣れたら scripts/referen
 
 ## 所感
 
-「新人研修マニュアル」という比喩が SKILL.md の本質をうまく捉える。特に「3段階の lazy load」は、なぜ SKILL をたくさん用意しても負担にならないか（段階1は1つ約100トークン）を説明し、[[08_Claudeを会社にする 42スキルの組織図]] の42スキルが成立する理由を裏付ける。description の「何をするか＋いつ使うか」は [[10_マルチエージェントでナレッジグラフ構築]] の「description と instructions の最適化に最も時間を使う」と同じ原理。本ボルトの運用ルール（CLAUDE.md）は1つの巨大な procedural memory だが、作業毎に SKILL.md に分割すれば description ベースの lazy load でコンテキスト節約になる可能性。入門記事だが実務的濃度が高い。
+「新人研修マニュアル」という比喩が SKILL.md の本質をうまく捉える。特に「3段階の lazy load」は、なぜ SKILL をたくさん用意しても負担にならないか（段階1は1つ約100トークン）を説明し、[[08_Claudeを会社にする 42スキルの組織図]] の42スキルが成立する理由を裏付ける。description の「何をするか＋いつ使うか」は [[10_マルチエージェントでナレッジグラフ構築 Neo4j×Google ADK]] の「description と instructions の最適化に最も時間を使う」と同じ原理。本ボルトの運用ルール（CLAUDE.md）は1つの巨大な procedural memory だが、作業毎に SKILL.md に分割すれば description ベースの lazy load でコンテキスト節約になる可能性。入門記事だが実務的濃度が高い。

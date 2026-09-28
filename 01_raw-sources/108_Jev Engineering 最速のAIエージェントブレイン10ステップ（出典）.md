@@ -16,7 +16,7 @@ created: 2026-09-20
 - タイトル: **Jev Engineering: how to build the fastest AI Agent Brain in 10 Steps (Full-Setup)**
 - 対象: Jev by TypeSafe AI（@typesafeai）— System One 決定特化モデル
 
-要約は [[05_Jev Engineering 決定と生成を分離するSystem One]] を参照。
+要約は [[02_Jev Engineering 決定と生成を分離するSystem One]] を参照。
 
 > [!note] 本文について
 > Jev（TypeSafe AI）のセットアップ解説。プロモーション色を含むが、System One / System Two 分離・ハーネス2層・決定の型（Choice/Score/Noul）等の設計知見は汎用的。

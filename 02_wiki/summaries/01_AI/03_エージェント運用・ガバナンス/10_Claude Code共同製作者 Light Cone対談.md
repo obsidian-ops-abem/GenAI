@@ -17,7 +17,7 @@ created: 2026-08-04
 
 ## 一行で
 
-Y Combinator の Light Cone ポッドキャストが Claude Code 共同製作者（Boris とは別人物・Anthropic Labs チーム出身）を迎えた回。Claude Code の誕生秘話・CLAUDE.md の wait-and-demand・plan mode の正体・subagent スワーム・「6ヶ月先にビルド」哲学。[[07_Boris対談]] が外部向けなら、本対談は YC の創業者向けでより率直。
+Y Combinator の Light Cone ポッドキャストが Claude Code 共同製作者（Boris とは別人物・Anthropic Labs チーム出身）を迎えた回。Claude Code の誕生秘話・CLAUDE.md の wait-and-demand・plan mode の正体・subagent スワーム・「6ヶ月先にビルド」哲学。[[10_Claude Code共同製作者 Light Cone対談]] が外部向けなら、本対談は YC の創業者向けでより率直。
 
 ## Claude Code 誕生（核心）
 
@@ -98,4 +98,4 @@ scaffolding で10-20%性能向上しても次モデルで無料で得られる�
 
 ## 所感
 
-「今日でなく6ヶ月先にビルド」は、[[09_ジェネレータ×エバリュエータ]] の「frontier は移動する・harness はモデル進化で簡素化」と同じ哲学の製品側から見た版。CLAUDE.md が wait-and-demand で生まれた事実は、本ボルトの CLAUDE.md 運用ルールも「使う中で必要になったもの」であるべきことを示唆。plan mode が「please don't code」1文なのは驚きだが、機能の正体が極めて薄いことを示す好例。「subagent スワームが週末で plugin を完成」は [[08_Claudeを会社にする 42スキルの組織図]] を Anthropic 内部で実践した事例。「Claude code transcript を採用材料に」は、agent 時代の新しいスキル評価の萌芽。Light Cone は YC 向けなので起業家視点が強く、[[07_Boris対談]] の企業導入視点と補完関係。
+「今日でなく6ヶ月先にビルド」は、[[09_ジェネレータ×エバリュエータハーネスで長時間走るエージェント]] の「frontier は移動する・harness はモデル進化で簡素化」と同じ哲学の製品側から見た版。CLAUDE.md が wait-and-demand で生まれた事実は、本ボルトの CLAUDE.md 運用ルールも「使う中で必要になったもの」であるべきことを示唆。plan mode が「please don't code」1文なのは驚きだが、機能の正体が極めて薄いことを示す好例。「subagent スワームが週末で plugin を完成」は [[08_Claudeを会社にする 42スキルの組織図]] を Anthropic 内部で実践した事例。「Claude code transcript を採用材料に」は、agent 時代の新しいスキル評価の萌芽。Light Cone は YC 向けなので起業家視点が強く、[[10_Claude Code共同製作者 Light Cone対談]] の企業導入視点と補完関係。

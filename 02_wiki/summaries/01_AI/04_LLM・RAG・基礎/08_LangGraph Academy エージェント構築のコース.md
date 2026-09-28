@@ -42,7 +42,7 @@ router を一つ変更 → ツール出力をユーザーでなく**モデルに
 2. **Observe**: ツール出力をモデルに戻す
 3. **Reason**: 出力について推論し次を決定（別ツールか終了か）
 
-ツール呼び出しを続ける限りループ。最大再帰制限等で停止。→ [[01_Graph Engineering エージェントを行列から解放する]]・[[04_Graph Engineering with Claude 14-Step roadmap]] の dynamic workflows と同系
+ツール呼び出しを続ける限りループ。最大再帰制限等で停止。→ [[01_Graph Engineering エージェントを行列から解放する]]・[[03_Graph Engineering with Claude 14-Step roadmap]] の dynamic workflows と同系
 
 ## 4. State schema と reducers
 
@@ -106,12 +106,12 @@ router を一つ変更 → ツール出力をユーザーでなく**モデルに
 ## 本ボルト内の位置付け
 
 - **「Chain（固定）vs Agent（LLM定義）」「信頼性曲線を曲げる」** は [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[04_Agent Harness vs Loop vs Graph Engineering]] の3層フレームと同じ視点。LangGraph は Graph 層の実装基盤
-- **ReAct（Act→Observe→Reason ループ）** は [[05_ループエンジニアリング14ステップ]]・[[02_Loop Engineering Claude,GPT 実戦で効くもの]]（Loop の反復）・[[01_Agent Harness vs Loop vs Graph Engineering]]（Loop の stop rule・証拠で止まる）の具体実装
+- **ReAct（Act→Observe→Reason ループ）** は [[01_ループエンジニアリング14ステップ]]・[[02_Loop Engineering Claude,GPT 実戦で効くもの]]（Loop の反復）・[[04_Agent Harness vs Loop vs Graph Engineering]]（Loop の stop rule・証拠で止まる）の具体実装
 - **conditional edge・分岐・並列** は [[05_Graph Engineering 入門 What It Is]]（fake-edge test・diamond・checker node）の LangGraph 実装。reducer で「同時更新の曖昧さ」を解決する仕組みは、diamond の収束ノード問題への直接的答え
 - **Trustcall + Spy（検証器の透明性）** は [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge 先構築・見えない2人のレビューア）・[[03_ccc関連事例調査 ボルト内の同じアプローチ]]（ccc の査の独立・伝言ゲーム対策）と同根。Trustcall が何をしたかを可視化する Spy は「報告は過去についての主張・実行ログが ground truth」（intent-cli v0.6.2 G556）と同じ思想
-- **3メモリ型（profile/to-do/instructions）** は [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（4層×1writer・identity.md/projects.md/tasks.md）と構造が相似。LangGraph は long-term store（namespace でメモリ型を分離）で実装
+- **3メモリ型（profile/to-do/instructions）** は [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（4層×1writer・identity.md/projects.md/tasks.md）と構造が相似。LangGraph は long-term store（namespace でメモリ型を分離）で実装
 - **LangGraph Platform の background runs/scheduling** は ccc の Forgejo Actions（pushトリガー・CI/CD）・[[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]]（Claude Code 自身を自律保守するルーチン）と同じ「スケジュールドエージェント」系譜
-- **Pydantic による実行時バリデーション** は [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]（spec の Constraints・境界を構造で守る）・[[01_Agent Harness vs Loop vs Graph Engineering]]（Harness の Safety And Governance）の具体実装
+- **Pydantic による実行時バリデーション** は [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]（spec の Constraints・境界を構造で守る）・[[04_Agent Harness vs Loop vs Graph Engineering]]（Harness の Safety And Governance）の具体実装
 
 ---
 
@@ -123,7 +123,7 @@ router を一つ変更 → ツール出力をユーザーでなく**モデルに
 - verifier/judge（Trustcall Spy） → [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]
 - ccc の査・伝言ゲーム → [[03_ccc関連事例調査 ボルト内の同じアプローチ]]
 - コンテキスト管理（filtering/trimming） → [[06_Context Engineering Claude Codeの文脈設計]]
-- 第二の脳（4層×1writer） → [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
+- 第二の脳（4層×1writer） → [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
 - スケジュールドエージェント（loops/routines） → [[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]]
 - spec の Constraints（Pydantic バリデーション） → [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]
 - LangChain/Langflow（プラットフォーム系） → [[03_LangChain エージェント・エンジニアリング・プラットフォーム]]・[[04_Langflow ビジュアルAIワークフロービルダー]]

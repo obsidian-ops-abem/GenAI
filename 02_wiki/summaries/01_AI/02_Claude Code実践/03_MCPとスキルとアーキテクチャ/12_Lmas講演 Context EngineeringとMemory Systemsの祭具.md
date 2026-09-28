@@ -105,7 +105,7 @@ Anthropic Applied AI の Lmas による、context engineering の1年の進化�
   - skills（progressive disclosure・本ボルトの index.md が working memory・Wikilink が検索パス）
   - **file systems as memory** = 本ボルトの `01_raw-sources` + `02_wiki` + `index.md` + `log.md` がまさにこれ。bash/grep で検索（専用ツールでない）という方針も一致
 - **production 4原則（versioning/hashing/permissioning/portability）** は本ボルトの Lint 操作（矛盾検出・孤立ページ・陳腐化検出）を production grade へ引き上げる指針。本ボルトは現在 git（versioning）のみで、hashing（並行制御）・permissioning（書き込み権限の階層）・portability（API）は未導入
-- **dreaming（out-of-band）** は本ボルトの Lint 操作（週1・手動）の**自動化・バッチ化版**。[[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・日曜 health pass）・[[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]]（Claude Code 自身を自律保守するルーチン）と同じ「スケジュールドエージェントでメモリを保守」系譜
+- **dreaming（out-of-band）** は本ボルトの Lint 操作（週1・手動）の**自動化・バッチ化版**。[[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・日曜 health pass）・[[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]]（Claude Code 自身を自律保守するルーチン）と同じ「スケジュールドエージェントでメモリを保守」系譜
 - **「学校の比喩（生徒・教師・校長）」** は ccc（[[03_ccc関連事例調査 ボルト内の同じアプローチ]]）の5ロール（采/計/作/査/析）と同じ階層的協調。dreaming の orchestrator → sub agent 艦隊は ccc の 采→計→作 に相似
 - **「針に糸を通す・harness へ codify」** は [[11_Thoric講演 Fableフィールドガイド unhobblingとunknowns]]（「モデルは育つ・私たちの理解が束縛」）・[[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]]（システムプロンプト80%削除・simple mode）と同根。**自律性と決定的制御の境界**をモデル進化に合わせて動かす
 - **「ツールコールのメタデータまで審査」** は [[05_Claude Codeの6層アーキテクチャ ダムループ]]（観測可能性層・イベントバスが全ツールコールをログ）・ccc の査（実機検証）と同根。transcript の表面でなく構造を見る
@@ -115,14 +115,14 @@ Anthropic Applied AI の Lmas による、context engineering の1年の進化�
 本ボルトの Lint 操作（手動・週1）は、Lmas の言う「in-band memory の限界（focus競合・可視性制限）」と同じ状況にある。**dreaming（out-of-band・バッチ）への移行**が次段階:
 1. **transcripts（log.md の全エントリ）を定期的にレビュー**し、cross-session パターン（繰り返し現れる誤り・陳腐化した記述）を発見
 2. memory store（02_wiki）への変更提案を人間が accept/reject
-3. [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]] の nightly compiler と統合
+3. [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]] の nightly compiler と統合
 
 ---
 
 ## 関連
 
 - Memory Engineering（表裏の概念） → [[10_Memory Engineering 最も見過ごされる層]]
-- nightly compiler（メモリの自動保守） → [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
+- nightly compiler（メモリの自動保守） → [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
 - Claude Code 自身を自律保守 → [[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]]
 - unhobbling（自律性と harness の境界） → [[11_Thoric講演 Fableフィールドガイド unhobblingとunknowns]]
 - 観測可能性（ツールコールまで審査） → [[05_Claude Codeの6層アーキテクチャ ダムループ]]

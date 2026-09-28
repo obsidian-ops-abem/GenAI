@@ -15,7 +15,7 @@ created: 2026-09-24
 - 形態: X 長文ポスト（日本語・ハウツー）
 - タイトル: **Claude Code×Jevでコンテキストを91%節約する方法**
 
-要約は [[14_Claude Code×Jev コンテキスト91%節約]] を参照。
+要約は [[05_Claude Code×Jev コンテキスト91%節約]] を参照。
 
 > [!note] 本文について
 > 記事中盤に Threads×AI 収益化の宣伝（LINE 招待）を含む。技術内容は TypeSafe の Jev Engineering ガイド（[[108_Jev Engineering 最速のAIエージェントブレイン10ステップ（出典）]]）のコンパクション利用に絞った日本語解説。

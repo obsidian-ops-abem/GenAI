@@ -49,7 +49,7 @@ AWS が DynamoDB のベクトル検索を GA 化。DynamoDB 上でベクトル�
 - **RAG/検索系** は [[02_PixelRAG スクショで検索するRAG]]（視覚ベース RAG）・[[03_graphify コードベースを知識グラフ化]]（知識グラフ・AST）・[[04_オントロジーでClaude性能向上 知識グラフの実測]]（オントロジーでコスト26%減）・[[02_GraphRAG 知識グラフでRAGを置き換える]] と同系。DynamoDB vector search はこれらのストレージバックエンド候補
 - **LangGraph の long-term store** ([[08_LangGraph Academy エージェント構築のコース]]・namespace でメモリ型分離) の production バックエンドとしても適する（PostgreSQL/SQLite に加えて DynamoDB）
 - **1桁 ms × 99%+ recall × 兆スケール** は [[01_知識グラフメモリをOpus5で安く運用する]]（コスト最適化）と同じ「スケール時の性能維持」課題への回答
-- **serverless（インフラゼロ）** は [[01_Vibe Kanban コーディングエージェント用Kanbanワークスペース]]・[[09_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] と同じ「管理不要インフラ」系譜
+- **serverless（インフラゼロ）** は [[01_Vibe Kanban コーディングエージェント用Kanbanワークスペース]]・[[04_ephemeral-sandbox 並列エージェント用OSSサンドボックス基盤]] と同じ「管理不要インフラ」系譜
 
 ---
 

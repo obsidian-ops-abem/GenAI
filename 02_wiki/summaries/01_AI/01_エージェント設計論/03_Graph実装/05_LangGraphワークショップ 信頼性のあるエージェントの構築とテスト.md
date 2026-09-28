@@ -125,23 +125,23 @@ Evaluator は LLM 判定（LLM-as-judge）またはヒューリスティック�
 
 Graph Engineering / エージェント設計の**LangChain チーム公式ワークショップ**。本ボルトの Graph 系・Loop 系ノート群に「LangGraph という具体実装」と「trajectory 評価」という新視点を加える:
 
-- **Chain vs Agent vs LangGraph** の3層は、[[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[08_Agent Harness vs Loop vs Graph Engineering]] の「Harness/Loop/Graph 3層」を LangChain 実装で具体化。**Chain=開発者制御・Agent=LM制御・LangGraph=中間**という整理は本ボルトの3層議論に実装を与える
+- **Chain vs Agent vs LangGraph** の3層は、[[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[04_Agent Harness vs Loop vs Graph Engineering]] の「Harness/Loop/Graph 3層」を LangChain 実装で具体化。**Chain=開発者制御・Agent=LM制御・LangGraph=中間**という整理は本ボルトの3層議論に実装を与える
 - **「The model is not the moat」** は、[[01_エージェントファクトリの作り方 ビルダーズガイド]]（工場思想・モデルでなくシステム）・[[02_24時間自走する自律型AIエージェントの設計図]]（モデルの知能でなく周囲の設計）と完全同系。ワークショップの核心メッセージ
-- **trajectory 評価**（ツール呼び出しの軌跡）は、[[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・ルール引用強制）・[[15_ループ仕様 論文 コーディングエージェントの実行レイヤ]]（停止ルール・検証可能目標）の「経路の正しさ」を**評価の対象**として扱う新視点。最終回答だけでなく**どう到達したか**を測る
+- **trajectory 評価**（ツール呼び出しの軌跡）は、[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・ルール引用強制）・[[03_ループ仕様 論文 コーディングエージェントの実行レイヤ]]（停止ルール・検証可能目標）の「経路の正しさ」を**評価の対象**として扱う新視点。最終回答だけでなく**どう到達したか**を測る
 - **Corrective RAG** は、[[02_GraphRAG 知識グラフでRAGを置き換える]]（GraphRAG）・[[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]（RAG 基礎）の発展形。RAG に reflect/grade/web search の自己修正を加える
-- **「LangGraph はローカルモデルでも推論の一貫性を保証」** は、[[12_Graph Engineering with Claude 14-Step roadmap]]（step12 model tier・安いモデルで退屈なノード）・[[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]（役割でモデル選ぶ）を**実証**。グラフ構造がモデル容量の差を吸収し推論の一貫性を保証
-- **「ルーターノードを先頭に」** は、[[13_Graph Architectへの20ステップ5フェーズ]]（Step 10 router パターン）・[[12_Graph Engineering with Claude 14-Step roadmap]]（step08 runtime router）の実務ベストプラクティス。**グラフの先頭に必ず実行されるルーター**で信頼性を担保
-- **「RAG for tools（ツール選択の semantic 検索）」** は、ツールが増えた時の実務解。[[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]（MCP サーバー選定）・[[12_mcpo MCP-to-OpenAPIプロキシ]]（MCP の相互運用）のツール増加問題へのアプローチ
+- **「LangGraph はローカルモデルでも推論の一貫性を保証」** は、[[03_Graph Engineering with Claude 14-Step roadmap]]（step12 model tier・安いモデルで退屈なノード）・[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（役割でモデル選ぶ）を**実証**。グラフ構造がモデル容量の差を吸収し推論の一貫性を保証
+- **「ルーターノードを先頭に」** は、[[04_Graph Architectへの20ステップ5フェーズ]]（Step 10 router パターン）・[[03_Graph Engineering with Claude 14-Step roadmap]]（step08 runtime router）の実務ベストプラクティス。**グラフの先頭に必ず実行されるルーター**で信頼性を担保
+- **「RAG for tools（ツール選択の semantic 検索）」** は、ツールが増えた時の実務解。[[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]（MCP サーバー選定）・[[03_mcpo MCP-to-OpenAPIプロキシ]]（MCP の相互運用）のツール増加問題へのアプローチ
 - **「indexing と generation の decouple」** は、検索用チャンクと生成用全文書を分離。RAG 設計の実務知見
 - **「loss-in-the-middle・先頭の recall 低下」** は、long context の限界の実証。100万トークン万能論への警告
 
 ## 関連
 
-- 3層（Harness/Loop/Graph）の概念 → [[02_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[08_Agent Harness vs Loop vs Graph Engineering]]
+- 3層（Harness/Loop/Graph）の概念 → [[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]・[[04_Agent Harness vs Loop vs Graph Engineering]]
 - モデルは堀でない → [[01_エージェントファクトリの作り方 ビルダーズガイド]]・[[02_24時間自走する自律型AIエージェントの設計図]]
-- trajectory・経路の正しさ（verifier・停止ルール） → [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]・[[15_ループ仕様 論文 コーディングエージェントの実行レイヤ]]
-- model tier・ローカルでも一貫 → [[12_Graph Engineering with Claude 14-Step roadmap]]・[[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]
-- router パターン → [[13_Graph Architectへの20ステップ5フェーズ]]・[[12_Graph Engineering with Claude 14-Step roadmap]]
+- trajectory・経路の正しさ（verifier・停止ルール） → [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]・[[03_ループ仕様 論文 コーディングエージェントの実行レイヤ]]
+- model tier・ローカルでも一貫 → [[03_Graph Engineering with Claude 14-Step roadmap]]・[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]
+- router パターン → [[04_Graph Architectへの20ステップ5フェーズ]]・[[03_Graph Engineering with Claude 14-Step roadmap]]
 - RAG（Corrective RAG の基礎） → [[02_GraphRAG 知識グラフでRAGを置き換える]]・[[05_デジタル庁 ChatGPTを業務に組み込むためのハンズオン]]
-- ツール選定・MCP → [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]・[[12_mcpo MCP-to-OpenAPIプロキシ]]
+- ツール選定・MCP → [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]・[[03_mcpo MCP-to-OpenAPIプロキシ]]
 - LangChain/LangGraph（実装） → [[03_LangChain エージェント・エンジニアリング・プラットフォーム]]

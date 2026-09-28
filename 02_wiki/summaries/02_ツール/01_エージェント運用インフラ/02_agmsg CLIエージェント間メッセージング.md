@@ -80,7 +80,7 @@ GitHub: fujibee/agmsg / ショーケース: agmsg.cc
 - **1.4.2で最も変わった点**: 1ターンのコストは同じでも**その1ターンで受け取れる答えが100個に**。「この50件、jev に聞いといて」というその場のまとめ投げがもとが取れる。889件は従来30通→**9通**
 - **教訓**: 「記録に残した形が、そのまま実装の仕様になる」——計測時の記録（OpenRouter の400本文は内側の形だけ残っていた）を仕様通りに読み、実APIで初めて不正になるバグを見つけた。安全面: 返事の1行に改行・制御文字・タブを混ぜない（ターミナル/ログ直流のため）
 
-> **Jev との接続**: [[05_Jev Engineering 決定と生成を分離するSystem One]]・[[08_Jevは誰のためのモデルか 汎用Decision Model]]。「判断は Jev・生成は LLM」を agmsg チームに組み込む実例。ccc（[[03_ccc関連事例調査 ボルト内の同じアプローチ]]）の査に相当する「軽量判断役」を Jev が担う構成
+> **Jev との接続**: [[02_Jev Engineering 決定と生成を分離するSystem One]]・[[04_Jevは誰のためのモデルか 汎用Decision Model]]。「判断は Jev・生成は LLM」を agmsg チームに組み込む実例。ccc（[[03_ccc関連事例調査 ボルト内の同じアプローチ]]）の査に相当する「軽量判断役」を Jev が担う構成
 
 ---
 
@@ -92,5 +92,5 @@ GitHub: fujibee/agmsg / ショーケース: agmsg.cc
 
 - マルチエージェント協調 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[03_Graph of Loops Claude Code完全システム10リポジトリ]]
 - エージェント運用基盤 → [[02_24時間自走する自律型AIエージェントの設計図]]・[[01_エージェントファクトリの作り方 ビルダーズガイド]]
-- Jev（System One 決定モデル） → [[05_Jev Engineering 決定と生成を分離するSystem One]]・[[08_Jevは誰のためのモデルか 汎用Decision Model]]
+- Jev（System One 決定モデル） → [[02_Jev Engineering 決定と生成を分離するSystem One]]・[[04_Jevは誰のためのモデルか 汎用Decision Model]]
 - herdr+agmsg での開発実例 → [[05_herdr+agmsgでintent-cli開発 スレッド分離オーケストレーション]]

@@ -97,4 +97,4 @@ Browser ←──(audio/video)── WebSocket
 
 ## 所感
 
-「STT→LLM→TTS の逐次パイプを raw audio で置換」は、遅延問題の根本解決。live request queue の「寿司コンベア」比喩は upstream/downstream 分離を直感的に説明。parallel agent の投票方式は [[09_ジェネレータ×エバリュエータハーネス]] の adversarial 構造とは違う「合議制」アプローチ（批評でなく投票）。in-context conditioning でアバター一貫性を保つ技法は、プロンプトベースで手軽に試せる点が実用的。Google Managed MCP で BigQuery 等への接続を簡略化する方向は、[[09_SKILL.md入門 新人研修マニュアル]] の「3段階 lazy load」と共に、インフラの隠蔽トレンド。
+「STT→LLM→TTS の逐次パイプを raw audio で置換」は、遅延問題の根本解決。live request queue の「寿司コンベア」比喩は upstream/downstream 分離を直感的に説明。parallel agent の投票方式は [[09_ジェネレータ×エバリュエータハーネスで長時間走るエージェント]] の adversarial 構造とは違う「合議制」アプローチ（批評でなく投票）。in-context conditioning でアバター一貫性を保つ技法は、プロンプトベースで手軽に試せる点が実用的。Google Managed MCP で BigQuery 等への接続を簡略化する方向は、[[09_SKILL.md入門 新人研修マニュアル]] の「3段階 lazy load」と共に、インフラの隠蔽トレンド。

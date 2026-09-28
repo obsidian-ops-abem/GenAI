@@ -65,7 +65,7 @@ ccc は Redmine チケットでプロセス間協調・5ロール横断だが、
 - **「hook で構造的強制・規約でなく」** → [[03_CLINEに全部賭けろ コーディングエージェント時代のプログラマ]]（設定は安全網で設計ではない・deno パーミッション）・[[01_エージェントファクトリの作り方 ビルダーズガイド]]（権限はモデル外で強制・プロンプトは決定に入らない）と同根
 - **「Claude 内部 subagent 丸投げ default-deny」** → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]（ワーカーの tools から Agent 削除＝構造的キャップ）の実践
 - **「worker に別モデル」** → [[07_Boris Cherny 講演 Claude Codeハーネスとproduct overhang]]（dynamic workflows で数千エージェント・モデル毎ルーティング）・[[05_Claude Codeの6層アーキテクチャ ダムループ]]（エージェントチームは完全な Claude Code インスタンス）の変形（同モデルでなく異モデル混交）
-- **「着手前に完了条件」** → [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]（Tasks の完了条件）・[[01_Agent Harness vs Loop vs Graph Engineering]]（Loop の stop rule・証拠で止まる）と同系
+- **「着手前に完了条件」** → [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]（Tasks の完了条件）・[[04_Agent Harness vs Loop vs Graph Engineering]]（Loop の stop rule・証拠で止まる）と同系
 - **「質問は選択肢で」** → [[03_AI協業の発注の型 HITL実務]]（決め手ポイントを1問ずつ）に相似
 
 ---

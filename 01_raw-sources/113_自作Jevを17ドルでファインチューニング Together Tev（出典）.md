@@ -16,7 +16,7 @@ created: 2026-09-25
 - タイトル: **How to train your own Jev for $17**
 - 対象: together/Tev1-4B-experimental（Qwen3.5 4B ベースの Jev ライク分類モデル）
 
-要約は [[17_自作Jevを17ドルでファインチューニング Together Tev]] を参照。
+要約は [[06_自作Jevを17ドルでファインチューニング Together Tev]] を参照。
 
 ---
 

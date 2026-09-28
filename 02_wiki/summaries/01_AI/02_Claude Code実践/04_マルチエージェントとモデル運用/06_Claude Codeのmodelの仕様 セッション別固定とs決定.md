@@ -36,7 +36,7 @@ ingest-note: "本ボルト主旨（AIエージェント設計・PKM）内のClau
 
 ## 本ボルト内の位置付け
 
-- [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[05_Jev Engineering 決定と生成を分離するSystem One]] が扱う「役割別モデル/effortルーティング」の**最も基礎的な前提**（そもそもセッション単位でモデルをどう固定するか）にあたる
+- [[02_1チャットをエージェントチームへ Opus5 12ステップ]]・[[02_Jev Engineering 決定と生成を分離するSystem One]] が扱う「役割別モデル/effortルーティング」の**最も基礎的な前提**（そもそもセッション単位でモデルをどう固定するか）にあたる
 - モデル設定の公式ドキュメント参照先: [code.claude.com モデル設定 - Claude Code Docs](https://t.co/kppXQhPeJu)（リンク先は本要約作成時点で内容未検証）
 
 ## 判断根拠（なぜ受け入れたか）
@@ -46,4 +46,4 @@ frontmatterの `ingest-note` を参照。vault主旨（AIエージェント設�
 ## 関連
 
 - モデル/effortルーティングの応用 → [[02_1チャットをエージェントチームへ Opus5 12ステップ]]
-- モデルルーティングの自動化版 → [[05_Jev Engineering 決定と生成を分離するSystem One]]
+- モデルルーティングの自動化版 → [[02_Jev Engineering 決定と生成を分離するSystem One]]

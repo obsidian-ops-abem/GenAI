@@ -15,7 +15,7 @@ created: 2026-09-24
 - 形態: note 記事（日本語・入門解説）
 - タイトル: **高速な判断に特化したAI - TypeSafe「Jev」と System One Model**
 
-要約は [[18_Jev入門 System One Modelの日本語解説 npaka]] を参照。
+要約は [[01_Jev入門 System One Modelの日本語解説 npaka]] を参照。
 
 ---
 

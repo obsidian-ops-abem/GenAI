@@ -54,17 +54,17 @@ agent 向けメッセージの3パターン:
 
 **Agent 時代の CLI/ドキュメント設計作法**。本ボルトの Claude Code 実践群を補完する「AI への知識提供」設計論:
 
-- **docs コマンドで Web Fetch 不要** は、[[12_カーパシーのObsidian活用術 30分で第二の脳]]（AI がローカルフォルダを直接読む・Web Fetch でなく）と同じ思想。CLI 版の「AI が直接アクセスできる経路」
-- **ドキュメント＝Agent Skill 共通化** は、[[01_Agent Skillsを作る完全プロンプト]]（SKILL.md の description・トリガー）と [[10_agent-skill-creator ワークフローをAIスキル化]]（OSS でスキル化）の実践版。**人間向けドキュメントの description をそのまま skill の description に使う**という統合アプローチ
-- **help/ログに agent 向けメッセージ** は、[[14_Claudeは多層実行エンジン Chatでない]]（Skills + MCP + CLAUDE.md の多層）を CLI という別のインターフェースで実現。CLI の help/ログが CLAUDE.md の役割を担う
+- **docs コマンドで Web Fetch 不要** は、[[04_カーパシーのObsidian活用術 30分で第二の脳]]（AI がローカルフォルダを直接読む・Web Fetch でなく）と同じ思想。CLI 版の「AI が直接アクセスできる経路」
+- **ドキュメント＝Agent Skill 共通化** は、[[01_Agent Skillsを作る完全プロンプト]]（SKILL.md の description・トリガー）と [[01_agent-skill-creator ワークフローをAIスキル化]]（OSS でスキル化）の実践版。**人間向けドキュメントの description をそのまま skill の description に使う**という統合アプローチ
+- **help/ログに agent 向けメッセージ** は、[[04_Claudeは多層実行エンジン Chatでない]]（Skills + MCP + CLAUDE.md の多層）を CLI という別のインターフェースで実現。CLI の help/ログが CLAUDE.md の役割を担う
 - **Auth の責務分離**（インタラクティブ＝人間、非インタラクティブ＝agent）は、[[03_AI協業の発注の型 HITL実務]]（人が触るのは依頼・承認・検証の3点）の CLI 版。不可逆・インタラクティブな操作は人間へ
-- **構造化出力（--format json）** は、[[12_Graph Engineering with Claude 14-Step roadmap]]（node 契約・JSON schema で validate）や [[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・境界ある入出力）の「契約」思想を CLI 出力に適用
+- **構造化出力（--format json）** は、[[03_Graph Engineering with Claude 14-Step roadmap]]（node 契約・JSON schema で validate）や [[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]（judge・境界ある入出力）の「契約」思想を CLI 出力に適用
 - **「AI に知識を持たせる」** は、本ボルト運用そのもの（CLAUDE.md で AI に運用ルールを与える・raw-sources を直接読ませる）。本記事は CLI 一般にこの思想を拡張
 
 ## 関連
 
-- AI が直接アクセス（Web Fetch でない） → [[12_カーパシーのObsidian活用術 30分で第二の脳]]
-- Agent Skill の description・トリガー → [[01_Agent Skillsを作る完全プロンプト]]・[[10_agent-skill-creator ワークフローをAIスキル化]]
+- AI が直接アクセス（Web Fetch でない） → [[04_カーパシーのObsidian活用術 30分で第二の脳]]
+- Agent Skill の description・トリガー → [[01_Agent Skillsを作る完全プロンプト]]・[[01_agent-skill-creator ワークフローをAIスキル化]]
 - 人間の関与ポイント（インタラクティブ＝人間） → [[03_AI協業の発注の型 HITL実務]]
-- 構造化出力・契約（schema） → [[12_Graph Engineering with Claude 14-Step roadmap]]・[[14_自己レビューエージェントのGraph設計 Anthropicメソッド]]
-- 多層（CLAUDE.md 相当を CLI で） → [[14_Claudeは多層実行エンジン Chatでない]]
+- 構造化出力・契約（schema） → [[03_Graph Engineering with Claude 14-Step roadmap]]・[[04_自己レビューエージェントのGraph設計 Anthropicメソッド]]
+- 多層（CLAUDE.md 相当を CLI で） → [[04_Claudeは多層実行エンジン Chatでない]]

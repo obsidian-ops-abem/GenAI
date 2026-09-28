@@ -54,9 +54,9 @@ created: 2026-08-05
 本ポストは Context Engineering と Memory Engineering の峻別という、本ボルト運用の中核に関わる知見。
 
 - **「Context engineering は今見るもの・Memory engineering は来週知っているもの」** は [[06_Context Engineering Claude Codeの文脈設計]]（発話前の約7,850トークン設計・削除優先・段階的開示）の対極として Memory 層を定義。Context と Memory は表裏
-- **Write policy（何を・いつ・どんな形式で・どんな confidence で）** は本ボルトの Ingest 操作（CLAUDE.md・「raw-sources は読むだけ・wiki は Claude が生成」）と同じ。本ボルトの write policy は「人間は raw へ書く・nightly agent は wiki へ書く」の層分離（[[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]] の 1層1writer）
+- **Write policy（何を・いつ・どんな形式で・どんな confidence で）** は本ボルトの Ingest 操作（CLAUDE.md・「raw-sources は読むだけ・wiki は Claude が生成」）と同じ。本ボルトの write policy は「人間は raw へ書く・nightly agent は wiki へ書く」の層分離（[[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]] の 1層1writer）
 - **Hierarchical retrieval（working memory → semantic search → trust/recency）** は [[08_LangGraph Academy エージェント構築のコース]]（短期記憶=checkpoint・長期記憶=store namespace）・[[04_オントロジーでClaude性能向上 知識グラフの実測]]（知識グラフで検索品質向上）と同系
-- **Active maintenance（TTL・confidence decay・dedup・compression）** は本ボルトの Lint 操作（矛盾・孤立ページ・重複概念の検出・古くなった記述の洗い出し）・[[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・compiled knowledge rots・日曜 health pass）と同じ「メモリの能動的保守」
+- **Active maintenance（TTL・confidence decay・dedup・compression）** は本ボルトの Lint 操作（矛盾・孤立ページ・重複概念の検出・古くなった記述の洗い出し）・[[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]（nightly compiler・compiled knowledge rots・日曜 health pass）と同じ「メモリの能動的保守」
 - **「S/N 比崩壊・検索品質死」** は [[08_LangGraph Academy エージェント構築のコース]]（長時間会話のトークン膨張・filtering/trimming/summarization）・[[05_Claude Codeの6層アーキテクチャ ダムループ]]（95%到達で要約でなく構造化抽出・pruning beats summarizing）と同じ課題
 - **Trust/recency filters** は ccc（[[02_ccc-forgejo-actions自動配備]]）の査による検証（合格/不合格二値＝trust）・監査記録（recency）に直結。[[03_ccc関連事例調査 ボルト内の同じアプローチ]] 参照
 
@@ -66,14 +66,14 @@ created: 2026-08-05
 1. **Write policy の明文化** — CLAUDE.md の Ingest 規則を write policy として再認識
 2. **ストレージ backend の層分離** — raw/wiki/index/log の各層が既に backend 分離
 3. **階層 retrieval** — index.md（working memory）→ Wikilink（1 hop）→ 全文検索 の階層を明示
-4. **能動的 maintenance** — Lint を nightly compiler 化（[[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]）する次段階
+4. **能動的 maintenance** — Lint を nightly compiler 化（[[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]）する次段階
 
 ---
 
 ## 関連
 
 - Context Engineering（対極・表裏） → [[06_Context Engineering Claude Codeの文脈設計]]
-- 1層1writer・nightly compiler → [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
+- 1層1writer・nightly compiler → [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
 - 短期/長期記憶・階層 retrieval → [[08_LangGraph Academy エージェント構築のコース]]
 - 検索品質（知識グラフ） → [[04_オントロジーでClaude性能向上 知識グラフの実測]]
 - pruning beats summarizing（S/N 比維持） → [[05_Claude Codeの6層アーキテクチャ ダムループ]]

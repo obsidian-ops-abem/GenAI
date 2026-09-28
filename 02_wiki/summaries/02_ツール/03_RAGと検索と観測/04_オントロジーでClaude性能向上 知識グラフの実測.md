@@ -77,10 +77,10 @@ claude mcp add --transport stdio memory -- npx -y @modelcontextprotocol/server-m
 - **「資料は並んでいるがつながっていない」** は本ボルトの構造的課題そのもの。`index.md`（カタログ）と Wikilink（関係）はあるが、**ノート間の意味関係（AはBを補完する・AとBは対立する等）が型付きで明示されていない**。オントロジー導入（リレーションに型を持たせる）は本ボルトの Lint（[[CLAUDE]] の Lint 操作）で抽出すべき「繰り返し言及されるのに専用ページがない概念」の次の段階
 - **memory MCP サーバー（`@modelcontextprotocol/server-memory`）** は Claude Code への知識グラフ導入の標準手段 → [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]（MCP サーバー）・[[04_Claudeは多層実行エンジン Chatでない]]（MCP層）と同基盤
 - **知識グラフ/RAG 系譜** → [[02_GraphRAG 知識グラフでRAGを置き換える]]（GraphRAG）・[[03_graphify コードベースを知識グラフ化]]（tree-sitter AST でコードをグラフ化）と同系。本記事は「プロジェクトの意味関係」をグラフ化する点で、graphify（コード構造）・GraphRAG（検索精度）の中間
-- **「推測でなく明示」** は [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]（曖昧さを先取り）・[[01_Agent Harness vs Loop vs Graph Engineering]]（自信でなく根拠）と同思想。オントロジーは「関係の曖昧さを先取り」する作業
+- **「推測でなく明示」** は [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]（曖昧さを先取り）・[[04_Agent Harness vs Loop vs Graph Engineering]]（自信でなく根拠）と同思想。オントロジーは「関係の曖昧さを先取り」する作業
 - **コスト削減の実測** → [[01_知識グラフメモリをOpus5で安く運用する]]（キャッシュ/バッチでコスト圧縮）と並ぶ「知識グラフ + コスト最適化」の実践。本記事はモデル側でなく**探索の削減**によるコストダウン
 - **「リポジトリが大きいほど効果大」** → [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]]（長期多段階で真価・Stripe の5000万行）と同じ「規模で効く」系譜。大規模コードベースほどオントロジーの省略効果が大きい
-- **本ボルト規模（中型）** は1Mコンテキスト（[[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]）で収まる可能性があるが、オントロジーは「コンテキストに放り込む情報の質」を上げる手段として併用価値がある
+- **本ボルト規模（中型）** は1Mコンテキスト（[[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]）で収まる可能性があるが、オントロジーは「コンテキストに放り込む情報の質」を上げる手段として併用価値がある
 
 ---
 
@@ -92,4 +92,4 @@ claude mcp add --transport stdio memory -- npx -y @modelcontextprotocol/server-m
 - MCP サーバー → [[02_Claude Code開発者ボリス推奨 MCPサーバー8選]]
 - 曖昧さを先取り（推測でなく明示） → [[04_Stop Vibe Coding Spec駆動開発の5ブロック]]
 - 規模で効く（大規模ほど効果大） → [[07_Everything Fable 5 Mythosクラスとプロンプトガイド]]
-- 1M コンテキストと検索の不要化 → [[18_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
+- 1M コンテキストと検索の不要化 → [[05_ULTIMATE SECOND BRAIN 第二の脳の新しい失敗モード]]
