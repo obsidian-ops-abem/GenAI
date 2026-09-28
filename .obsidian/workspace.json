@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/17_Karpathy講演 Software 3.0とTransformerの全史.md",
+                "file": "02_wiki/summaries/01_AI/05_Jev/05_Claude Code×Jev コンテキスト91%節約.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "17_Karpathy講演 Software 3.0とTransformerの全史"
+              "title": "05_Claude Code×Jev コンテキスト91%節約"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/17_Karpathy講演 Software 3.0とTransformerの全史.md",
+                "file": "02_wiki/summaries/01_AI/05_Jev/05_Claude Code×Jev コンテキスト91%節約.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,19 +197,19 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "log.md.tmp.1392.926995be11da",
-    "index.md.tmp.1392.b346b10b6abf",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/17_Karpathy講演 Software 3.0とTransformerの全史.md",
-    "01_raw-sources/115_Karpathy講演 Software 3.0とTransformerの全史（出典）.md",
-    "01_raw-sources/115_Karpathy講演 Software 3.0とTransformerの全史（出典）.md.tmp.1392.714c5d3431d9",
-    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
-    "02_wiki/summaries/01_AI/05_Jev/05_Claude Code×Jev コンテキスト91%節約.md",
     "02_wiki/summaries/01_AI/05_Jev/06_自作Jevを17ドルでファインチューニング Together Tev.md",
-    "02_wiki/summaries/01_AI/05_Jev/04_Jevは誰のためのモデルか 汎用Decision Model.md",
     "02_wiki/summaries/01_AI/05_Jev/03_Jev Engineering実践ガイド 分割と失敗モード.md",
     "02_wiki/summaries/01_AI/05_Jev/02_Jev Engineering 決定と生成を分離するSystem One.md",
     "02_wiki/summaries/01_AI/05_Jev/01_Jev入門 System One Modelの日本語解説 npaka.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/17_Karpathy講演 Software 3.0とTransformerの全史.md",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/16_QWen Image Edit 軽量QLoRAでジブリ風画像生成.md",
+    "log.md.tmp.1392.926995be11da",
+    "index.md.tmp.1392.b346b10b6abf",
+    "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/13_RAGの基礎 知識カットオフからneedle in a haystackまで.md",
+    "01_raw-sources/115_Karpathy講演 Software 3.0とTransformerの全史（出典）.md",
+    "01_raw-sources/115_Karpathy講演 Software 3.0とTransformerの全史（出典）.md.tmp.1392.714c5d3431d9",
+    "02_wiki/summaries/01_AI/05_Jev/05_Claude Code×Jev コンテキスト91%節約.md",
+    "02_wiki/summaries/01_AI/05_Jev/04_Jevは誰のためのモデルか 汎用Decision Model.md",
     "log.md.tmp.1392.b46e472d97a8",
     "01_raw-sources/61_Boris Cherny 講演 Claude Codeハーネス設計とproduct overhang（出典）.md",
     "log.md.tmp.1392.53c3756d82af",
@@ -219,7 +219,6 @@
     "index.md.tmp.1392.5d07ca078474",
     "index.md.tmp.1392.535df303027c",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/17_自作Jevを17ドルでファインチューニング Together Tev.md",
-    "02_wiki/summaries/01_AI/05_Jev",
     "_prefix_backup_20260926/05_Jev移動前/18_Jev入門 System One Modelの日本語解説 npaka.md",
     "_prefix_backup_20260926/05_Jev移動前/17_自作Jevを17ドルでファインチューニング Together Tev.md",
     "_prefix_backup_20260926/05_Jev移動前/14_Claude Code×Jev コンテキスト91%節約.md",
