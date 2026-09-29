@@ -15,6 +15,7 @@ created: 2026-09-24
 - 形態: X 長文ポスト（ビルドガイド・コード例付き）
 - タイトル: **Jev Engineering: How to Actually Build Your First AI Agent Brain (from scratch)**
 - 補足: TypeSafe AI は2026-09-15にステルス解禁（DCVC 主導の$40M調達）。創業者 Diogo Almeida は OpenAI で RLHF・InstructGPT の共同発明者
+- 補助出典（2026-09-29 追記）: 著者自身の告知ポスト（2026-09-23・日本語訳経由。「Jev はあらゆる AI エージェントに欠けている頭脳。ミリ秒単位で次に何が起こるかを決め、ほぼゼロコストで実行。正しく設定すれば品質を損なうことなくエージェントの請求書の大部分を削減できる」）— 本記事の内容と同一のため新規ノート不作成
 
 要約は [[03_Jev Engineering実践ガイド 分割と失敗モード]] を参照。
 

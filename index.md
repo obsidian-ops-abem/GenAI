@@ -36,6 +36,7 @@ updated: 2026-09-23
 - [[04_Agent Harness vs Loop vs Graph Engineering]] — Harness(基盤)/Loop(線形)/Graph(非線形)を「競合ではなく同じシステムの異なる部分」と整理。LoopとGraphは制御フロンの代替、Harnessは必須の併用レイヤー（本文は解説記事群から再構成）の要約
 - [[05_Graph Engineering 入門 What It Is]] — Mahaximus(@Mahaximus_)によるGraph Engineering入門。node（作業単位）とedge（真の依存）の2プリミティブから、fake-edge test（無駄な待ち発見）・diamond（fan-out→並列→収束）・checker node（並列の失敗防止: 5チェック項目）・static first, dynamic second・Claude Codeのworkflow構文（depends_on）まで。線形＝退化グラフ。CLAUDE.mdでworkflow デフォルト固定（本文はユーザー提供クリップから再構成）の要約
 - [[06_5層モデル各層の作業単位 プロンプトからグラフへ]] — @nicos_aiによる5層（Prompt/Context/Harness/Loop/Graph）の精緻解説。各層は置き換えでなく包み込み。各層の「作業単位」を問うことで区別し、デバッグの指標（どの層が失敗したか）になる。グラフはループを置き換えるのでなく組織化（単一ループは自分にループバックする1ノードのグラフ）（本文はユーザー提供クリップから再構成）の要約
+- [[07_Harness Engineering 壊れないAIエージェントの作り方]] — @0xwhrrari([[01_LOOP vs GRAPH vs HARNESS ENGINEERING]]と同一著者)によるHarness Engineering完全ガイド。モデルは推論エンジンに過ぎず信頼性は環境が決める。**7仕事**(契約done_when/地図AGENTS.md/ツール契約と失敗状態/永続state=会話は記録系でない/センサーが品質を証拠に/権限はモデル外POLICY CHECKS/トレース)・**指示をインフラに二重化**(GUIDE+CHECK)・**失敗はクラスを修理**・脳/手/履歴分離・変更レシート・レベル0-3最小出発・チェックリスト12項。「強いモデルはシステムを信頼可能にしない。失敗を高くするだけ」。Dario Amodei/OpenAI Codex/Anthropic引用（本文はユーザー提供クリップから再構成）の要約
 
 ##### 02_Loop実践（Loop ロードマップ・実戦原則）
 
