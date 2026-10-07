@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Loops and Graphs how to stop babysitting agents and only approve the last step (full course).md",
+                "file": "Clippings/Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Loops and Graphs how to stop babysitting agents and only approve the last step (full course)"
+              "title": "Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide)"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Loops and Graphs how to stop babysitting agents and only approve the last step (full course).md",
+                "file": "Clippings/Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,8 +197,9 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
-    "Clippings/How to Build Your Own LLM The 5-Step Pipeline Behind GPT & Claude.md",
     "Clippings/Loops and Graphs how to stop babysitting agents and only approve the last step (full course).md",
+    "Clippings/How to Build Your Own LLM The 5-Step Pipeline Behind GPT & Claude.md",
+    "Clippings/Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide).md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/17_Karpathy講演 Software 3.0とTransformerの全史.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/18_LLM構築講義 事前訓練からDPOまで.md",
     "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md",
@@ -228,7 +229,6 @@
     "02_wiki/summaries/01_AI/02_Claude Code実践/03_MCPとスキルとアーキテクチャ/03_Learn Claude Code ハーネスエンジニアリング学習.md",
     "01_raw-sources/123_Boris実践Tips Claude Code使い始めからSDK並列まで（出典）.md",
     "01_raw-sources/123_Boris実践Tips Claude Code使い始めからSDK並列まで（出典）.md.tmp.45228.f5c729427a7b",
-    "01_raw-sources/122_Claude Managed Agents進化 トークンから本番エージェントへ（出典）.md",
     "01_raw-sources/122_Claude Managed Agents進化 トークンから本番エージェントへ（出典）.md.tmp.45228.b1a7e2b9fa0f",
     "01_raw-sources/121_Grokbot PMをエージェント同僚化するワークフロー（出典）.md.tmp.45228.ad685f2e7933",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/18_LLM構築講義 事前訓練からDPOまで.md.tmp.45228.3703d3f2693a",
