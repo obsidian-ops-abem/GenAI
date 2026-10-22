@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide).md",
+                "file": "clippings_index_20260813.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide)"
+              "title": "clippings_index_20260813"
             }
           }
         ]
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide).md",
+                "file": "clippings_index_20260813.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,11 +197,11 @@
   },
   "active": "57b62f7551877b5f",
   "lastOpenFiles": [
+    "Clippings/Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide).md",
     "Clippings/Loops and Graphs how to stop babysitting agents and only approve the last step (full course).md",
     "Clippings/How to Build Your Own LLM The 5-Step Pipeline Behind GPT & Claude.md",
     "02_wiki/summaries/01_AI/02_Claude Code実践/02_ワークフローと発注/02_Claude Code 計画と実行を分けるワークフロー.md",
     "02_wiki/summaries/07_思考・意思決定/01_Randomnessを測る 定量思考が確率を形にする.md",
-    "Clippings/Opus 5.5 Is 2x the Price on Paper. In a Long Agent Loop It's 1.26x (Full Guide).md",
     "99_to_delete/summaries_05_買い物_空フォルダ/desktop.ini",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/17_Karpathy講演 Software 3.0とTransformerの全史.md",
     "02_wiki/summaries/01_AI/04_LLM・RAG・基礎/18_LLM構築講義 事前訓練からDPOまで.md",
